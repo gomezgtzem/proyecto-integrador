@@ -1,0 +1,17 @@
+body{
+  margin: 0;
+  background-color: #2569B8;
+}
+header{
+  width: 100%;
+  min-height: 10vh;
+  /* border: 2px solid #7CB6F9; */
+}
+header nav .navbar-collapse .navbar-nav .nav-letra{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #002B5C;
+  text-align: center;
+}
