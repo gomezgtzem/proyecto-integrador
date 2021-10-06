@@ -1,0 +1,35 @@
+body {
+  background-color: #e44d41;
+}
+
+/*imagen de fondo */
+.contenido-hero {
+  height: 20rem;
+  max-width: 100%;
+}
+
+.contenido-hero,
+img {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #e44d41;
+}
+
+/* checkout button */
+.checkout-button {
+  display: flex;
+  justify-content: end;
+  padding-right: 100px;
+}
+
+.button {
+  border: 3px solid #10476e;
+  background-color: transparent;
+  font-style: italic;
+  text-transform: lowercase;
+  font-weight: 700;
+  height: 40px;
+  letter-spacing: 1px;
+  width: 110px;
+  color: #10476e;
+}
