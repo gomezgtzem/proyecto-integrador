@@ -15,6 +15,9 @@ cards.addEventListener('click', (e)=>{
     addCart(e)
 })
 
+items.addEventListener('click', e =>{
+    btnAction(e)
+})
 const fetchData = async ()=>{
     try{
         const response = await fetch('api-prueba.json') 
@@ -69,7 +72,7 @@ const paintCart = ()=> {
     items.innerHTML= ''
     Object.values(cart).forEach(product =>{
         templateCart.querySelector('th').textContent = product.id
-        templateCart.querySelectorAll('td')[0].textContent = product.title
+        templateCart.querySelectorAll('td')[0].textContent = product.title  //innerHtml
         templateCart.querySelectorAll('td')[1].textContent = product.cantidad
         templateCart.querySelector('.btn-info').dataset.id = product.id
         templateCart.querySelector('.btn-danger').dataset.id = product.id
@@ -88,6 +91,7 @@ const paintFooter = ()=> {
         footer.innerHTML=`
         <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
         ` 
+        return
     }
     const nCantidad =Object.values(cart).reduce((acumulator,{cantidad})=>
         acumulator + cantidad,0)
@@ -101,4 +105,14 @@ const paintFooter = ()=> {
     const clone = templateFooter.cloneNode(true)
     fragment.appendChild(clone)
     footer.appendChild(fragment)
+
+    const btnVaciar = document.querySelector('#vaciar-carrito')
+    btnVaciar.addEventListener('click', ()=>{
+        cart = {}
+        paintCart()
+    })
+}
+
+const btnAction = e =>{
+   console.log(e.target)
 }
