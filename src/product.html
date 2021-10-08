@@ -10,9 +10,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/navbar-footer.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuente Montserrat tamaños 400,700,900 -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Fuente Permanent-Marker tamaño 400-->
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <!-- End fonts -->
+
 </head>
 
-<body class="style1">
+<body">
+  <!-- area del header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="col col-lg-1 col-md-1 navbar-brand" href="#">lata01</a>
@@ -34,23 +44,27 @@
       </div>
     </nav>
   </header>
+  <!-- contenido principal -->
   <section>
-    <div class="row justify-content-around">
+    <div class="row justify-content-around" id="block1">
       <div>
-        <img src="27_pink_purple_Ridge.png" class="img-thumbnail.border-0" alt="...">
+        <img
+          src="https://images.pexels.com/photos/5622349/pexels-photo-5622349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          class="img-fluid.border-0" alt="..." width="300px">
       </div>
       <div>
         <div class="card.border-0" style="width: 400px;">
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <p><a href="#" class="btn btn-dark btn-block">Go somewhere</a></p>
-            <p><a href="#" class="btn btn-dark btn-block">Go somewhere</a></p>
+            <p><a href="#" class="btn btn-dark btn-lg">Go somewhere</a></p>
+            <p><a href="#" class="btn btn-dark btn-lg">Go somewhere</a></p>
           </div>
         </div>
       </div>
     </div>
-    <div>
+    <!-- bloque 2 -->
+    <div id="block2">
       <div class="card.border-0">
         <div class="card-body" style="width: 800px;">
           <p>
@@ -67,37 +81,68 @@
         </div>
       </div>
     </div>
-
-    <div class="row justify-content-around" id="sect3">
-      <div class="col-6">
-        <img src="https://images.pexels.com/photos/5069290/pexels-photo-5069290.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-fluid.border-0" alt="..." width="550px">
-      </div>
-      <div class="row align-items-center">
-        <div class="col-4 card.border-0 ">
-          <div class="card-body" style="width: 500px;">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, aperiam aliquam saepe quis rem eum, impedit ab
-            velit magni harum cupiditate, aliquid autem reiciendis veritatis! Rerum in placeat nisi est. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Dicta qui asperiores corporis velit similique sit dolorum
-            itaque aspernatur labore, sunt suscipit consequatur eaque beatae delectus repellat maxime natus sequi
-            deserunt?
+    <!-- bloque 3 -->
+    <div class="container">
+      <div class="row justify-content-around" id="block3">
+        <div class="col-6">
+          <img
+            src="https://images.pexels.com/photos/5069290/pexels-photo-5069290.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            class="img-fluid.border-0" alt="..." width="550px">
+        </div>
+        <div class="row align-items-center">
+          <div class="col-4 card.border-0 ">
+            <div class="card-body" style="width: 500px;">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, aperiam aliquam saepe quis rem eum, impedit
+              ab
+              velit magni harum cupiditate, aliquid autem reiciendis veritatis! Rerum in placeat nisi est. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Dicta qui asperiores corporis velit similique sit dolorum
+              itaque aspernatur labore, sunt suscipit consequatur eaque beatae delectus repellat maxime natus sequi
+              deserunt?
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="conatiner-fluid" id="imgs">
-      <div class="row align-items-start">
-        <div class="col">
-          <img src="pexels-anna-shvets-5325842 3.jpg" class="img-thumbnail" alt="...">
-        </div>
-        <div class="col">
-          <img src="pexels-allan-mas-5622349 (1) 1.jpg" class="img-thumbnail" alt="...">
-          <img src="pexels-philip-boakye-1813947 1.jpg" class="img-thumbnail" alt="...">
-        </div>
-        <div class="col">
-          <img src="pexels-polina-tankilevitch-8626839 1.jpg" class="img-thumbnail" alt="...">
-        </div>
-  </section>
 
-</body>
+    <!-- bloque 4 -->
+    <div class="container-fluid" id="block4">
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://images.pexels.com/photos/5325842/pexels-photo-5325842.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            class="img-fluid" alt="..." width="400px">
+        </div>
+        <div class="col align-self-center">
+          <img
+            src="https://images.pexels.com/photos/5622349/pexels-photo-5622349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            class="img-fluid" alt="..." width="200px">
+          <img
+            src="https://images.pexels.com/photos/1813947/pexels-photo-1813947.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            class="img-fluid" alt="..." width="200px">
+        </div>
+        <div class="col">
+          <img
+            src="https://images.pexels.com/photos/8626839/pexels-photo-8626839.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            class="img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="container row">
+      <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        <img src="./assets/images/santa-cruz-logo.png" alt="Logo Santa Cruz - recognized Skateboarding brand">
+      </div>
+      <div class="copyright col-lg-7 col-md-7 col-sm-7 col-xs-7">
+        <p class="texto-copyright">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem rerum sit,
+          suscipit vel corrupti debitis nisi neque nostrum optio! Et repellat libero ipsam soluta repellendus molestiae
+          qui cupiditate sapiente.</p>
+      </div>
+      <div class="social-network col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+    </div>
+  </footer>
+
+  </body>
 
 </html>
