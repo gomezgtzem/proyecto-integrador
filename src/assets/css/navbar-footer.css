@@ -16,10 +16,9 @@ header {
 }
 header nav .navbar-collapse .navbar-nav .nav-letra {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 900;
   line-height: 1.5;
-  color: #002b5c;
   text-align: center;
 }
 footer {
