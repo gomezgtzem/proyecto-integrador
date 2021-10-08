@@ -1,4 +1,8 @@
 /* 4 opciones de colores */
+/* borde */
+.bordS{
+    border-color:rgba(0, 43, 92, 1);
+}
 .style1{
     background-color:rgba(37, 105, 184, 1);
 }

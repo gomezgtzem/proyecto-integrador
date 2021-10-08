@@ -1,96 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>producto</title>
-        <link rel="stylesheet" href="product.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    
-    </head>
-    <body>
-        <header class="head">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
-        </header>
-        <section class="container">
-            <div class="row justify-content-around">
-                <div>
-                    <img src="27_pink_purple_Ridge_bcJ079-_002small_480x480.png" class="img-thumbnail.border-0" alt="...">
-                </div>
-                <div>
-                    <div class="card.border-0" style="width: 400px;">
-                        <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <p><a href="#" class="btn btn-dark btn-block">Go somewhere</a></p>
-                          <p><a href="#" class="btn btn-dark btn-block">Go somewhere</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card.border-0">
-                <div class="card-body">
-                    <p><h1>Descripción del producto</h1></p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum dolor ipsam, exercitationem praesentium dolores accusamus, similique ex modi ullam voluptatem mollitia et nulla perferendis aperiam! Nobis doloribus ipsum ullam.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vel animi aut eius reprehenderit harum consectetur? Non voluptatibus laudantium perspiciatis voluptatum adipisci sunt omnis nulla libero. Ea sunt ullam ab! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nihil maxime facere itaque non sequi eligendi? Ex eius veniam ipsum, consequatur laboriosam maiores aliquam excepturi, perspiciatis doloremque tenetur dolor fugiat.
-                </div>
-            </div>
-            <div class="sec2">
-                <div class="row justify-content-around">
-                    <div class="row no-gutters">
-                        <div class="card mb-3" style="max-width: 1500px;">
-                            <div class="row no-gutters">
-                              <div class="col-md-6">
-                                <img src="pexels-photo-5069290.jpeg" alt="..." width="500">
-                              </div>
-                              <div class="col-md-6">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eligendi laborum reprehenderit unde, ipsam voluptatem fugit molestiae sint nesciunt vitae laboriosam natus, sit possimus autem nulla ducimus dolor debitis adipisc. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium non quod incidunt voluptatem, molestias placeat soluta rem itaque aut mollitia perspiciatis. Numquam voluptate ratione, totam fugit sint ipsa quo dignissimos!</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </body>
-</html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <title>producto</title>
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/navbar-footer.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuente Montserrat tamaños 400,700,900 -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Fuente Permanent-Marker tamaño 400-->
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <!-- End fonts -->
 
-<!-- <div class="row justify-content-around">
-    <div>
-        <img src="pexels-photo-5069290.jpeg" class="img-thumbnail.border-0" alt="..." width="600px">
-    </div>
-    <div class="row no-gutters">
-        <div class="card.border-0" style="width: 600px;">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cum eligendi corporis tempora obcaecati. Maiores repellendus quia voluptatum, perferendis iusto debitis? Eaque non ipsa mollitia earum tempora, dolorem excepturi tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima ad non est hic! Dolorem odio alias sint blanditiis temporibus! Quam ipsa distinctio sint laboriosam asperiores placeat eos optio dignissimos! </p>
-            </div>
+</head>
+
+<body">
+  <!-- area del header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="col col-lg-1 col-md-1 navbar-brand" href="#">lata01</a>
+      <a class="col col-lg-1 col-md-1 navbar-brand" href="#">lata02</a>
+      <a class="col col-lg-1 col-md-1 navbar-brand" href="#">lata03</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="col navbar-nav">
+          <a class="col control" href="#"></a>
+          <a class="nav-link nav-letra" href="index.html">INICIO</a>
+          <a class="nav-link nav-letra" href="contact.html">CONTACTO</a>
+          <a class="nav-link nav-letra" href="categories.html">TIENDA</a>
+          <a class="nav-link nav-letra" href="about-us.html">NOSOTROS</a>
+          <a class="nav-link nav-letra" href="login-signup.html">REGISTRARSE</a>
+          <a class="nav-letra nav-link" href="cart.html"><i class="bi bi-cart4"></i></a>
         </div>
+      </div>
+    </nav>
+  </header>
+  <!-- contenido principal -->
+  <section>
+    <div class="row justify-content-around" id="block1">
+      <div>
+        <img
+          src="https://images.pexels.com/photos/5622349/pexels-photo-5622349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          class="img-fluid.border-0" alt="..." width="300px">
+      </div>
+      <div>
+        <div class="card.border-0" style="width: 400px;">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p><a href="#" class="btn btn-dark btn-lg">Go somewhere</a></p>
+            <p><a href="#" class="btn btn-dark btn-lg">Go somewhere</a></p>
+          </div>
+        </div>
+      </div>
     </div>
-</div> -->
+    <!-- bloque 2 -->
+    <div id="block2">
+      <div class="card.border-0">
+        <div class="card-body" style="width: 800px;">
+          <p>
+          <h1>Descripción del producto</h1>
+          </p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum dolor ipsam, exercitationem praesentium
+          dolores accusamus, similique ex modi ullam voluptatem mollitia et nulla perferendis aperiam! Nobis doloribus
+          ipsum ullam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vel animi aut eius reprehenderit harum
+          consectetur? Non voluptatibus laudantium perspiciatis voluptatum adipisci sunt omnis nulla libero. Ea sunt
+          ullam ab! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nihil maxime facere itaque non sequi
+          eligendi? Ex eius veniam ipsum, consequatur laboriosam maiores aliquam excepturi, perspiciatis doloremque
+          tenetur dolor fugiat.
+        </div>
+      </div>
+    </div>
+    <!-- bloque 3 -->
+    <div class="container">
+      <div class="row justify-content-around" id="block3">
+        <div class="col-6">
+          <img
+            src="https://images.pexels.com/photos/5069290/pexels-photo-5069290.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            class="img-fluid.border-0" alt="..." width="550px">
+        </div>
+        <div class="row align-items-center">
+          <div class="col-4 card.border-0 ">
+            <div class="card-body" style="width: 500px;">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, aperiam aliquam saepe quis rem eum, impedit
+              ab
+              velit magni harum cupiditate, aliquid autem reiciendis veritatis! Rerum in placeat nisi est. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Dicta qui asperiores corporis velit similique sit dolorum
+              itaque aspernatur labore, sunt suscipit consequatur eaque beatae delectus repellat maxime natus sequi
+              deserunt?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bloque 4 -->
+    <div class="container-fluid" id="block4">
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://images.pexels.com/photos/5325842/pexels-photo-5325842.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            class="img-fluid" alt="..." width="400px">
+        </div>
+        <div class="col align-self-center">
+          <img
+            src="https://images.pexels.com/photos/5622349/pexels-photo-5622349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            class="img-fluid" alt="..." width="200px">
+          <img
+            src="https://images.pexels.com/photos/1813947/pexels-photo-1813947.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            class="img-fluid" alt="..." width="200px">
+        </div>
+        <div class="col">
+          <img
+            src="https://images.pexels.com/photos/8626839/pexels-photo-8626839.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            class="img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="container row">
+      <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        <img src="./assets/images/santa-cruz-logo.png" alt="Logo Santa Cruz - recognized Skateboarding brand">
+      </div>
+      <div class="copyright col-lg-7 col-md-7 col-sm-7 col-xs-7">
+        <p class="texto-copyright">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem rerum sit,
+          suscipit vel corrupti debitis nisi neque nostrum optio! Et repellat libero ipsam soluta repellendus molestiae
+          qui cupiditate sapiente.</p>
+      </div>
+      <div class="social-network col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+    </div>
+  </footer>
+
+  </body>
+
+</html>
