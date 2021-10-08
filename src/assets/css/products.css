@@ -39,7 +39,7 @@ div .text-hero {
 div .text-hero h1{ 
     font-size: 120px;
     font-family:'Times New Roman', Times, serif;
-    color: #002B5C;
+    
     font-family: 'Permanent Marker', cursive;
 
 }
@@ -117,7 +117,7 @@ a:link, a:visited, a:active{
 }
 
 .btn{
-    background-color: #002B5C;
+  
     display: block;
     color: rgb(255, 255, 255);
     font-size: 12px;
