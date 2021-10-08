@@ -16,45 +16,39 @@ body{
     line-height: 2;
 }
 
-/* Nav header */
-
-/* .nav-header .navbar{
-background-color: transparent !important;
-}  */
 
 
-/* Images header */
+/* Images hero */
 
-header .img-header{
-    background-image: url(/img/products-header.jpg);
+div .hero{
+    background-image: url(img/products-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
     width: 100%;
     height: 100vh;
-    min-height: 100vh;
+    background-position: center center;
 }
 
-.text-header{
-    width: calc(100vw - 2rem);
+div .text-hero {
+   
 	height: 100vh;
     min-height: 100vh;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-    
+    align-items: center;
+	justify-content: center; 
+	 
 }
 
-header .text-header h1{ 
-    width: calc(100vw - 20px);
-    font-size:10rem;
-    font-family: 'Permanent Marker', cursive;
+div .text-hero h1{ 
+    font-size: 12rem;
+    font-family:'Times New Roman', Times, serif;
     color: #002B5C;
-    
+    font-family: 'Permanent Marker', cursive;
+
 }
 
-/* Producto1 prueba */
+/* Productos */
 
 .products .product{
     position: relative;
@@ -105,7 +99,8 @@ figure:hover > img{
 
 
 
-/* Producto 2 prueba */
+/* boton producto */
+
  .texto-producto{
     text-align: center;
     padding: .2rem;
@@ -139,3 +134,23 @@ a:link, a:visited, a:active{
     border-bottom: 1px solid #fff;
 }
 
+
+/* media */
+@media screen and (max-width: 1920px){
+    .div .text-hero h1{
+        font-size: 12rem;
+        
+    }
+}
+@media screen and (max-width: 1290px){
+    div .text-hero h1{
+        font-size: 11rem;
+       
+    }
+}
+@media screen and (max-width: 800px){
+    div .text-hero h1 {
+        font-size: 5.5rem;
+        
+    }
+}
