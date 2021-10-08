@@ -1,19 +1,5 @@
-body {
-    height: 100vh;
-    margin: 0;
-    background-color: #2569b8;
-    display: flex;
-    flex-direction: column;
-}
-/* .section-container .title-categories{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 50px;
-    font-weight: 900;
-    color: #002b5c;
-    text-align: center;
-  }*/
 
-#block1{
+.block1{
     color:#002B5C ;
     padding: 35px;
     font-family: Montserrat;
