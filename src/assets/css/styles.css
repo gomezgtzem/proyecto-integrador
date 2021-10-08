@@ -11,6 +11,16 @@
     place-items: center;
     background: -webkit-linear-gradient(left, #2569B8, #2569B8);
   }
+  .section-container{
+    width: 100%;
+  }
+  .section-container .title-categories{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    font-weight: 900;
+    color: #002b5c;
+    text-align: center;
+  }
   ::selection{
     background: #42a7fa;
     color: rgb(108, 145, 247);

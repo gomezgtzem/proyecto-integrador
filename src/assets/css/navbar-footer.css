@@ -1,9 +1,3 @@
-body {
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
 header {
   width: 100%;
   min-height: 10vh;
