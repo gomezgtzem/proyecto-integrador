@@ -7,6 +7,10 @@ const templateCart = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 let cart = {}
 
+/* lista de purchased */
+const list = document.getElementById('list')
+const button = document.querySelector('button')
+
 document.addEventListener('DOMContentLoaded', ()=>{
     fetchData()
     if(localStorage.getItem('cart')){
