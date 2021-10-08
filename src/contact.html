@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- cambio de color -->
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css" />
+    <!-- de la pag  -->
+    <link href="assets/css/contact.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body id="back">
+    <!-- parte de botones -->
+    <header>
+        <!-- Nav bar, pendiente a fusionar -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top style1">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div id="text1" class="navbar-nav font-bold">
+                    <a class="nav-link" href="#">INICIO<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">CONTACTO</a>
+                    <a class="nav-link" href="#">CATEGORÍAS</a>
+                    <a class="nav-link" href="#">NOSOTRXS</a>
+                    <a class="nav-link" href="#">
+                        <img id="cart-image" src="assets/images/style1.png" height="40px" width="40px" />
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- botones colores, pendiente  a fusionar -->
+        <div class="container">
+            <div class="row">
+                <form action="" id="colorSelect">
+                    <div class="btn-group btn-group-toggle pt-5 mt-4" data-toggle="buttons">
+                        <label class="btn border-0">
+                            <input type="radio" name="options" id="option1">
+                            <img src="assets/images/green-blue.png" width="90" height="90" alt="...">
+                        </label>
+
+                        <label class="btn border-0">
+                            <input type="radio" name="options" id="option2">
+                            <img src="assets/images/wheel-green.png" width="100" height="100" alt="...">
+                        </label>
+
+                        <label class="btn active border-0">
+                            <input type="radio" name="options" id="option3">
+                            <img src="assets/images/wheel-red.png" width="100" height="100" alt="...">
+                        </label>
+                        <label class="btn border-0">
+                            <input type="radio" name="options" id="option4">
+                            <img src="assets/images/wheel-yellow.png" width="100" height="100" alt="...">
+                        </label>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+        <!-- fin botones cambio de colores -->
+
+    </header>
+
+    <!-- Formulario -->
+    <div class="container justify-content-center mt-5 mb-5">
+        <div id="form-box" class="card bordS text-center font-mainColor-s1" style="width: 100%">
+            <div id="color-form" class="card-body style1">
+              <h1 class="card-title font-titles mt-3">CONTÁCTANOS</h1>
+              <img src="assets/images/letter-s1.png" id="letter" width="100" height="100" class="mt-4 mb-5" alt="...">
+              <p class="card-text">
+                <form class="was-validated" method="POST">
+
+                    <div class="font-bold text-left">
+
+                        <div class="form-group">
+                            <label for="validationDefault01">Nombre y apellidos</label>
+                            <input type="text" class="form-control font-bold font-mainColor-s1 style1 bordS" id="validationDefault01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Correo electrónico</label>
+                            <input type="email" class="form-control font-bold font-mainColor-s1 style1 bordS" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text font-regular font-mainColor-s1">No compartiremos tu
+                                información con nadie</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationTextarea">Mensaje</label>
+                            <textarea class="form-control is-invalid font-bold font-mainColor-s1 style1 bordS" id="validationTextarea" placeholder="Mensaje"
+                                required></textarea>
+
+                        </div>
+
+                    </div>
+                    <button id="button-send" class="m-5 font-bold bordS font-mainColor-s1 style1" type="submit"
+                        >Enviar</button>
+                </form>
+
+              </p>
+            
+            </div>
+          </div>
+
+    </div>
+
+    <!-- fin formulario -->
+
+    <!-- footer -->
+    <div class="footer style1-comp mt-5 row" >
+
+        <img id="logo" src="assets/images/logo-s1.png" class="col-auto" />
+        <p class="col-4 font-regular font-compColor-s1">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Quisquam, ab dolor vitae pariatur voluptatum doloribus, ipsum porro neque, id consequatur corporis
+            consequuntur molestias assumenda. Laudantium repellendus impedit rerum explicabo ratione.</p>
+        <div class="social-media col-4">
+            <img id="facebook" src="assets/images/fb-s1.png" alt="..." />
+            <img id="instagram" src="assets/images/insta-s1.png" alt="..." />
+            <img id="twitter" src="assets/images/twit-s1.png" alt="..." />
+            <img id="youtube" src="assets/images/you-s1.png" alt="..." />
+
+        </div>
+
+
+    </div>
+
+    <!-- codigo js -->
+    <script src="assets/js/change-color.js"></script> <!-- cambia elementos de color -->
+    <script src="assets/js/change-back-contact.js"></script> <!-- cambia imagenes de fondo -->
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

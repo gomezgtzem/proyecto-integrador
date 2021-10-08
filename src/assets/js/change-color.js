@@ -1,13 +1,12 @@
 //selector de colores
 const $styleOption = document.querySelector('#colorSelect');
 //lo comentado es para el footer
-/* const $cartImage = document.querySelector('#cart-image');//imagenes a cambiar
-const $letter = document.querySelector('#letter');
+const $cartImage = document.querySelector('#cart-image');//imagenes a cambiar
 const $logo = document.querySelector('#logo');
 const $facebook = document.querySelector('#facebook');
 const $instagram = document.querySelector('#instagram');
 const $twitter = document.querySelector('#twitter');
-const $youtube = document.querySelector('#youtube'); */
+const $youtube = document.querySelector('#youtube'); 
 
 //background color y font color 
 const mainStyle1 = 'rgba(37, 105, 184, 1)';//estilo 1, color principal y letras de footer
@@ -48,14 +47,13 @@ document.body.addEventListener('change', (e) => {
                 textComp[i].style.color = mainStyle1; //letras de footer
             }
             //imagenes para navbar y footer
-            /* $letter.src = "letter-s1.png";
-            $logo.src = "logo-s1.png";
-            $facebook.src = "fb-s1.png";
-            $instagram.src = "insta-s1.png";
-            $twitter.src = "twit-s1.png";
-            $youtube.src = "you-s1.png";
-            $cartImage.src = "style1.png"; */
-
+            
+            $logo.src = "assets/images/logo-s1.png";
+            $facebook.src = "assets/images/fb-s1.png";
+            $instagram.src = "assets/images/insta-s1.png";
+            $twitter.src = "assets/images/twit-s1.png";
+            $youtube.src = "assets/images/you-s1.png";
+            $cartImage.src = "assets/images/style1.png"; 
 
             break;
 
@@ -78,13 +76,13 @@ document.body.addEventListener('change', (e) => {
                 textComp[i].style.color = mainStyle2; //letras de footer
             }
             //imagenes para header y footer
-          /*   $logo.src = "logo-s2.png";//imagenes
-            $cartImage.src = "style2.png";
-            $facebook.src = "fb-s2.png";
-            $instagram.src = "insta-s2.png";
-            $twitter.src = "twit-s2.png";
-            $youtube.src = "you-s2.png";
-            $letter.src = "letter-s2.png"; */
+            $logo.src = "assets/images/logo-s2.png";//imagenes
+            $cartImage.src = "assets/images/style2.png";
+            $facebook.src = "assets/images/fb-s2.png";
+            $instagram.src = "assets/images/insta-s2.png";
+            $twitter.src = "assets/images/twit-s2.png";
+            $youtube.src = "assets/images/you-s2.png";
+            
 
             break;
 
@@ -107,13 +105,13 @@ document.body.addEventListener('change', (e) => {
                 textComp[i].style.color = mainStyle3; //letras de footer
             }
             //imagenes para header y footer
-            /* $cartImage.src = "style34.png";
-            $logo.src = "logo-s3.png";
-            $facebook.src = "fb-s3.png";
-            $instagram.src = "insta-s3.png";
-            $twitter.src = "twit-s3.png";
-            $youtube.src = "you-s3.png";
-            $letter.src = "letter-s34.png"; */
+            $cartImage.src = "assets/images/style34.png";
+            $logo.src = "assets/images/logo-s3.png";
+            $facebook.src = "assets/images/fb-s3.png";
+            $instagram.src = "assets/images/insta-s3.png";
+            $twitter.src = "assets/images/twit-s3.png";
+            $youtube.src = "assets/images/you-s3.png";
+             
 
             break;
 
@@ -136,13 +134,13 @@ document.body.addEventListener('change', (e) => {
                 textComp[i].style.color = mainStyle4; //letras de footer
             }
             //imagenes para header y footer
-            /* $cartImage.src = "style34.png";//imagen carrito
-            $logo.src = "logo-s4.png";
-            $facebook.src = "fb-s4.png";
-            $instagram.src = "insta-s4.png";
-            $twitter.src = "twit-s4.png";
-            $youtube.src = "you-s4.png";
-            $letter.src = "letter-s34.png"; */
+            $cartImage.src = "assets/images/style34.png";//imagen carrito
+            $logo.src = "assets/images/logo-s4.png";
+            $facebook.src = "assets/images/fb-s4.png";
+            $instagram.src = "assets/images/insta-s4.png";
+            $twitter.src = "assets/images/twit-s4.png";
+            $youtube.src = "assets/images/you-s4.png"; 
+            
 
             break;
     }
