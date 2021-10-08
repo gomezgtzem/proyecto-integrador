@@ -18,7 +18,7 @@
   <!-- End fonts -->
 
   <!-- Begin own styles -->
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/colors.css">
   <link rel="stylesheet" href="./assets/css/aside-filters.css">
   <link rel="stylesheet" href="./assets/css/footer.css">
@@ -34,7 +34,7 @@
 
 
 <!-- BARRA DE NAVEGACION -->
-<body>
+<body class="style1">
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="col col-lg-1 col-md-1 navbar-brand" href="#">lata01</a>
@@ -149,46 +149,44 @@
 </div>
   
 <!-- OFERTAS -->
-<section class="ofertas"> 
-  <img class="imagen-ofertas" src="assets/images/landing/pexels-anna-shvets-5325842.jpg" alt="">
-  <article class="ofertas-informacion">
+<section class="ofertas row container"> 
+  <article class="ofertas-informacion col-4">
     <h1>new</h1>
+    <img class="imagen-ofertas" src="assets/images/landing/pexels-anna-shvets-5325842.jpg" alt="">
+  </article>
+  
+  <article class="ofertas-informacion col-4">
+    <h1>new</h1>
+    <img class="imagen-ofertas" src="assets/images/landing/pexels-anna-shvets-5325842.jpg" alt="">
+  </article>
+
+  <article class="ofertas-informacion col-4">
+    <h1>new</h1>
+    <img class="imagen-ofertas" src="assets/images/landing/pexels-anna-shvets-5325842.jpg" alt="">
   </article>
 </section>
-
-<section class="ofertas"> 
-  <img class="imagen-ofertas" src="assets/images/landing/pexels-anna-shvets-5325842.jpg" alt="">
-  <article class="ofertas-informacion">
-    <h1>new</h1>
-  </article>
-</section>
-
-<section class="ofertas"> 
-  <img class="imagen-ofertas" src="assets/images/landing/pexels-anna-shvets-5325842.jpg" alt="">
-  <article class="ofertas-informacion">
-    <h1>new</h1>
-  </article>
-</section>
-
 
 <!-- TENNIS -->
-  <article>
-    <figure class="tennis-img--1">
-      <img src="assets/images/landing/low blue D.png"alt=""class="img"/>
-    </figure>
 
-    <figure class="tennis-img--2">
-      <img src="assets/images/landing/low green D.png"alt=""class="img"/>
-    </figure>
-
-    <figure class="tennis-img--3">
-      <img src="assets/images/landing/low red D.png"alt=""class="img"/>
-    </figure>
-
-    <figure class="tennis-img--4">
-      <img src="assets/images/landing/low yellow D.png"alt=""class="img"/>
-    </figure>
+<section class="tennis row container">
+  <div class="d-flex pr-1 pl-1">
+  <article class="tennis-img-blue col-3 container-tennis">
+      <img class="imagen-tennis" src="assets/images/landing/low blue D.png"alt=""class="img"/>
   </article>
+
+  <article class="tennis-img-green col-3 container-tennis">
+    <img class="imagen-tennis" src="assets/images/landing/low green D.png"alt=""class="img"/>
+  </article>
+
+  <article class="tennis-img-red col-3 container-tennis">
+    <img class="imagen-tennis" src="assets/images/landing/low red D.png"alt=""class="img"/>
+  </article>
+
+  <article class="tennis-img-yellow col-3 container-tennis">
+    <img class="imagen-tennis" src="assets/images/landing/low yellow D.png"alt=""class="img"/>
+  </article>
+</div>
+</section>
 
 <!-- FOTO SECUNDARIA -->    
   <article class="secundaria"><img src="./assets/images/landing/ciudad.png" alt=""> </article>

@@ -1,0 +1,294 @@
+html {
+  line-height: 1.5;
+  background-color: #2569b8;
+}
+
+/* Formato Documento */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Permanent Marker", cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Barra de Navegacion */
+nav {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  background: #2569b8;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  color: #002b5c;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav img {
+  height: 5rem;
+  margin-right: auto;
+}
+
+/* Imagen Principal */
+.principal {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  color: #2569b8;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+}
+
+.imagen-principal {
+  width: 100%;
+  height: 100%;
+}
+
+.principal__informacion {
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.principal__informacion h1 {
+  font-size: 7rem;
+}
+
+.principal__informacion p {
+  width: 60%;
+  margin: 4rem 0;
+}
+
+/* Carrusel y Texto */
+.carrusel-img {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.img {
+  object-fit: cover;
+  width: 10rem;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.carrusel-flex {
+  display: flex;
+  border: 1rem solid #2569b8;
+}
+
+.carrusel-img--1 {
+  flex: 1 1 60%;
+}
+.carrusel-img--2 {
+  flex: 1 1 20%;
+}
+.carrusel-img--3 {
+  flex: 1 1 100%;
+}
+.carrusel-img--4 {
+  flex: 1 1 20%;
+}
+.carrusel-img--5 {
+  flex: 1 1 60%;
+}
+.carrusel-img--6 {
+  flex: 1 1 20%;
+}
+
+.contenedor-carrusel {
+  width: 100%;
+  height: 500px;
+}
+
+.contenedor-carrusel .img-carrusel {
+  height: 500px;
+}
+
+.reseñas-container {
+  display: flex;
+  color: #2569b8;
+  background-color: #002b5c;
+  flex-flow: row wrap;
+}
+
+.reseñas--img {
+  flex: 1 1 50%;
+  display: flex;
+}
+
+.reseñas--img img {
+  flex: 1 1;
+  width: 1rem;
+  height: 100%;
+  padding: 4rem;
+  object-fit: cover;
+}
+
+.reseñas--info {
+  flex: 1 1 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+.reseñas--info h3 {
+  font-size: 6rem;
+}
+
+.reseñas--info p {
+  font-size: 2.5rem;
+}
+
+/* Ofertas */
+.ofertas {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  color: #2569b8;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+
+.imagen-ofertas {
+  width: 100%;
+  height: 100%;
+}
+
+.ofertas-informacion {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ofertas-informacion h1 {
+  font-size: 7rem;
+  position: absolute;
+}
+
+.ofertas-informacion p {
+  width: 60%;
+  margin: 4rem 0;
+}
+
+/* Tennis */
+.tennis {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  color: #2569b8;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0 auto;
+  transform: translateX(15%);
+}
+
+/* .container-tennis {
+  width: 500px;
+  height: 155px;
+} */
+
+.imagen-tennis {
+  width: 150%;
+  height: 100%;
+  line-height: 0;
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  transition: transform 300ms ease-out;
+  cursor: pointer;
+}
+.tennis-img-blue {
+  flex: 1 1 100%;
+  z-index: 5;
+  transform: translateX(-60%);
+}
+.tennis-img-green {
+  flex: 1 1 100%;
+  z-index: 4;
+  transform: translateX(-70%);
+}
+.tennis-img-red {
+  flex: 1 1 100%;
+  z-index: 3;
+  transform: translateX(-80%);
+}
+.tennis-img-yellow {
+  flex: 1 1 100%;
+  z-index: 2;
+  transform: translateX(-90%);
+}
+
+/* Imagen Secundaria */
+.secundaria {
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  color: #2569b8;
+  display: flex;
+  /* flex-flow: row wrap; */
+  /* align-items: flex-end; */
+}
+
+/* Footer */
+footer {
+  background: #002b5c;
+  width: 100%;
+}
+
+.footer-container {
+  color: #2569b8;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer--info {
+  max-width: 40%;
+}
+
+.footer--info h2 {
+  font-size: 2rem;
+}
+
+.footer-logo {
+  max-width: 10%;
+}
+
+.footer-logo img {
+  width: 10rem;
+}
+
+@media screen and (max-width: 600px) {
+.tennis {
+  margin: 0;
+}
+}
