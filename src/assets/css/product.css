@@ -4,20 +4,17 @@
     padding: 35px;
     font-family: Montserrat;
 }
-#block2{
+.block2{
     color:#002B5C ;
     padding: 35px;
     font-family: Montserrat;
 }
-#block3{
+.block3{
     background-color: #002B5C;
     color: #2569b8 ;
-    padding: 35px;
     font-family: Montserrat;
-
 }
-#block4{
-    padding: 35px;
+.block4{
     display: flex;
-    
+    justify-content: space-evenly;
 }
