@@ -9,6 +9,10 @@ let cart = {}
 
 document.addEventListener('DOMContentLoaded', ()=>{
     fetchData()
+    if(localStorage.getItem('cart')){
+        cart = JSON.parse(localStorage.getItem('cart'))
+        paintCart()
+    }
 })
 
 cards.addEventListener('click', (e)=>{
@@ -83,6 +87,8 @@ const paintCart = ()=> {
     items.appendChild(fragment)
 
     paintFooter()
+
+    localStorage.setItem('cart', JSON.stringify(cart))
 }
 
 const paintFooter = ()=> {
@@ -97,7 +103,7 @@ const paintFooter = ()=> {
         acumulator + cantidad,0)
     const nPrecio = Object.values(cart).reduce((acumulator,{cantidad, precio})=>
     acumulator + cantidad * precio,0)
-    console.log(nPrecio)
+    /* console.log(nPrecio) */
    
     templateFooter.querySelectorAll('td')[0].textContent = nCantidad
     templateFooter.querySelector('.total').textContent = nPrecio
@@ -114,5 +120,23 @@ const paintFooter = ()=> {
 }
 
 const btnAction = e =>{
-   console.log(e.target)
+/*    console.log(e.target) */
+      /* aumentar */
+   if(e.target.classList.contains('btn-info')){
+/*     console.log(cart[e.target.dataset.id]) */
+    /* cart[e.target.dataset.id] */
+    const product = cart[e.target.dataset.id]
+    product.cantidad = cart[e.target.dataset.id].cantidad + 1
+    cart[e.target.dataset.id] = {...product}
+    paintCart()
+   }
+   if(e.target.classList.contains('btn-danger')){
+    const product = cart[e.target.dataset.id]
+    product.cantidad--
+        if (product.cantidad === 0) {
+            delete cart[e.target.dataset.id]
+   }
+    paintCart()
+}
+   e.stopPropagation()
 }

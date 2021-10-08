@@ -23,14 +23,24 @@ img {
 }
 
 .button {
-  border: 3px solid #10476e;
+  border: 5px solid #10476e;
   background-color: transparent;
   font-style: italic;
   text-transform: lowercase;
-  font-weight: 700;
+  font-weight: 900;
   height: 40px;
-  letter-spacing: 1px;
-  width: 110px;
+  width: 125px;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
   color: #10476e;
-  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+a:hover {
+  color: #10476e;
+}
+.button:hover {
+  background-color: yellow;
 }
