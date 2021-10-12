@@ -1,20 +1,35 @@
 
-.block1{
-    color:#002B5C ;
-    padding: 35px;
-    font-family: Montserrat;
+.small-img{
+    flex-basis: 40%;
+    cursor: pointer;
+    padding: 1px;    
 }
 .block2{
-    color:#002B5C ;
-    padding: 35px;
-    font-family: Montserrat;
-}
-.block3{
     background-color: #002B5C;
     color: #2569b8 ;
-    font-family: Montserrat;
 }
-.block4{
-    display: flex;
-    justify-content: space-evenly;
+.icon1{
+    cursor: pointer;
+    color: red;
+    padding: 10px;
+}
+.icon2{
+    cursor: pointer;
+    color: greenyellow;
+    padding: 10px;
+}
+.icon3{
+    cursor: pointer;
+    color: #002B5C;
+    padding: 10px;
+}
+.icon4{
+    cursor: pointer;
+    color: yellow;
+    padding: 10px;
+}
+.butt{
+    text-align: center;
+    background-color: #002B5C;
+    color: #2569b8;
 }
