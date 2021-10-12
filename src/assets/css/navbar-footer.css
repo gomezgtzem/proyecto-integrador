@@ -24,7 +24,6 @@ footer {
 footer .container .logo {
   align-self: center;
   height: 80px;
-
 }
 footer .container .logo img {
   width: 100%;
@@ -46,7 +45,7 @@ footer .container .copyright .texto-copyright {
 footer .container .social-network {
   height: 110px;
 }
-footer .container .social-network .footer-letra{
+footer .container .social-network .footer-letra {
   font-size: 60px;
   line-height: 1.5;
   color: rgba(37, 105, 184, 1);
