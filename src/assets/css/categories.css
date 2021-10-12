@@ -1,19 +1,21 @@
 .section-container{
-  width: 100%;
+  width: 95%;
   height: 80vh;
   display: flex;
   margin: 0 auto;
 }
 .section-container .title-categories{
   font-family: 'Permanent Marker', cursive;
+  margin: 10px auto;
   font-size: 50px;
   font-weight: 900;
   color: #002b5c;
   text-align: center;
 }
 .section-container .categories-content{
-  width: 80%;
+  margin: 0 auto;
   height: 50vh;
   display: flex;
   border: 2px solid green;
+  margin-bottom: 10px;
 }
