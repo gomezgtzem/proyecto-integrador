@@ -78,8 +78,69 @@ nav img {
   margin: 4rem 0;
 }
 
-/* Carrusel y Texto */
-.carrusel-img {
+/* Carrusel con Texto */
+.contenedor {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #11466e;
+  box-sizing: border-box;
+}
+.interior {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #11466e;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 4.6%;
+  margin-bottom: 6%;
+}
+
+.colunmna-uno {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #11466e;
+  box-sizing: border-box;
+  width: 30.434%;
+  margin-left: 4.347%;
+}
+
+.colunmna-dos {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #11466e;
+  box-sizing: border-box;
+  margin-left: 4.347%;
+  width: 17.391%;
+  display: flex;
+  flex-direction: column;
+}
+
+.colunmna-tres {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #11466e;
+  box-sizing: border-box;
+  width: 34.782%;
+  margin-left: 4.347%;
+  display: flex;
+  flex-direction: column;  
+}
+
+.texto {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #11466e;
+  box-sizing: border-box;
+  width: 57.1%;  
+}
+
+/* .carrusel-img {
   display: flex;
   flex-flow: column wrap;
   height: 100rem;
@@ -125,7 +186,7 @@ nav img {
 
 .contenedor-carrusel .img-carrusel {
   height: 500px;
-}
+} */
 
 .reseñas-container {
   display: flex;
@@ -204,7 +265,7 @@ nav img {
   flex-flow: row wrap;
   align-items: center;
   margin: 0 auto;
-  transform: translateX(15%);
+  transform: translateX(9%);
 }
 
 /* .container-tennis {
