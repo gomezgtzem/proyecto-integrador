@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- bootstrap icon -->
+    <!-- Begin Bootstrap styles -->
+    <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- End Bootstrap styles -->
 
-    <title>producto</title>
-
-      <!-- Begin fonts -->
+    <!-- Begin fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente Montserrat tamaños 400,700,900 -->
@@ -22,16 +23,19 @@
     <!-- Fuente Permanent-Marker tamaño 400-->
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <!-- End fonts -->
-    <link rel="stylesheet" href="./assets/css/categories.css">
+
+    <!-- Begin own styles -->
+    <link rel="stylesheet" href="./assets/css/product.css">
     <link rel="stylesheet" href="./assets/css/colors.css">
     <link rel="stylesheet" href="./assets/css/aside-filters.css">
     <link rel="stylesheet" href="./assets/css/image-header&product-shop.css">
     <link rel="stylesheet" href="./assets/css/images-categories&shop.css">
     <link rel="stylesheet" href="./assets/css/navbar-footer.css">
+    <!-- End own styles -->
 
-  
+
   </head>
-  
+
 
   <body class="style1">
     <!-- header -->
@@ -41,7 +45,7 @@
         <div class="container">
           <div class="row">
             <form action="" id="colorSelect">
-              <div class="btn-group btn-group-toggle pt-5 mt-4" data-toggle="buttons">
+              <div class="btn-group btn-group-toggle " data-toggle="buttons">
                 <label class="btn border-0">
                   <input type="radio" name="options" id="option1">
                   <i class="col col-lg-1 col-md-1 navbar-brand text-primary fas fa-spray-can fa-spin"
@@ -90,118 +94,135 @@
     </header>
     <!-- contenido principal -->
     <!-- bloque 1 -->
-    <section>
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col-md-6.col-sm-12 col align-self-center">
-            <img
-              src="https://images.pexels.com/photos/5622349/pexels-photo-5622349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              class="img-fluid.border-0" alt="..." width="300px">
-          </div>
-          <div class="col-md-6.col-sm-12 col align-self-center">
-            <div class="card.border-0" style="width: 400px;">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <p><a href="#" class="btn btn-dark btn-lg">Go somewhere</a></p>
-                <p><a href="#" class="btn btn-dark btn-lg">Go somewhere</a></p>
+    <main class="">
+      <div class="container pt-5 pb-5">
+          <div class="row mt-5">
+              <div class="col-lg-6 col-sm-12">
+                  <img class="img-fluid w-100 pb-1"
+                      src="https://images.pexels.com/photos/5622349/pexels-photo-5622349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                      alt="">
+                  <div class="d-flex justify-content-between">
+                      <div class="small-img">
+                          <img src="https://images.pexels.com/photos/5622349/pexels-photo-5622349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                              alt="" class="small-img" width="100%">
+                      </div>
+                      <div class="small-img">
+                          <img src="https://images.pexels.com/photos/5622349/pexels-photo-5622349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                              alt="" class="small-img" width="100%">
+                      </div>
+                      <div class="small-img">
+                          <img src="https://images.pexels.com/photos/5622349/pexels-photo-5622349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                              alt="" class="small-img" width="100%">
+                      </div>
+                  </div>
               </div>
-            </div>
+              <div class="col-lg-6 col-sm-12">
+                  <div class="card border-0 bg-transparent">
+                      <div class="card-body">
+                          <h6 class=" card-text mb-3 pt-5">Products/skatebord</h6>
+                          <h2 class="card-title py-3">skatebord-001</h2>
+                          <h3 class="card-text">Elige un color</h3>
+                          <div class="col d-flex justify-content-around">
+                              <i class="bi bi-circle-fill icon1" style="font-size: 40px;"></i>
+                              <i class="bi bi-circle-fill icon2" style="font-size: 40px;"></i>
+                              <i class="bi bi-circle-fill icon3" style="font-size: 40px;"></i>
+                              <i class="bi bi-circle-fill icon4" style="font-size: 40px;"></i>
+                          </div>
+                          <h2 class="card-text">$2500.00</h2>
+                          <div class="row justify-content-center">
+                              <div class="col-12 pt-3">
+                                  <a href="#" class="btn-lg btn-block butt">Agregar al carrito</a>
+                              </div>
+                              <div class="col-12 pt-3">
+                                  <a href="#" class="btn-lg btn-block butt">Comprar</a>
+                              </div>
+                              
+                          </div>
+                         
+                      </div>
+                  </div>
+                  <div class="col card.border-0 ">
+                      <div class="card-body">
+                          <h2 class="card-title py-3">Descrición del producto</h2>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, aperiam aliquam saepe quis rem eum, impedit
+                          ab
+                          velit magni harum cupiditate, aliquid autem reiciendis veritatis! Rerum in placeat nisi est. Lorem ipsum
+                          dolor sit amet consectetur adipisicing elit. Dicta qui asperiores corporis velit similique sit dolorum
+                          itaque aspernatur labore, sunt suscipit consequatur eaque beatae delectus repellat maxime natus sequi
+                          deserunt?
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
+      </div>
+      
+      <div class="container-fluid block2">
+          <div class="container">
+              <div class="row pt-5">
+                  <div class="col-lg-7">
+                      <img class="img-fluid w-100"
+                          src="https://images.pexels.com/photos/5069290/pexels-photo-5069290.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                          alt="">
+                  </div>
+                  <div class="col-lg-5 align-self-center">
+                      <div class="col card.border-0 ">
+                          <div class="card-body align-self-center">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, aperiam aliquam saepe quis rem eum,
+                              impedit
+                              ab
+                              velit magni harum cupiditate, aliquid autem reiciendis veritatis! Rerum in placeat nisi est. Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. Dicta qui asperiores corporis velit similique sit dolorum
+                              itaque aspernatur labore, sunt suscipit consequatur eaque beatae delectus repellat maxime natus sequi
+                              deserunt?
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>               
       </div>
 
-      <!-- bloque 2 -->
-      <div class="countainer" id="block2">
-        <div class="row justify-content-center">
-          <div class=" col-sm-12 card.border-0">
-            <div class="card-body" style="width: 700px;">
-              <p>
-              <h1>Descripción del producto</h1>
-              </p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum dolor ipsam, exercitationem praesentium
-              dolores accusamus, similique ex modi ullam voluptatem mollitia et nulla perferendis aperiam! Nobis doloribus
-              ipsum ullam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vel animi aut eius reprehenderit harum
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- bloque 3 -->
-      <div class="container">
-        <div class="row justify-content-around" id="block3">
-          <div class="col-6.col-sm-12 justify-content-center">
-            <img
-              src="https://images.pexels.com/photos/5069290/pexels-photo-5069290.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-              class="img-fluid.border-0" alt="..." width="550px">
-          </div>
-          <div class="col-6 justify-content-center">
-            <div class="col card.border-0 ">
-              <div class="card-body">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, aperiam aliquam saepe quis rem eum, impedit
-                ab
-                velit magni harum cupiditate, aliquid autem reiciendis veritatis! Rerum in placeat nisi est. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Dicta qui asperiores corporis velit similique sit dolorum
-                itaque aspernatur labore, sunt suscipit consequatur eaque beatae delectus repellat maxime natus sequi
-                deserunt?
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- bloque 4 -->
-      <div class="container-fluid" id="block4">
-        <div class="row justify-content-around">
-          <div class="col-4.col-sm-12 align-self-center">
-            <img
-              src="https://images.pexels.com/photos/5325842/pexels-photo-5325842.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-              class="img-fluid" alt="..." width="400px">
-          </div>
-          <div class="col-4.col-sm-12 align-self-center">
-            <img
-              src="https://images.pexels.com/photos/5622349/pexels-photo-5622349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              class="img-fluid" alt="..." width="200px">
-            <img
-              src="https://images.pexels.com/photos/1813947/pexels-photo-1813947.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-              class="img-fluid" alt="..." width="200px">
-          </div>
-          <div class="col-4.colsm-12 align-self-center">
-            <img
-              src="https://images.pexels.com/photos/8626839/pexels-photo-8626839.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-              class="img-fluid" alt="..." width="400px">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- footer -->
-    <footer>
+
+    <!-- Begin footer -->
+    <footer class="footer style1-comp">
       <div class="container row">
-        <div class="logo col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        <div class="logo col col-lg-2 col-md-2 col-sm-1 col-xs-1">
           <img src="./assets/images/santa-cruz-logo.png" alt="Logo Santa Cruz - recognized Skateboarding brand">
         </div>
-        <div class="copyright col-lg-7 col-md-7 col-sm-7 col-xs-7">
-          <p class="texto-copyright">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem rerum sit,
-            suscipit vel corrupti debitis nisi neque nostrum optio! Et repellat libero ipsam soluta repellendus molestiae
+        <div class="copyright col col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <p class="font-regular font-compColor-s1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            quidem rerum sit,
+            suscipit vel corrupti debitis nisi neque nostrum optio! Et repellat libero ipsam soluta repellendus
+            molestiae
             qui cupiditate sapiente.</p>
         </div>
-        <div class="social-network col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+        <div class="row social-media col col-4 social-network col-lg-5 col-md-5 col-sm-6 col-xs-6">
+          <a class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" href="#"><i
+              class="bi bi-facebook footer-letra font-compColor-s1"></i></a>
+          <a class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" href="#"><i
+              class="bi bi-instagram footer-letra font-compColor-s1"></i></a>
+          <a class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" href="#"><i
+              class="bi bi-twitter footer-letra font-compColor-s1"></i></a>
+          <a class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" href="#"><i
+              class="bi bi-youtube footer-letra font-compColor-s1"></i></a>
+        </div>
       </div>
     </footer>
-    
+    <!-- End footer -->
     <!-- Begin Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-    </script>
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+      </script>
     <!-- End Bootstrap -->
+
+
 
     <!-- Begin own Javascript files -->
     <script src="assets/js/change-color.js"></script> <!-- cambia elementos de color -->
     <!-- End own Javascript files -->
-
   </body>
 
 </html>

@@ -6,6 +6,7 @@ const templateFooter = document.getElementById('template-footer').content
 const templateCart = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 let cart = {}
+const btn = document.querySelector('.button')
 
 /* lista de purchased */
 const list = document.getElementById('list')
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     if(localStorage.getItem('cart')){
         cart = JSON.parse(localStorage.getItem('cart'))
         paintCart()
+        
     }
 })
 
@@ -93,6 +95,7 @@ const paintCart = ()=> {
     paintFooter()
 
     localStorage.setItem('cart', JSON.stringify(cart))
+    
 }
 
 const paintFooter = ()=> {
@@ -144,3 +147,14 @@ const btnAction = e =>{
 }
    e.stopPropagation()
 }
+
+
+
+
+console.log(localStorage.getItem('cart'))
+button.addEventListener('click',()=>{
+    localStorage.getItem('cart')
+    window.location.href="purchased.html"
+})
+
+/* onload */
