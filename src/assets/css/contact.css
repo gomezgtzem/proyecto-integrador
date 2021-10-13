@@ -53,10 +53,11 @@
 
 }
 #back{ 
-    background-image: linear-gradient(90deg, rgba(37,105,184,0.6702031154258579) 100%, rgba(37,105,184,0.404096672848827) 100%), url("../images/contact/collage.png"); 
+    background-image: linear-gradient(90deg, rgba(37,105,184,0.6702031154258579) 100%, rgba(37,105,184,0.404096672848827) 100%), url("collage1.png"); 
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
+
 }
 /* style1
  
