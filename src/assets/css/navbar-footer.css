@@ -6,6 +6,7 @@ header {
   right: 0;
   left: 0;
   z-index: 1030;
+  margin-bottom: 25px;
 }
 header nav .navbar-collapse .navbar-nav .nav-letra {
   font-family: "Montserrat", sans-serif;
@@ -15,11 +16,7 @@ header nav .navbar-collapse .navbar-nav .nav-letra {
   text-align: center;
 }
 footer {
-<<<<<<< HEAD
   /*   position: fixed; */
-=======
-  /* position: fixed; */
->>>>>>> main
   bottom: 0;
   width: 100%;
   min-height: 85px;

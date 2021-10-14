@@ -1,6 +1,5 @@
 .section-container{
   width: 95%;
-  height: 80vh;
   display: flex;
   margin: 0 auto;
 }
@@ -14,8 +13,11 @@
 }
 .section-container .categories-content{
   margin: 0 auto;
-  height: 50vh;
   display: flex;
-  border: 2px solid green;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+}
+.filter-text{
+  font-size: 30px;
+  font-family: 'Montserrat';
+  font-weight: 400;
 }
