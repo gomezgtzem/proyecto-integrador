@@ -15,7 +15,7 @@ header nav .navbar-collapse .navbar-nav .nav-letra {
   text-align: center;
 }
 footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   min-height: 85px;
