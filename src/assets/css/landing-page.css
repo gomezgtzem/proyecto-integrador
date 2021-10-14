@@ -1,54 +1,6 @@
-html {
-  line-height: 1.5;
-  background-color: #2569b8;
-}
-
-/* Formato Documento */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Permanent Marker", cursive;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-}
-
-/* Barra de Navegacion */
-nav {
-  position: absolute;
-  z-index: 4;
-  display: flex;
-  background: #2569b8;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 1rem;
-  /* font-family: 'Montserrat', sans-serif; */
-}
-nav ul li {
-  display: inline;
-}
-nav ul li a {
-  color: #002b5c;
-  margin-right: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-}
-
-nav img {
-  height: 5rem;
-  margin-right: auto;
-}
-
 /* Imagen Principal */
 .principal {
+  font-size: 62.5%;
   width: 100%;
   height: 700px;
   position: relative;
@@ -56,6 +8,7 @@ nav img {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-end;
+  font-family: "Permanent Marker", cursive;
 }
 
 .imagen-principal {
@@ -76,8 +29,8 @@ nav img {
 .principal__informacion p {
   width: 60%;
   margin: 4rem 0;
+  font-family: "Permanent Marker", cursive;
 }
-
 /* Carrusel con Texto */
 .contenedor {
   text-align: left;
@@ -96,48 +49,36 @@ nav img {
   margin-top: 4.6%;
   margin-bottom: 6%;
 }
-
-.colunmna-uno {
+[class*="columna-"],
+.texto {
+  font-family: "Permanent Marker", cursive;
   text-align: left;
   font-size: 1rem;
   line-height: 1.5;
   color: #11466e;
   box-sizing: border-box;
+}
+.columna-uno {
   width: 30.434%;
   margin-left: 4.347%;
 }
 
-.colunmna-dos {
-  text-align: left;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #11466e;
-  box-sizing: border-box;
+.columna-dos {
   margin-left: 4.347%;
   width: 17.391%;
   display: flex;
   flex-direction: column;
 }
 
-.colunmna-tres {
-  text-align: left;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #11466e;
-  box-sizing: border-box;
+.columna-tres {
   width: 34.782%;
   margin-left: 4.347%;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .texto {
-  text-align: left;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #11466e;
-  box-sizing: border-box;
-  width: 57.1%;  
+  width: 57.1%;
 }
 
 /* .carrusel-img {
@@ -189,6 +130,7 @@ nav img {
 } */
 
 .reseñas-container {
+  font-family: "Permanent Marker", cursive;
   display: flex;
   color: #2569b8;
   background-color: #002b5c;
@@ -216,7 +158,7 @@ nav img {
 }
 
 .reseñas--info h3 {
-  font-size: 6rem;
+  font-size: 62.5%;
 }
 
 .reseñas--info p {
@@ -245,6 +187,9 @@ nav img {
   margin: 0 auto;
 }
 
+[class*="ofertas-informacion"]{
+  font-family: "Permanent Marker", cursive;
+}
 .ofertas-informacion h1 {
   font-size: 7rem;
   position: absolute;
@@ -349,7 +294,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-.tennis {
-  margin: 0;
-}
+  .tennis {
+    margin: 0;
+  }
 }
