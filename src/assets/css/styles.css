@@ -9,18 +9,19 @@
     height: 100%;
     width: 100%;
     place-items: center;
-    background: -webkit-linear-gradient(left, #2569B8, #2569B8);
+   /*  background: -webkit-linear-gradient(left, #2569B8, #2569B8); */ /* superponía
+    este estilo */
   }
   .section-container{
     width: 100%;
   }
-  .section-container .title-categories{
+ /*  .title-categories{
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
     font-weight: 900;
     color: #002b5c;
     text-align: center;
-  }
+  } *//* esto no va en el diseño original */
   ::selection{
     background: #42a7fa;
     color: rgb(108, 145, 247);
@@ -28,22 +29,24 @@
   .wrapper{
     overflow: hidden;
     max-width: 390px;
-    background: rgb(30, 90, 202);
+    background: rgba(37, 105, 184, 1);
     padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+/*     border-radius: 5px;
+    border-width: 10px;
+    border-color: pink; */
+    /* box-shadow: 0px 15px 20px rgba(0,0,0,0.1); */
   }
-  .wrapper .title-text{
+  /* .wrapper .title-text{
     display: flex;
     width: 200%;
-  }
-  .wrapper .title{
+  } */
+/*   .wrapper .title{
     width: 50%;
     font-size: 35px;
     font-weight: 600;
     text-align: center;
     transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
-  }
+  } */
   .wrapper .slide-controls{
     position: relative;
     display: flex;
@@ -52,8 +55,10 @@
     overflow: hidden;
     margin: 30px 0 10px 0;
     justify-content: space-between;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
+/*     border-top: 7px solid rgba(0, 43, 92, 1);
+    border-right: 7px solid rgba(0, 43, 92, 1);
+    border-left: 7px solid rgba(0, 43, 92, 1); */
+    /* border-radius: 5px; */
   }
   .slide-controls .slide{
     height: 100%;
@@ -76,9 +81,10 @@
     width: 50%;
     left: 0;
     z-index: 0;
-    border-radius: 5px;
-    background: -webkit-linear-gradient(left, #000000, #000000);
-    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+    background-color:rgba(0, 43, 92, 1);
+    /* border-radius: 5px; */
+    /* background: -webkit-linear-gradient(left, #000000, #000000); */
+    /* transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55); */
   }
   input[type="radio"]{
     display: none;
@@ -87,19 +93,20 @@
     left: 50%;
   }
   #signup:checked ~ label.signup{
-    color: rgb(255, 255, 255);
+    color: rgba(37, 105, 184, 1);
     cursor: default;
     user-select: none;
   }
   #signup:checked ~ label.login{
-    color: rgb(255, 255, 255);
+    color:rgba(0, 43, 92, 1);
   }
   #login:checked ~ label.signup{
-    color: rgb(255, 255, 255);
+    color:rgba(0, 43, 92, 1);
   }
   #login:checked ~ label.login{
     cursor: default;
     user-select: none;
+    color: rgba(37, 105, 184, 1);
   }
   .wrapper .form-container{
     width: 100%;
@@ -114,9 +121,13 @@
     transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
   }
   .form-inner form .field{
-    height: 50px;
+    height: 60px;
     width: 100%;
     margin-top: 20px;
+    /* background-color: pink; */
+    border-width: 10px;
+    /* margin-bottom: 15px; */
+    border-color: rgba(0, 43, 92, 1);
   }
   .form-inner form .field input{
     height: 100%;
@@ -149,7 +160,7 @@
   }
   .form-inner form .pass-link a,
   .form-inner form .signup-link a{
-    color: #050505;
+    color:rgba(0, 43, 92, 1);
     text-decoration: none;
   }
   .form-inner form .pass-link a:hover,
@@ -168,9 +179,10 @@
     width: 300%;
     position: absolute;
     left: -100%;
-    background: -webkit-linear-gradient(right, #2569B8, #2569B8, #2569B8, #2569B8);
+
+    /* background: -webkit-linear-gradient(right, #2569B8, #2569B8, #2569B8, #2569B8); */
     border-radius: 5px;
-    transition: all 0.4s ease;;
+    transition: all 0.4s ease;
   }
   form .btn:hover .btn-layer{
     left: 0;

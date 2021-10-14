@@ -41,7 +41,7 @@
         rutas de navegacion
       -->
    <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light style1">
          <!-- botones colores, pendiente  a fusionar -->
          <div class="container">
             <div class="row">
@@ -96,19 +96,19 @@
    <!--
         End Navbar
       -->
-   <div class="wrapper">
-      <div class="title-text">
+   <div class="wrapper style1">
+      <!-- <div class="title-text">
          <div class="col col-lg-12 col-md-12">
             <h1 class="title-categories font-mainColor-s1">Únete</h1>
          </div>
-      </div>
+      </div> -->
       <div class="form-container">
-         <div class="slide-controls">
+         <div class="slide-controls bordS">
             <input type="radio" name="slide" id="login" checked>
             <input type="radio" name="slide" id="signup">
-            <label for="login" class="slide login">Inicia Sesión</label>
+            <label for="login" class="slide login font-compColor-s1">Inicia Sesión</label>
             <label for="signup" class="slide signup">Registrate</label>
-            <div class="slider-tab"></div>
+            <div class="slider-tab style1-comp"></div>
          </div>
          <div class="form-inner">
             <form action="#" class="login">
@@ -119,14 +119,14 @@
                   <input type="password" placeholder="Contraseña" required>
                </div>
                <div class="pass-link">
-                  <a href="#">¿Olvidaste tu contraseña?</a>
+                  <a href="#" class="font-mainColor-s1">¿Olvidaste tu contraseña?</a>
                </div>
-               <div class="field btn">
+               <div class="field btn bordS">
                   <div class="btn-layer"></div>
-                  <input type="submit" value="Login">
+                  <input class="font-mainColor-s1" type="submit" value="Login">
                </div>
                <div class="signup-link">
-                  ¿Aún no eres miembro? <a href="">Registrate ahora</a>
+                  ¿Aún no eres miembro? <a href="" class="font-mainColor-s1">Registrate ahora</a>
                </div>
             </form>
             <form action="#" class="signup">
@@ -142,7 +142,7 @@
                <div class="field">
                   <input type="password" placeholder="Confirmar contraseña" required>
                </div>
-               <div class="field btn">
+               <div class="field btn bordS">
                   <div class="btn-layer"></div>
                   <input type="submit" value="Registrarse">
                </div>
@@ -152,7 +152,7 @@
    </div>
 
      <!-- Begin footer -->
-  <footer class="footer style1-comp">
+<!--   <footer class="footer style1-comp">
    <div class="container row">
      <div class="logo col col-lg-2 col-md-2 col-sm-1 col-xs-1">
        <img src="./assets/images/santa-cruz-logo.png" alt="Logo Santa Cruz - recognized Skateboarding brand">
@@ -170,7 +170,7 @@
        <a class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" href="#"><i class="bi bi-youtube footer-letra font-compColor-s1"></i></a>
      </div>
    </div>
- </footer>
+ </footer> -->
  <!-- End footer -->
 
    <script>
@@ -194,6 +194,7 @@
    </script>
    <!-- Begin own Javascript files -->
   <script src="assets/js/change-color.js"></script> <!-- cambia elementos de color -->
+  <script src="assets/js/change-login-sign.js"></script>
   <!-- End own Javascript files -->
 </body>
 
