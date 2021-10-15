@@ -2,7 +2,7 @@
 .principal {
   font-size: 62.5%;
   width: 100%;
-  height: 700px;
+  height: 450px;
   position: relative;
   color: #2569b8;
   display: flex;
@@ -81,46 +81,7 @@
   width: 57.1%;
 }
 
-/* .carrusel-img {
-  display: flex;
-  flex-flow: column wrap;
-  height: 100rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.img {
-  object-fit: cover;
-  width: 10rem;
-  height: 100%;
-  flex-grow: 1;
-}
-
-.carrusel-flex {
-  display: flex;
-  border: 1rem solid #2569b8;
-}
-
-.carrusel-img--1 {
-  flex: 1 1 60%;
-}
-.carrusel-img--2 {
-  flex: 1 1 20%;
-}
-.carrusel-img--3 {
-  flex: 1 1 100%;
-}
-.carrusel-img--4 {
-  flex: 1 1 20%;
-}
-.carrusel-img--5 {
-  flex: 1 1 60%;
-}
-.carrusel-img--6 {
-  flex: 1 1 20%;
-}
-
-.contenedor-carrusel {
+/*.contenedor-carrusel {
   width: 100%;
   height: 500px;
 }
@@ -158,7 +119,7 @@
 }
 
 .reseñas--info h3 {
-  font-size: 62.5%;
+  font-size: 6rem;
 }
 
 .reseñas--info p {
@@ -180,11 +141,13 @@
 .imagen-ofertas {
   width: 100%;
   height: 100%;
+  justify-content: space-evenly;
 }
 
 .ofertas-informacion {
   width: 100%;
   margin: 0 auto;
+  justify-content: space-evenly
 }
 
 [class*="ofertas-informacion"]{
