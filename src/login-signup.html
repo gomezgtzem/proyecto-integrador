@@ -15,7 +15,7 @@
 
    <!-- Begin fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <!-- Fuente Montserrat tamaños 400,700,900 -->
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
    <!-- Fuente Permanent-Marker tamaño 400-->
@@ -23,26 +23,22 @@
    <!-- End fonts -->
 
    <!-- Begin own styles -->
-   <link rel="stylesheet" href="./assets/css/styles.css">
+   <link rel="stylesheet" href="./assets/css/login-signup.css">
    <link rel="stylesheet" href="assets/css/colors.css">
-   <link rel="stylesheet" href="./assets/css/aside-filters.css">
-   <link rel="stylesheet" href="./assets/css/image-header&product-shop.css">
-   <link rel="stylesheet" href="./assets/css/images-categories&shop.css">
+
+
+
    <link rel="stylesheet" href="./assets/css/navbar-footer.css">
    <!-- End own styles -->
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Login/Signup forms</title>
 </head>
 
+<!--Begin Navbar botones de lata y rutas de navegacion-->
+
 <body class="style1">
-   <!-- 
-        Begin Navbar 
-        botones de lata y
-        rutas de navegacion
-      -->
    <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-         <!-- botones colores, pendiente  a fusionar -->
+      <nav class="navbar navbar-expand-lg navbar-light style1">
          <div class="container">
             <div class="row">
                <form action="" id="colorSelect">
@@ -85,30 +81,24 @@
                <a class="col control" href="#"></a>
                <a class="nav-link nav-letra font-mainColor-s1" href="index.html">INICIO</a>
                <a class="nav-link nav-letra font-mainColor-s1" href="contact.html">CONTACTO</a>
-               <a class="nav-link nav-letra font-mainColor-s1" href="categories.html">TIENDA</a>
+               <a class="nav-link nav-letra font-mainColor-s1" href="store.html">TIENDA</a>
                <a class="nav-link nav-letra font-mainColor-s1" href="about-us.html">NOSOTROS</a>
                <a class="nav-link nav-letra font-mainColor-s1" href="login-signup.html">REGISTRARSE</a>
-               <a class="nav-letra nav-link font-mainColor-s1" href="cart.html"><i class="bi bi-cart4"></i></a>
+               <a class="nav-link nav-letra font-mainColor-s1" href="cart.html"><i class="bi bi-cart4"></i></a>
             </div>
          </div>
       </nav>
    </header>
-   <!--
-        End Navbar
-      -->
-   <div class="wrapper">
-      <div class="title-text">
-         <div class="col col-lg-12 col-md-12">
-            <h1 class="title-categories font-mainColor-s1">Únete</h1>
-         </div>
-      </div>
+   <!--End Navbar-->
+
+   <div class="wrapper style1">
       <div class="form-container">
-         <div class="slide-controls">
+         <div class="slide-controls bordS">
             <input type="radio" name="slide" id="login" checked>
             <input type="radio" name="slide" id="signup">
-            <label for="login" class="slide login">Inicia Sesión</label>
+            <label for="login" class="slide login font-compColor-s1">Inicia Sesión</label>
             <label for="signup" class="slide signup">Registrate</label>
-            <div class="slider-tab"></div>
+            <div class="slider-tab style1-comp"></div>
          </div>
          <div class="form-inner">
             <form action="#" class="login">
@@ -119,14 +109,14 @@
                   <input type="password" placeholder="Contraseña" required>
                </div>
                <div class="pass-link">
-                  <a href="#">¿Olvidaste tu contraseña?</a>
+                  <a href="#" class="font-mainColor-s1">¿Olvidaste tu contraseña?</a>
                </div>
-               <div class="field btn">
+               <div class="field btn bordS">
                   <div class="btn-layer"></div>
-                  <input type="submit" value="Login">
+                  <input class="font-mainColor-s1" type="submit" value="Login">
                </div>
                <div class="signup-link">
-                  ¿Aún no eres miembro? <a href="">Registrate ahora</a>
+                  ¿Aún no eres miembro? <a href="" class="font-mainColor-s1">Registrate ahora</a>
                </div>
             </form>
             <form action="#" class="signup">
@@ -142,7 +132,7 @@
                <div class="field">
                   <input type="password" placeholder="Confirmar contraseña" required>
                </div>
-               <div class="field btn">
+               <div class="field btn bordS">
                   <div class="btn-layer"></div>
                   <input type="submit" value="Registrarse">
                </div>
@@ -151,28 +141,51 @@
       </div>
    </div>
 
-     <!-- Begin footer -->
-  <footer class="footer style1-comp">
-   <div class="container row">
-     <div class="logo col col-lg-2 col-md-2 col-sm-1 col-xs-1">
-       <img src="./assets/images/santa-cruz-logo.png" alt="Logo Santa Cruz - recognized Skateboarding brand">
-     </div>
-     <div class="copyright col col-lg-5 col-md-5 col-sm-5 col-xs-5">
-       <p class="font-regular font-compColor-s1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-         quidem rerum sit,
-         suscipit vel corrupti debitis nisi neque nostrum optio! Et repellat libero ipsam soluta repellendus molestiae
-         qui cupiditate sapiente.</p>
-     </div>
-     <div class="row social-media col col-4 social-network col-lg-5 col-md-5 col-sm-6 col-xs-6">
-       <a class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" href="#"><i class="bi bi-facebook footer-letra font-compColor-s1"></i></a>
-       <a class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" href="#"><i class="bi bi-instagram footer-letra font-compColor-s1"></i></a>
-       <a class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" href="#"><i class="bi bi-twitter footer-letra font-compColor-s1"></i></a>
-       <a class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" href="#"><i class="bi bi-youtube footer-letra font-compColor-s1"></i></a>
-     </div>
-   </div>
- </footer>
- <!-- End footer -->
+   <!-- Begin footer -->
+   <footer class="footer d-flex  style1-comp">
+      <div class="col-sm-2 col-md-2 col-lg-2 logo">
+         <img class="row img rounded mx-auto d-block max-width: 100%" src="./assets/images/santa-cruz-logo.png"
+            alt="Logo Santa Cruz - recognized Skateboarding brand" />
+         <label class="text-center col font-titles font-compColor-s1">SKATE NATION</label>
+      </div>
 
+      <div class="col-sm-6 col-md-6 col-lg-8 copyright">
+         <h5 class="footer-letra font-compColor-s1 col font-titles text-center">Sobre nosotros</h5>
+         <p class="font-compColor-s1 col  text-center simple-text">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Natus
+            quidem rerum sit,
+            suscipit vel corrupti debitis nisi neque nostrum optio! Et repellat libero ipsam soluta repellendus
+            molestiae
+            qui cupiditate sapiente.</p>
+         <a class="nav-link nav-letra col text-center font-compColor-s1 simple-text saberMas" href="about-us.html">Saber
+            más</a>
+      </div>
+
+      <div class="col-sm-4 col-md-4 col-lg-2  social-network ">
+         <h5 class="col text-center font-compColor-s1 font-titles">Redes sociales</h5>
+         <div class="col text-center">
+            <a class="footer-letra" href="#"><i
+                  class=" text-center bi bi-facebook footer-letra font-compColor-s1"></i></a>
+            <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Facebook</label>
+         </div>
+         <div class="col text-center">
+            <a class="footer-letra" href="#"><i
+                  class=" text-center bi bi-instagram footer-letra font-compColor-s1"></i></a>
+            <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Instagram</label>
+         </div>
+         <div class="col text-center">
+            <a class="footer-letra" href="#"><i
+                  class=" text-center bi bi-twitter footer-letra font-compColor-s1"></i></a>
+            <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Twitter</label>
+         </div>
+         <div class="col text-center">
+            <a class="footer-letra" href="#"><i
+                  class=" text-center bi bi-youtube footer-letra font-compColor-s1"></i></a>
+            <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Youtube</label>
+         </div>
+      </div>
+   </footer>
+   <!-- End footer -->
    <script>
       const loginText = document.querySelector(".title-text .login");
       const loginForm = document.querySelector("form.login");
@@ -193,8 +206,9 @@
       });
    </script>
    <!-- Begin own Javascript files -->
-  <script src="assets/js/change-color.js"></script> <!-- cambia elementos de color -->
-  <!-- End own Javascript files -->
+   <script src="assets/js/change-color.js"></script> <!-- cambia elementos de color -->
+   <script src="assets/js/change-login-sign.js"></script>
+   <!-- End own Javascript files -->
 </body>
 
 </html>
