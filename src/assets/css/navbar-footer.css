@@ -6,6 +6,7 @@ header {
   right: 0;
   left: 0;
   z-index: 1030;
+  margin-bottom: 25px;
 }
 header nav .navbar-collapse .navbar-nav .nav-letra {
   font-family: "Montserrat", sans-serif;
@@ -15,41 +16,48 @@ header nav .navbar-collapse .navbar-nav .nav-letra {
   text-align: center;
 }
 footer {
-  position: fixed;
+  /*   position: fixed; */
   bottom: 0;
   width: 100%;
   min-height: 85px;
   height: auto;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   clear: both;
   padding-top: 20px;
   padding-bottom: 20px;
-  justify-content:space-around;
-} 
+  justify-content: space-around;
+}
 
 footer .logo img {
-  max-width:80px;
+  max-width: 80px;
   height: 80px;
-  width: 80px; 
-  align-self:center;
-  
-}  
+  width: 80px;
+  align-self: center;
+}
 .simple-text {
-  text-align:left;
+  text-align: left;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
-
 }
 
-footer .container .social-network .footer-letra{
+.saberMas {
+  color: rgb(202, 23, 112);
+  font-size: 14px;
+  font-weight: bold;
+}
+.saberMas:hover {
+  color: rgb(138, 245, 253);
+}
+
+footer .container .social-network .footer-letra {
   font-size: 35px;
   line-height: 1.5;
   text-align: right;
 }
-.font-titles{
-  font-family: 'Permanent Marker', cursive;
+.font-titles {
+  font-family: "Permanent Marker", cursive;
   font-size: 20px;
   text-align: left;
 }
