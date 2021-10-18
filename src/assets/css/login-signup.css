@@ -68,7 +68,7 @@ input[type="radio"] {
 .wrapper .form-container {
   width: 100%;
   overflow: hidden;
-  border-width: 10px;
+  /* border-width: 10px; */
 }
 .form-container .form-inner {
   display: flex;
@@ -132,7 +132,7 @@ form .btn input[type="submit"] {
   z-index: 1;
   position: relative;
   background: none;
-  border: none;
+  /* border: none; */
   color: rgb(0, 0, 0);
   padding-left: 0;
   border-radius: 5px;
