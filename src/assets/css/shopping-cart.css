@@ -3,16 +3,16 @@
 } */
 
 /*imagen de fondo */
-.contenido-hero {
-  height: 20rem;
-  max-width: 100%;
+/* .contenido-hero {
+  width: 40%;
+  margin-bottom: 50px;
+  position: relative;
 }
-
-.contenido-hero,
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
+@media (max-width: 100px) {
+  .contenido-hero {
+    width: 100%;
+  }
+} */
 
 /* checkout button */
 .checkout-button {
