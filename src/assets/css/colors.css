@@ -42,14 +42,14 @@ body {
 }
 /* color */
 .style3 {
-  background-color: rgba(228, 77, 65, 1);
+  background-color: rgba(228, 77, 65, 0.9);
 }
 /* letrs */
 .font-mainColor-s3 {
   color: rgba(16, 71, 110, 1);
 }
 .font-compColor-s3 {
-  color: rgba(228, 77, 65, 1);
+  color: rgba(228, 77, 65, 0.9);
 }
 /* color */
 .style3-comp {
@@ -57,14 +57,14 @@ body {
 }
 
 .style4 {
-  background-color: rgba(254, 196, 81, 1);
+  background-color: rgba(254, 196, 81, 0.9);
 }
 .style4-comp {
   background-color: rgba(16, 71, 110, 1);
 }
 /* letras */
 .font-compColor-s4 {
-  color: rgba(254, 196, 81, 1);
+  color: rgba(254, 196, 81, 0.9);
 }
 .font-mainColor-s4 {
   color: rgba(16, 71, 110, 1);
