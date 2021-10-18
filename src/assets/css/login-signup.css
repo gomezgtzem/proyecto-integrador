@@ -10,6 +10,7 @@
   max-width: 490px;
   max-height: 600px;
   padding: 30px;
+  background: transparent;
 }
 .wrapper .slide-controls {
   position: relative;
@@ -92,6 +93,7 @@ input[type="radio"] {
   outline: none;
   padding-left: 15px;
   margin-bottom: 10px;
+  background: transparent;
 }
 .form-inner form .pass-link {
   margin-top: 5px;
