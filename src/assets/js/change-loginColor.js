@@ -16,9 +16,9 @@ const style1 = 'rgba(37, 105, 184, 1)';//estilo 1, color principal y letras de f
 const cStyle1 = 'rgba(0, 43, 92, 1)'; //color de footer y color principal de letras :v-
 const style2 = 'rgba(115, 149, 73, 1)';//estilo 2, color principal y letras de footer
 const cStyle2 = 'rgba(37, 37, 36, 1)';//color de footer y principal de las letras
-const style3 = 'rgba(228, 77, 65, 1)';//estilo 3, color pincipal y de letras de footer
+const style3 = 'rgba(228, 77, 65, 0.9)';//estilo 3, color pincipal y de letras de footer
 const cStyle34 = 'rgba(16, 71, 110, 1)';//color de footer y principal de letras de estilo 3 y 4
-const style4 = 'rgba(254, 196, 81, 1)';// estilo 4, color principal y de letras de footer
+const style4 = 'rgba(254, 196, 81, 0.9)';// estilo 4, color principal y de letras de footer
 //cambio de color de encabezados cada vez que se seleccione un nuevo color
 $ColorOp1.onclick = (() => {
    if(historyPointer==0){
