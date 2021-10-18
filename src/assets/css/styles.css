@@ -27,7 +27,8 @@
   }
   .wrapper{
     overflow: hidden;
-    max-width: 390px;
+    max-width: 500px;
+    
     background: rgb(30, 90, 202);
     padding: 30px;
     border-radius: 5px;
