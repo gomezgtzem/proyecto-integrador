@@ -35,3 +35,9 @@
 .img-nombre {
   display: inline;
 }
+a{
+  color: #002b5c;
+}
+a:hover{
+  text-decoration: underline;
+}
