@@ -39,7 +39,7 @@ document.body.addEventListener("change", (e) => {
         textComp[i].style.color = mainStyle1; //letras de footer
       }
       //imagenes para navbar y footer
-      $logo.src = "assets/images/footer/logo-s1.png";
+      $logo.src = "./assets/images/footer/logo-s1.png";
       break;
 
     case "option2":
@@ -59,7 +59,7 @@ document.body.addEventListener("change", (e) => {
         textComp[i].style.color = mainStyle2; //letras de footer
       }
       //imagenes para header y footer
-      $logo.src = "assets/images/footer/logo-s2.png";//imagenes
+      $logo.src = "./assets/images/footer/logo-s2.png";//imagenes
 
       break;
 
@@ -80,7 +80,7 @@ document.body.addEventListener("change", (e) => {
         textComp[i].style.color = mainStyle3; //letras de footer
       }
       //imagenes para header y footer
-       $logo.src = "assets/images/footer/logo-s3.png";
+       $logo.src = "./assets/images/footer/logo-s3.png";
       break;
 
     case "option4":
@@ -100,7 +100,7 @@ document.body.addEventListener("change", (e) => {
         textComp[i].style.color = mainStyle4; //letras de footer
       }
       //imagenes para header y footer
-      $logo.src = "assets/images/footer/logo-s4.png";
+      $logo.src = "./assets/images/footer/logo-s4.png";
       break;
   }
 });
