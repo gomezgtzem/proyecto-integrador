@@ -9,6 +9,7 @@
   flex-flow: row wrap;
   align-items: flex-end;
   font-family: "Permanent Marker", cursive;
+  margin: 0 auto;
 }
 
 .imagen-principal {
@@ -24,6 +25,7 @@
 
 .principal__informacion h1 {
   font-size: 7rem;
+  margin-left: 10px;
 }
 
 .principal__informacion p {
@@ -81,14 +83,15 @@
   width: 57.1%;
 }
 
-/*.contenedor-carrusel {
+.contenedor-carrusel {
   width: 100%;
   height: 500px;
 }
 
 .contenedor-carrusel .img-carrusel {
   height: 500px;
-} */
+  width: 60%;
+}
 
 .reseñas{
   width:100%;
