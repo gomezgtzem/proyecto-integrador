@@ -11,6 +11,9 @@
   max-height: 600px;
   padding: 30px;
   background: transparent;
+/*   background-color: salmon;
+  border-width: 5px;
+  border-color: springgreen; */
 }
 .wrapper .slide-controls {
   position: relative;
@@ -69,6 +72,9 @@ input[type="radio"] {
 .wrapper .form-container {
   width: 100%;
   overflow: hidden;
+/*   background-color: springgreen;
+  border-width: 10px;
+  border-color: wheat; */
   /* border-width: 10px; */
 }
 .form-container .form-inner {
