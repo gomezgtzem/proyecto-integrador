@@ -1,4 +1,4 @@
-/* Imagen Principal */
+/* ///////////////////// Imagen Principal ///////////////////// */
 .principal {
   font-size: 62.5%;
   width: 100%;
@@ -11,29 +11,26 @@
   font-family: "Permanent Marker", cursive;
   margin: 0 auto;
 }
-
 .imagen-principal {
   width: 100%;
   height: 100%;
 }
-
 .principal__informacion {
   position: absolute;
   width: 80%;
   margin: 0 auto;
 }
-
 .principal__informacion h1 {
   font-size: 7rem;
   margin-left: 10px;
 }
-
 .principal__informacion p {
   width: 60%;
   margin: 4rem 0;
   font-family: "Permanent Marker", cursive;
 }
-/* Carrusel con Texto */
+
+/* ///////////////////// Imagenes con Texto ///////////////////// */
 .contenedor {
   text-align: left;
   font-size: 1rem;
@@ -62,42 +59,41 @@
 }
 .columna-uno {
   width: 30.434%;
-  margin-left: 4.347%;
+  margin-left: 2%;
 }
-
 .columna-dos {
-  margin-left: 4.347%;
+  margin-left: 10%;
   width: 17.391%;
   display: flex;
   flex-direction: column;
 }
-
 .columna-tres {
   width: 34.782%;
-  margin-left: 4.347%;
+  margin-left: 20%;
   display: flex;
   flex-direction: column;
 }
-
 .texto {
   width: 57.1%;
 }
 
+
+/* ///////////////////// Carrusel ///////////////////// */
 .contenedor-carrusel {
   width: 100%;
   height: 500px;
 }
-
 .contenedor-carrusel .img-carrusel {
   height: 500px;
   width: 60%;
 }
 
+
+/* ///////////////////// Reseñas ///////////////////// */
 .reseñas{
   width:100%;
   margin:15px 0;
 }
-
 .reseñas-container {
   font-family: "Permanent Marker", cursive;
   display: flex;
@@ -105,12 +101,10 @@
   background-color: #002b5c;
   flex-flow: row wrap;
 }
-
 .reseñas--img {
   flex: 1 1 50%;
   display: flex;
 }
-
 .reseñas--img img {
   flex: 1 1;
   width: 1rem;
@@ -118,23 +112,21 @@
   padding: 4rem;
   object-fit: cover;
 }
-
 .reseñas--info {
   flex: 1 1 50%;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
 }
-
 .reseñas--info h3 {
   font-size: 3rem;
 }
-
 .reseñas--info p {
   font-size: 1.5rem;
 }
 
-/* Ofertas */
+
+/* ///////////////////// Ofertas ///////////////////// */
 .ofertas {
   width: 100%;
   height: 70%;
@@ -145,33 +137,30 @@
   align-items: flex-end;
   margin: 0 auto;
 }
-
 .imagen-ofertas {
   width: 100%;
   height: 100%;
   justify-content: space-evenly;
 }
-
 .ofertas-informacion {
   width: 100%;
   margin: 0 auto;
   justify-content: space-evenly
 }
-
 [class*="ofertas-informacion"]{
   font-family: "Permanent Marker", cursive;
 }
 .ofertas-informacion h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   position: absolute;
 }
-
 .ofertas-informacion p {
   width: 60%;
   margin: 4rem 0;
 }
 
-/* Tennis */
+
+/* ///////////////////// Tennis ///////////////////// */
 .tennis {
   width: 80%;
   height: 500px;
@@ -183,12 +172,10 @@
   margin: 0 auto;
   transform: translateX(9%);
 }
-
 /* .container-tennis {
   width: 500px;
   height: 155px;
 } */
-
 .imagen-tennis {
   width: 150%;
   height: 100%;
@@ -220,7 +207,8 @@
   transform: translateX(-90%);
 }
 
-/* Imagen Secundaria */
+
+/* ///////////////////// Imagen Secundaria ///////////////////// */
 .secundaria {
   width: 100%;
   background-repeat: no-repeat;
@@ -236,12 +224,12 @@
   width: 100%;
 }
 
-/* Footer */
+
+/* ///////////////////// Footer /////////////////////  */
 footer {
   background: #002b5c;
   width: 100%;
 }
-
 .footer-container {
   color: #2569b8;
   width: 80%;
@@ -251,22 +239,19 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
 .footer--info {
   max-width: 40%;
 }
-
 .footer--info h2 {
   font-size: 2rem;
 }
-
 .footer-logo {
   max-width: 10%;
 }
-
 .footer-logo img {
   width: 10rem;
 }
+
 
 @media screen and (max-width: 600px) {
   .tennis {
