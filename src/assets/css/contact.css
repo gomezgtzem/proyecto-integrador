@@ -11,6 +11,13 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+.text-menu{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-align: center;
+}
 #form-box{
     border-width: 7px;
     border-color:rgba(0, 43, 92, 1);
