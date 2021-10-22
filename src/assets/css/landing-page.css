@@ -10,24 +10,30 @@
   align-items: flex-end;
   font-family: "Permanent Marker", cursive;
   margin: 0 auto;
+  min-width: 250px;
+  flex-wrap: wrap;
 }
 .imagen-principal {
   width: 100%;
   height: 100%;
+  min-width: 250px;
 }
 .principal__informacion {
   position: absolute;
   width: 80%;
   margin: 0 auto;
+  min-width: 250px;
 }
 .principal__informacion h1 {
   font-size: 7rem;
   margin-left: 10px;
+  min-width: 250px;
 }
 .principal__informacion p {
   width: 60%;
   margin: 4rem 0;
   font-family: "Permanent Marker", cursive;
+  min-width: 250px;
 }
 
 /* ///////////////////// Imagenes con Texto ///////////////////// */
@@ -37,6 +43,7 @@
   line-height: 1.5;
   color: #11466e;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 .interior {
   text-align: left;
@@ -47,6 +54,7 @@
   display: flex;
   margin-top: 4.6%;
   margin-bottom: 6%;
+  flex-wrap: wrap;
 }
 [class*="columna-"],
 .texto {
@@ -56,22 +64,31 @@
   line-height: 1.5;
   color: #11466e;
   box-sizing: border-box;
+  min-width: 250px;
 }
 .columna-uno {
   width: 30.434%;
   margin-left: 2%;
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 0px;
 }
 .columna-dos {
   margin-left: 10%;
   width: 17.391%;
   display: flex;
   flex-direction: column;
+  flex: 2;
+  min-width: 250px;
+  margin-bottom: 0px;
 }
 .columna-tres {
   width: 34.782%;
   margin-left: 20%;
   display: flex;
   flex-direction: column;
+  min-width: 250px;
+  margin-bottom: 0px;
 }
 .texto {
   width: 57.1%;
