@@ -95,8 +95,9 @@
   <!--End Navbar-->
 
   <!-- ///////////////////// FOTO PRINCIPAL ///////////////////// -->
-  <section class="principal">
-    <img class="imagen-principal"
+  <div class="container-fluid">
+  <section class="principal row">
+    <img class="imagen-principal img-fluid" 
       src="assets/images/landing/Opcion21.jpg" alt="">
     <article class="principal__informacion">
       <h1 class="font-mainColor-s1">SKATE NATION</h1>
@@ -104,48 +105,48 @@
   </section>
 
   <!-- ///////////////////// IMAGENES CON TEXTO ///////////////////// -->
-  <section class="contenedor">
-    <div class="interior">
+  <section class="d-flex  ">
+    <div class="interior ">
 
-      <div class="columna-uno">
-        <div class="texto font-mainColor-s1">
+      <div class="columna-uno col-lg-4">
+        <div class="texto font-mainColor-s1 text-center">
           <p>
             Para muchos, el skateboarding es más que un deporte, es amor y una parte fundamental de sus vidas.
           </p>
         </div>
 
-        <div>
+        <div class="text-center">
           <div>
-            <img src="assets/images/landing/Opcion11.jpg">
+            <img src="assets/images/landing/Opcion11.jpg" width="400px">
           </div>
         </div>
 
-        <div class="font-mainColor-s1">
+        <div class="font-mainColor-s1  text-center">
           <p>
             ¡Aquí te entendemos y cubrimos tus expectativas y necesidades!
           </p>
         </div>
       </div>
 
-      <div class="columna-dos">
+      <div class="columna-dos col-lg-4 text-center">
         <div>
           <div>
             <img src="assets/images/landing/Opcion19.jpg">
           </div>
         </div>
 
-        <div class="texto font-mainColor-s1">
+        <div class="texto font-mainColor-s1 text-center">
           <p>
             Compartimos contigo esa pasion y la sensación del skateboarding.
           </p>
         </div>
       </div>
 
-      <div class="columna-tres font-mainColor-s1">
+      <div class="columna-tres col-lg-4 font-mainColor-s1 text-center">
         <h2>since 2021.</h2>
         <div>
           <div>
-            <img src="assets/images/landing/Opcion10.jpg">
+            <img src="assets/images/landing/Opcion10.jpg" width="400px">
           </div>
           <p>
             Gracias a nosotros, y por supuesto a tu buen gusto, todos te voltearan a ver.
@@ -158,22 +159,23 @@
   
 
   <!-- ///////////////////// RESEÑAS ///////////////////// -->
-  <article class="reseñas">
-    <section class="reseñas-container style1-comp">
-      <figure class="reseñas--img">
-        <img src="assets/images/landing/Opcion5.jpg" alt="" />
+  <section class="reseñas ">
+      <div>
+        <figure class="reseñas--img ">
+        <img class="img img-fluid " src="assets/images/landing/Opcion5.jpg"  alt="" />
       </figure>
-      <div class="reseñas--info font-compColor-s1">
-        <h3>Se parte de Skate Nation ...</h3>
-        <h2>
-          <p>y recibe ofertas sobre tus marcas favoritas o productos añadidosrecientementemente</p>
+      </div>
+      <div class="reseñas--info contenedor-info font-compColor-s1 ">
+        <h3 class="text-center">Se parte de Skate Nation ...</h3>
+        <h2 class="text-center">
+          <p>y recibe ofertas sobre tus marcas favoritas o productos añadidos recientementemente</p>
           <p>Sabías que...</p>
           <p>Recomendaciones...</p>
           <p>Las mejores ofertas...</p>
         </h2>
       </div>
-    </section>
-  </article>
+   
+  </section>
 
 <!-- ///////////////////// CARRUSEL DE BOOSTRAP ///////////////////// -->    
 <div id="carouselExampleIndicators" class="carousel slide contenedor-carrusel" data-ride="carousel">
@@ -215,7 +217,7 @@
 </div>
   
 <!-- ///////////////////// OFERTAS ///////////////////// -->
-<section class="ofertas row container"> 
+<!-- <section class="ofertas container mt-5"> 
   <article class="ofertas-informacion col-4 font-mainColor-s1">
     <h1>new</h1>
     <img class="imagen-ofertas" src="assets/images/landing/Ofertas1.jpg" alt="">
@@ -230,11 +232,11 @@
     <h1>outlet</h1>
     <img class="imagen-ofertas" src="assets/images/landing/Ofertas4.png" alt="">
   </article>
-</section>
+</section> -->
 
   <!-- ///////////////////// TENNIS ///////////////////// -->
-  <section class="tennis row container">
-    <div class="d-flex pr-1 pl-1">
+  <section class="tennis tennis-container">
+    <div class="d-flex pr-1 pl-1 row justify-content-center">
       <article class="tennis-img-blue col-3 container-tennis">
         <img class="imagen-tennis" src="assets/images/landing/low blue D.png" alt="" class="img" />
       </article>
@@ -255,6 +257,7 @@
 
   <!-- ///////////////////// FOTO SECUNDARIA ///////////////////// -->
   <article class="secundaria"><img class="secundaria-imagen" src="./assets/images/landing/ciudad.png" alt=""> </article>
+</div>
 
   <!-- Begin footer -->
   <footer class="footer d-flex  style1-comp">
