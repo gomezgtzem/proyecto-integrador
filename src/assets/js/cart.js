@@ -111,7 +111,7 @@ const paintFooter = () => {
     (acumulator, { cantidad, precio }) => acumulator + cantidad * precio,
     0
   );
-  /* console.log(nPrecio) */
+  localStorage.setItem("total", JSON.stringify(nPrecio));
 
   templateFooter.querySelectorAll("td")[0].textContent = nCantidad;
   templateFooter.querySelector(".total").textContent = nPrecio;

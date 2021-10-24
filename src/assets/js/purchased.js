@@ -1,26 +1,26 @@
 const $list = document.querySelector("#list");
-const fragment2 = document.createDocumentFragment();
+const $total = document.querySelector(".total");
 
 let cartPurchased = JSON.parse(localStorage.getItem("cart"));
-console.log(cartPurchased);
 
-/* (() => {
-  $list.innerHTML = `${cartPurchased[2].cantidad} ${cartPurchased[2].title} Precio: $${cartPurchased[2].precio} `;
-})(); */
+let total = JSON.parse(localStorage.getItem("total"));
+console.log(total);
+$total.innerHTML = `Total $${total}`;
 
-for (element in cartPurchased) {
-  console.log(cartPurchased[element]);
-  $list.innerHTML = `${cartPurchased[element].cantidad}`;
-}
+const newPurchasedCart = Object.values(cartPurchased);
 
-Object.values(cartPurchased).forEach((product) => {
-  $list.innerHTML = `${product.title}`;
-});
+(() => {
+  newPurchasedCart.map((item) => {
+    ({ title, precio, cantidad, total } = item);
+    let listItem = document.createElement("li");
 
-/* for (let element in cartPurchased) {
-  $list.innerHTML = `${cartPurchased[element].title}`;
-}
- */
-
-/* const clone = $list.cloneNode(true);
-fragment.appendChild(clone); */
+    listItem.innerHTML = `<p class='container'> <span  class='col-4'>${cantidad} </span> <span  class='col-4'> ${title}</span> <span  class='col-4'> $${
+      cantidad * precio
+    } </span></p>
+    `;
+    let newPrecio = parseInt(precio);
+    newPrecio += newPrecio;
+    console.log(newPrecio);
+    $list.appendChild(listItem);
+  });
+})();
