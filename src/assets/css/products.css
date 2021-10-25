@@ -2,9 +2,7 @@
 *{
     box-sizing: border-box;
 }
-header{
-    margin-bottom: 2px !important;
-}
+
 
 body,html{
     border: 0%;
@@ -14,23 +12,29 @@ body,html{
     min-height: 100vh;
 }
 
-
+header{
+    margin-bottom: 2px !important;
+}
 
 /* Images hero */
-
+.col{
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
 
 
 div .hero{
-    background-image: url(../images/products/products-header2.jpg);
+    background-image: url(../images/products/products-header2.png);
     display: grid;
-   grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     width: 100%;
     height: 100vh;
     background-position: center center;
-    mix-blend-mode: hard-light
+    
+    
 }
 
 div .text-hero {
@@ -39,8 +43,11 @@ div .text-hero {
     min-height: 100vh;
     display: grid;
 	grid-template-columns: repeat(6, 1fr);
-    grid-column: 3 / 5; 
-    
+    grid-column: 3 / 5;
+    display: flex;
+    text-align: center;
+    align-items: center;
+	justify-content: center;
 	 
 }
 
@@ -51,12 +58,12 @@ div .text-hero h1{
     display: flex;
     text-align: center;
     align-items: center;
-	justify-content: center; 
-    
+	justify-content: center;
 
 }
-
+ 
 .cubo{
+    font-size: 17px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -66,12 +73,21 @@ div .text-hero h1{
 
 /* Productos */
 
-.products .product{
-    position: relative;
-    width: 100%;
-   
+.caja-producto{
+    margin-top: 30px;
+    margin-bottom: -10px;
+    font-size: 20px;
+
 }
-.products .overlay{
+.text-precio {
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+.text-product{
+    margin-bottom: 10px;
+}
+/* .products .overlay{
     width: 0%;
     height: 100%;
     position: absolute;
@@ -81,14 +97,14 @@ div .text-hero h1{
     background-color: #002b5c00;
     overflow: hidden;
     transition: .8s ease;
-}
+} */
 
-.products .product:hover .overlay{
+/* .products .product:hover .overlay{
     width: 100%;
     opacity: .8;
-}
+} */
 
-.overlay-texto1{
+/* .overlay-texto1{
     top: 50%;
     left: 50%;
     position: absolute;
@@ -98,8 +114,8 @@ div .text-hero h1{
     transform: translate(-50%, -50%);
     overflow: hidden;
 
-}
-.overlay-texto2{
+} */
+/* .overlay-texto2{
     top: 40%;
     left: 50%;
     position: absolute;
@@ -109,14 +125,16 @@ div .text-hero h1{
     transform: translate(-50%, -50%);
     overflow: hidden;
 
-}
-figure:hover > img{
+} */
+
+/* figure:hover > img{
     transform: scale(1.1);
+} */
+
+.main-productos{
+    margin: 0px;
+    padding: 20px;
 }
-
-
-
-/* boton producto */
 
  .texto-producto{
     text-align: center;
@@ -132,7 +150,7 @@ a:link, a:visited, a:active{
   
     display: block;
     color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
     padding: 15px;
@@ -150,22 +168,82 @@ a:link, a:visited, a:active{
     .div .text-hero h1{
         font-size: 110px;
         text-align: center;
-        
     }
+    div .hero{
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        }
+        .productos{
+            margin: 0px;
+    
+        }
 }
 @media screen and (max-width: 1290px){
     div .text-hero h1{
         font-size: 90px;
-        align-items: center;
         text-align: center;
-       
     }
+    div .hero{
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        }
+        .productos{
+            margin: 0px;
+    
+        }
 }
+
 @media screen and (max-width: 800px){
     div .text-hero h1 {
         font-size: 55px;
-        align-items: center;
         text-align: center;
-        
+    }
+    div .hero{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    }
+    .productos{
+        margin: 0px;
     }
 }
+
+@media screen and (max-width: 620px){
+    div .text-hero h1 {
+        font-size: 55px;
+        text-align: center;
+    }
+    div .hero{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+   
+    }
+    .productos{
+        margin: 0px;
+        padding: 5px;
+    }
+    .btn{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 360px){
+    div .text-hero h1 {
+        font-size: 55px;
+        text-align: center;
+    }
+    div .hero{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    }
+    .productos{
+        margin: 0px;
+        padding: 5px;
+    }
+    .btn{
+        font-size: 9px;
+    }
+} 
