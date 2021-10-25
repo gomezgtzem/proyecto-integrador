@@ -1,4 +1,4 @@
-/* Imagen Principal */
+/* ///////////////////// Imagen Principal ///////////////////// */
 .principal {
   font-size: 62.5%;
   width: 100%;
@@ -10,36 +10,48 @@
   align-items: flex-end;
   font-family: "Permanent Marker", cursive;
   margin: 0 auto;
+  min-width: 250px;
+  flex-wrap: wrap;
 }
-
 .imagen-principal {
   width: 100%;
   height: 100%;
+  min-width: 250px;
 }
-
 .principal__informacion {
   position: absolute;
   width: 80%;
   margin: 0 auto;
+  min-width: 250px;
 }
-
 .principal__informacion h1 {
   font-size: 7rem;
   margin-left: 10px;
+  min-width: 250px;
 }
-
+@media(max-width: 768px) {
+  .principal__informacion h1 {
+    font-size: 4rem;
+  }
+}
 .principal__informacion p {
   width: 60%;
   margin: 4rem 0;
   font-family: "Permanent Marker", cursive;
+  min-width: 250px;
 }
-/* Carrusel con Texto */
+.container-fluid {
+  padding: 0%;
+}
+
+/* ///////////////////// Imagenes con Texto ///////////////////// */
 .contenedor {
   text-align: left;
   font-size: 1rem;
   line-height: 1.5;
   color: #11466e;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 .interior {
   text-align: left;
@@ -50,6 +62,7 @@
   display: flex;
   margin-top: 4.6%;
   margin-bottom: 6%;
+  flex-wrap: wrap;
 }
 [class*="columna-"],
 .texto {
@@ -59,82 +72,107 @@
   line-height: 1.5;
   color: #11466e;
   box-sizing: border-box;
+  min-width: 250px;
 }
-.columna-uno {
+/* .columna-uno {
   width: 30.434%;
-  margin-left: 4.347%;
+  margin-left: 2%;
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 0px;
 }
-
 .columna-dos {
-  margin-left: 4.347%;
+  margin-left: 10%;
   width: 17.391%;
   display: flex;
   flex-direction: column;
+  flex: 2;
+  min-width: 250px;
+  margin-bottom: 0px;
 }
-
 .columna-tres {
   width: 34.782%;
-  margin-left: 4.347%;
+  margin-left: 20%;
   display: flex;
   flex-direction: column;
+  min-width: 250px;
+  margin-bottom: 0px;
 }
-
 .texto {
   width: 57.1%;
-}
+} */
 
+
+/* ///////////////////// Carrusel ///////////////////// */
 .contenedor-carrusel {
   width: 100%;
   height: 500px;
 }
-
 .contenedor-carrusel .img-carrusel {
   height: 500px;
   width: 60%;
 }
 
-.reseñas{
-  width:100%;
-  margin:15px 0;
-}
 
-.reseñas-container {
-  font-family: "Permanent Marker", cursive;
-  display: flex;
-  color: #2569b8;
+/* ///////////////////// Reseñas ///////////////////// */
+ .reseñas{
   background-color: #002b5c;
-  flex-flow: row wrap;
+display: flex;
+/* flex-wrap: wrap; */
+justify-content: center;
+align-items: center;
+gap: 5rem;
+padding: 4rem;
 }
-
-.reseñas--img {
-  flex: 1 1 50%;
-  display: flex;
+@media (max-width: 1000px) {
+  .reseñas{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .reseñas--img  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    min-width: 100px;
+  }
+  .reseñas--info {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
 }
-
-.reseñas--img img {
-  flex: 1 1;
-  width: 1rem;
-  height: 100%;
-  padding: 4rem;
-  object-fit: cover;
+@media (max-width:678px) {
+  .reseñas {
+    padding: 0;
+  }
+  .reseñas--img{
+     max-width: 500px;
+    min-width: 100px;
+  }
+  .reseñas--info h3 {
+  font-size: 1rem;
 }
-
-.reseñas--info {
-  flex: 1 1 50%;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
+.contenedor-info {
+  max-width: 300px;
+margin-right: 55px;
 }
-
+}
+.reseñas--info{
+  font-family:  "Permanent Marker", cursive;
+}
 .reseñas--info h3 {
   font-size: 3rem;
 }
-
 .reseñas--info p {
   font-size: 1.5rem;
 }
+ 
 
-/* Ofertas */
+/* ///////////////////// Ofertas ///////////////////// */
 .ofertas {
   width: 100%;
   height: 70%;
@@ -145,34 +183,36 @@
   align-items: flex-end;
   margin: 0 auto;
 }
-
+@media(max-width:768px) {
+  .ofertas {
+    display: none;
+  }
+}
 .imagen-ofertas {
   width: 100%;
   height: 100%;
   justify-content: space-evenly;
 }
-
 .ofertas-informacion {
   width: 100%;
   margin: 0 auto;
   justify-content: space-evenly
 }
-
 [class*="ofertas-informacion"]{
   font-family: "Permanent Marker", cursive;
 }
 .ofertas-informacion h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   position: absolute;
 }
-
 .ofertas-informacion p {
   width: 60%;
   margin: 4rem 0;
 }
 
-/* Tennis */
-.tennis {
+
+/* ///////////////////// Tennis ///////////////////// */
+/* .tennis {
   width: 80%;
   height: 500px;
   position: relative;
@@ -182,45 +222,53 @@
   align-items: center;
   margin: 0 auto;
   transform: translateX(9%);
+} */
+.tennis-container {
+  margin-right: 70px;
 }
-
+@media(max-width:768px) {
+  .tennis-container {
+    display: none;
+  }
+} 
+}
 /* .container-tennis {
   width: 500px;
   height: 155px;
 } */
-
 .imagen-tennis {
   width: 150%;
   height: 100%;
   line-height: 0;
-  /* position: absolute; */
+  position: absolute;
   left: 0;
   top: 0;
   transition: transform 300ms ease-out;
   cursor: pointer;
 }
 .tennis-img-blue {
-  flex: 1 1 100%;
+  flex: 0 0 100%;
   z-index: 5;
   transform: translateX(-60%);
 }
 .tennis-img-green {
-  flex: 1 1 100%;
+  flex: 0 0 100%;
   z-index: 4;
   transform: translateX(-70%);
 }
 .tennis-img-red {
-  flex: 1 1 100%;
+  flex: 0 0 100%;
   z-index: 3;
   transform: translateX(-80%);
 }
 .tennis-img-yellow {
-  flex: 1 1 100%;
+  flex: 0 0 100%;
   z-index: 2;
   transform: translateX(-90%);
 }
 
-/* Imagen Secundaria */
+
+/* ///////////////////// Imagen Secundaria ///////////////////// */
 .secundaria {
   width: 100%;
   background-repeat: no-repeat;
@@ -236,12 +284,12 @@
   width: 100%;
 }
 
-/* Footer */
+
+/* ///////////////////// Footer /////////////////////  */
 footer {
   background: #002b5c;
   width: 100%;
 }
-
 .footer-container {
   color: #2569b8;
   width: 80%;
@@ -251,22 +299,19 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
 .footer--info {
   max-width: 40%;
 }
-
 .footer--info h2 {
   font-size: 2rem;
 }
-
 .footer-logo {
   max-width: 10%;
 }
-
 .footer-logo img {
   width: 10rem;
 }
+
 
 @media screen and (max-width: 600px) {
   .tennis {
