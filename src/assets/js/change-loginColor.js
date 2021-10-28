@@ -91,7 +91,6 @@ loginBtn.onclick = (() => { //iniciar sesion
    //para historial de color
    showColor = localStorage.getItem("OpcionColor");
    //console.log(`color seleccionado prev ${showColor}`);
-
    if ((document.getElementById('option1').checked) || (showColor == 1)) {
       backLogin.style.color = cStyle1;
       backSign.style.color = style1;  //poner color de letra en css

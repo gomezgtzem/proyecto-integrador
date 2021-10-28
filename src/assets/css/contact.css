@@ -62,7 +62,7 @@
     font-size: 20px;
     height: 200px;
 }
-::placeholder { /* letra de formulario */
+::placeholder {
     color:black;
   }
 #back{ 

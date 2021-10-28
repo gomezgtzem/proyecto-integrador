@@ -147,7 +147,7 @@ form .btn input[type="submit"] {
   font-weight: 500;
   cursor: pointer;
 }
-::placeholder { /* letra de formulario */
+::placeholder { 
   color:black;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
