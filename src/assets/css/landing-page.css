@@ -211,11 +211,11 @@
   margin: 45px 0;
 }
 .tennis-container:before {
-  content: '';
+  content: "";
   display: block;
   padding-bottom: 24%;
 }
-.tennis-container span{
+.tennis-container span {
   display: block;
   width: 110%;
   height: 100%;
@@ -226,8 +226,8 @@
   transition: transform 300ms ease-out;
   cursor: pointer;
 }
-.tennis-container span{
-  width:840px;
+.tennis-container span {
+  width: 840px;
 }
 .tennis-container span:first-child {
   transform: translateX(-15%);
@@ -245,7 +245,7 @@
   transform: translateX(40%);
   z-index: 2;
 }
-.tennis-container span .img-tennis{
+.tennis-container span .img-tennis {
   width: 100%;
   height: auto;
 }
@@ -307,8 +307,12 @@ footer {
   width: 10rem;
 }
 
-@media screen and (max-width: 600px) {
-  .tennis {
-    margin: 0;
+@media only screen and (min-device-width: 280px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  .tennis-container {
+    display: none;
+  }
+  .imagen-principal {
+    object-fit: cover;
+    width: 100%;
   }
 }
