@@ -1,3 +1,31 @@
+/* ///////////////////// SCROLLBAR ///////////////////// */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #2569B8;
+}
+::-webkit-scrollbar-thumb {
+  background: #002b5c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #002b5c;
+}
+
+/* ///////////////////// CINTA ///////////////////// */
+marquee {
+  font-family: Montserrat;
+  font-style: italic;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  height: 35px;
+  line-height: 35px;
+}
+
 /* ///////////////////// Imagen Principal ///////////////////// */
 .principal {
   font-size: 62.5%;
