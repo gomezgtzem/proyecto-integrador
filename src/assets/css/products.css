@@ -17,11 +17,18 @@ header{
 }
 
 /* Images hero */
+
+.img-hero{
+    padding: 0%;
+}
 .col{
     padding-right: 5px !important;
     padding-left: 5px !important;
 }
 
+.container-fluid {
+    padding: 0%;
+  }
 
 div .hero{
     background-image: url(../images/products/products-header2.png);
@@ -33,7 +40,7 @@ div .hero{
     width: 100%;
     height: 100vh;
     background-position: center center;
-    
+    mix-blend-mode: hard-light;
     
 }
 
@@ -73,6 +80,15 @@ div .text-hero h1{
 
 /* Productos */
 
+.product{
+    transition: all 300ms;
+    position: relative;
+}
+
+.img-fluid:hover{
+    transform: scale(1.30);
+}
+
 .caja-producto{
     margin-top: 30px;
     margin-bottom: -10px;
@@ -87,49 +103,6 @@ div .text-hero h1{
 .text-product{
     margin-bottom: 10px;
 }
-/* .products .overlay{
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #002b5c00;
-    overflow: hidden;
-    transition: .8s ease;
-} */
-
-/* .products .product:hover .overlay{
-    width: 100%;
-    opacity: .8;
-} */
-
-/* .overlay-texto1{
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    white-space: nowrap;
-    color: beige;
-    font-size: 18px;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-
-} */
-/* .overlay-texto2{
-    top: 40%;
-    left: 50%;
-    position: absolute;
-    white-space: nowrap;
-    color: beige;
-    font-size:18px;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-
-} */
-
-/* figure:hover > img{
-    transform: scale(1.1);
-} */
 
 .main-productos{
     margin: 0px;
@@ -154,12 +127,10 @@ a:link, a:visited, a:active{
     text-transform: uppercase;
     font-weight: 600;
     padding: 15px;
-    transition: background-color .3s ease-out;
 }
 
 
 
-/* footer */
 
 
 
@@ -201,7 +172,7 @@ a:link, a:visited, a:active{
         text-align: center;
     }
     div .hero{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-size: cover;
     }
@@ -216,7 +187,7 @@ a:link, a:visited, a:active{
         text-align: center;
     }
     div .hero{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-size: cover;
    
@@ -229,15 +200,16 @@ a:link, a:visited, a:active{
         font-size: 9px;
     }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 460px){
     div .text-hero h1 {
         font-size: 55px;
         text-align: center;
     }
     div .hero{
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+       
     }
     .productos{
         margin: 0px;
@@ -246,4 +218,6 @@ a:link, a:visited, a:active{
     .btn{
         font-size: 9px;
     }
+
+
 } 
