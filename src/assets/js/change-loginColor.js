@@ -24,114 +24,113 @@ const style4 = 'rgba(254, 196, 81, 0.9)';// estilo 4, color principal y de letra
 //cambio de encabezados cuando se haya seleccionado un color previamente en otra pagina
 (() => { //funcion IIFE - se ejecuta automaticamente,
    showOP = localStorage.getItem("OpcionColor");
-   console.log(`color seleccionado prev ${showOP}`);
+   //console.log(`color seleccionado prev ${showOP}`);
    if ((showOP == null) || (showOP == 1)) {
-      console.log("Opcion 1 letras de  pestañas azul :v");
-      backLogin.style.color = style1;
-      backSign.style.color = cStyle1;
+      //console.log("Opcion 1 letras de  pestañas azul :v");
+      backLogin.style.color = cStyle1;
+      backSign.style.color = style1;
    }
    if (showOP == 2) {
-      console.log("opcion 2 letras de pestañas verdes");
-      backLogin.style.color = style2;
-      backSign.style.color = cStyle2;
+      //console.log("opcion 2 letras de pestañas verdes");
+      backLogin.style.color = cStyle2; 
+      backSign.style.color = style2;
    }
    if (showOP == 3) {
-      console.log("opcion 3 letras de pestañas rojo");
-      backLogin.style.color = style3;
-      backSign.style.color = cStyle34;
+      //console.log("opcion 3 letras de pestañas rojo");
+      backLogin.style.color = cStyle34;
+      backSign.style.color = style3;
    }
    if (showOP == 4) {
-      console.log("opcion 4 pestañas amarillo");
-      backLogin.style.color = style4;
-      backSign.style.color = cStyle34;
+      //console.log("opcion 4 pestañas amarillo");
+      backLogin.style.color = cStyle34;
+      backSign.style.color = style4;
    }
 })();
 //cambio de color de encabezados cada vez que se seleccione un nuevo color
 $ColorOp1.onclick = (() => {
    if (historyPointer == 0) {
+      backLogin.style.color =cStyle1; 
+      backSign.style.color = style1;
+   } else {
       backLogin.style.color = style1;
       backSign.style.color = cStyle1;
-   } else {
-      backLogin.style.color = cStyle1;
-      backSign.style.color = style1;
    }
 });
 $ColorOp2.onclick = (() => {
    if (historyPointer == 0) {
-      backLogin.style.color = style2;
-      backSign.style.color = cStyle2;
-   } else {
       backLogin.style.color = cStyle2;
-      backSign.style.color = style2;
+      backSign.style.color =  style2;
+   } else {
+      backLogin.style.color = style2; 
+      backSign.style.color = cStyle2;
    }
 });
 $ColorOp3.onclick = (() => {
    if (historyPointer == 0) {
-      backLogin.style.color = style3;
-      backSign.style.color = cStyle34;
-   } else {
       backLogin.style.color = cStyle34;
       backSign.style.color = style3;
+   } else {
+      backLogin.style.color = style3; 
+      backSign.style.color = cStyle34;
    }
 });
 $ColorOp4.onclick = (() => {
    if (historyPointer == 0) {
-      backLogin.style.color = style4;
-      backSign.style.color = cStyle34;
-   } else {
       backLogin.style.color = cStyle34;
       backSign.style.color = style4;
+   } else {
+      backLogin.style.color = style4;
+      backSign.style.color = cStyle34;  
    }
 });
 //formato y color de encabezados cada que se intercambien de pestañas
 loginBtn.onclick = (() => { //iniciar sesion
    loginForm.style.marginLeft = "0%";
    historyPointer = 0; //0 - log in / sign up - 1
-   console.log(historyPointer);
+  // console.log(historyPointer);
    //para historial de color
    showColor = localStorage.getItem("OpcionColor");
-   console.log(`color seleccionado prev ${showColor}`);
-
+   //console.log(`color seleccionado prev ${showColor}`);
    if ((document.getElementById('option1').checked) || (showColor == 1)) {
-      backLogin.style.color = style1;  //poner color de letra en css
-      backSign.style.color = cStyle1;
+      backLogin.style.color = cStyle1;
+      backSign.style.color = style1;  //poner color de letra en css
    }
    if ((document.getElementById('option2').checked) || (showColor == 2)) {
-      backLogin.style.color = style2; //poner color de letra en css
-      backSign.style.color = cStyle2;
+      backLogin.style.color = cStyle2; 
+      backSign.style.color = style2; //poner color de letra en css
    }
    if ((document.getElementById('option3').checked) || (showColor == 3)) {
-      backLogin.style.color = style3; //poner color de letra en css
-      backSign.style.color = cStyle34;
+      backLogin.style.color = cStyle34; 
+      backSign.style.color = style3; //poner color de letra en css
    }
    if ((document.getElementById('option4').checked) || (showColor == 4)) {
-      backLogin.style.color = style4; //poner color de letra en css
-      backSign.style.color = cStyle34;
+      backLogin.style.color = cStyle34; 
+      backSign.style.color = style4; //poner color de letra en css
    }
 });
 signupBtn.onclick = (() => {
    historyPointer = 1; //0 - log in / sign up - 1
-   console.log(historyPointer);
+   //console.log(historyPointer);
    loginForm.style.marginLeft = "-50%";
    //para historial de color
    showColor = localStorage.getItem("OpcionColor");
-   console.log(`color seleccionado prev ${showColor}`);
+   //console.log(`color seleccionado prev ${showColor}`);
 
    if ((document.getElementById('option1').checked) || (showColor == 1)) {
-      backLogin.style.color = cStyle1; //poner color de letra en css
-      backSign.style.color = style1;
+      backLogin.style.color = style1;
+      backSign.style.color = cStyle1; //poner color de letra en css
    }
    if ((document.getElementById('option2').checked) || (showColor == 2)) {
-      backLogin.style.color = cStyle2; //poner color de letra en css
-      backSign.style.color = style2;
+      backLogin.style.color = style2; 
+      backSign.style.color = cStyle2; //poner color de letra en css
    }
    if ((document.getElementById('option3').checked) || (showColor == 3)) {
-      backLogin.style.color = cStyle34; //poner color de letra en css
-      backSign.style.color = style3;
+      backLogin.style.color = style3; 
+      backSign.style.color = cStyle34; //poner color de letra en css
    }
    if ((document.getElementById('option4').checked) || (showColor == 4)) {
-      backLogin.style.color = cStyle34; //poner color de letra en css
-      backSign.style.color = style4;
+      backLogin.style.color = style4; 
+      backSign.style.color = cStyle34; //poner color de letra en css
    }
 });
 

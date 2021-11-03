@@ -1,3 +1,31 @@
+/* ///////////////////// SCROLLBAR ///////////////////// */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #2569B8;
+}
+::-webkit-scrollbar-thumb {
+  background: #002b5c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #002b5c;
+}
+
+/* ///////////////////// CINTA ///////////////////// */
+marquee {
+  font-family: Montserrat;
+  font-style: italic;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  height: 35px;
+  line-height: 35px;
+}
+
 /* ///////////////////// Imagen Principal ///////////////////// */
 .principal {
   font-size: 62.5%;
@@ -29,7 +57,7 @@
   margin-left: 10px;
   min-width: 250px;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .principal__informacion h1 {
     font-size: 4rem;
   }
@@ -102,7 +130,6 @@
   width: 57.1%;
 } */
 
-
 /* ///////////////////// Carrusel ///////////////////// */
 .contenedor-carrusel {
   width: 100%;
@@ -113,24 +140,22 @@
   width: 60%;
 }
 
-
 /* ///////////////////// Reseñas ///////////////////// */
- .reseñas{
+.reseñas {
   background-color: #002b5c;
-display: flex;
-/* flex-wrap: wrap; */
-justify-content: center;
-align-items: center;
-gap: 5rem;
-padding: 4rem;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 4rem;
 }
 @media (max-width: 1000px) {
-  .reseñas{
+  .reseñas {
     display: flex;
     flex-direction: column;
-    
   }
-  .reseñas--img  {
+  .reseñas--img {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,31 +163,29 @@ padding: 4rem;
     min-width: 100px;
   }
   .reseñas--info {
-   
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
 }
-@media (max-width:678px) {
+@media (max-width: 678px) {
   .reseñas {
     padding: 0;
   }
-  .reseñas--img{
-     max-width: 500px;
+  .reseñas--img {
+    max-width: 500px;
     min-width: 100px;
   }
   .reseñas--info h3 {
-  font-size: 1rem;
+    font-size: 1rem;
+  }
+  .contenedor-info {
+    max-width: 300px;
+    margin-right: 55px;
+  }
 }
-.contenedor-info {
-  max-width: 300px;
-margin-right: 55px;
-}
-}
-.reseñas--info{
-  font-family:  "Permanent Marker", cursive;
+.reseñas--info {
+  font-family: "Permanent Marker", cursive;
 }
 .reseñas--info h3 {
   font-size: 3rem;
@@ -170,7 +193,6 @@ margin-right: 55px;
 .reseñas--info p {
   font-size: 1.5rem;
 }
- 
 
 /* ///////////////////// Ofertas ///////////////////// */
 .ofertas {
@@ -183,7 +205,7 @@ margin-right: 55px;
   align-items: flex-end;
   margin: 0 auto;
 }
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .ofertas {
     display: none;
   }
@@ -196,9 +218,9 @@ margin-right: 55px;
 .ofertas-informacion {
   width: 100%;
   margin: 0 auto;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
-[class*="ofertas-informacion"]{
+[class*="ofertas-informacion"] {
   font-family: "Permanent Marker", cursive;
 }
 .ofertas-informacion h1 {
@@ -210,34 +232,20 @@ margin-right: 55px;
   margin: 4rem 0;
 }
 
-
 /* ///////////////////// Tennis ///////////////////// */
-/* .tennis {
-  width: 80%;
-  height: 500px;
-  position: relative;
-  color: #2569b8;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  margin: 0 auto;
-  transform: translateX(9%);
-} */
 .tennis-container {
-  margin-right: 70px;
+  width: 100%;
+  position: relative;
+  margin: 45px 0;
 }
-@media(max-width:768px) {
-  .tennis-container {
-    display: none;
-  }
-} 
+.tennis-container:before {
+  content: "";
+  display: block;
+  padding-bottom: 24%;
 }
-/* .container-tennis {
-  width: 500px;
-  height: 155px;
-} */
-.imagen-tennis {
-  width: 150%;
+.tennis-container span {
+  display: block;
+  width: 110%;
   height: 100%;
   line-height: 0;
   position: absolute;
@@ -246,27 +254,45 @@ margin-right: 55px;
   transition: transform 300ms ease-out;
   cursor: pointer;
 }
-.tennis-img-blue {
-  flex: 0 0 100%;
+.tennis-container span {
+  width: 840px;
+}
+.tennis-container span:first-child {
+  transform: translateX(-15%);
   z-index: 5;
-  transform: translateX(-60%);
 }
-.tennis-img-green {
-  flex: 0 0 100%;
+.tennis-container span:nth-child(2) {
+  transform: translateX(0%);
   z-index: 4;
-  transform: translateX(-70%);
 }
-.tennis-img-red {
-  flex: 0 0 100%;
+.tennis-container span:nth-child(3) {
+  transform: translateX(20%);
   z-index: 3;
-  transform: translateX(-80%);
 }
-.tennis-img-yellow {
-  flex: 0 0 100%;
+.tennis-container span:nth-child(4) {
+  transform: translateX(40%);
   z-index: 2;
-  transform: translateX(-90%);
 }
-
+.tennis-container span .img-tennis {
+  width: 100%;
+  height: auto;
+}
+.tennis-container span:first-child:hover {
+  transform: translateX(-5%);
+  transition: transform 300ms ease-out;
+}
+.tennis-container span:nth-child(2):hover {
+  transform: translateX(15%);
+  transition: transform 300ms ease-out;
+}
+.tennis-container span:nth-child(3):hover {
+  transform: translateX(35%);
+  transition: transform 300ms ease-out;
+}
+.tennis-container span:nth-child(4):hover {
+  transform: translateX(55%);
+  transition: transform 300ms ease-out;
+}
 
 /* ///////////////////// Imagen Secundaria ///////////////////// */
 .secundaria {
@@ -277,13 +303,10 @@ margin-right: 55px;
   position: relative;
   color: #2569b8;
   display: flex;
-  /* flex-flow: row wrap; */
-  /* align-items: flex-end; */
 }
-.secundaria-imagen{
+.secundaria-imagen {
   width: 100%;
 }
-
 
 /* ///////////////////// Footer /////////////////////  */
 footer {
@@ -312,9 +335,12 @@ footer {
   width: 10rem;
 }
 
-
-@media screen and (max-width: 600px) {
-  .tennis {
-    margin: 0;
+@media only screen and (min-device-width: 280px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  .tennis-container {
+    display: none;
+  }
+  .imagen-principal {
+    object-fit: cover;
+    width: 100%;
   }
 }

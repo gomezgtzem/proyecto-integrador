@@ -23,11 +23,11 @@ let showOP;
 //para guardar el color
 (() => { //funcion IIFE - se ejecuta automaticamente,
   //por si cambian entre pestañas, para que se mantenga el color seleccionado
-  console.log("estoy entrando a la funcion");
+  //console.log("estoy entrando a la funcion");
   showOP = localStorage.getItem("OpcionColor");
-  console.log(showOP);
+  //console.log(showOP);
   if ((showOP == null) || (showOP == 1)) {
-    console.log("Opcion 1 azul :v");
+   // console.log("Opcion 1 azul :v");
     for (let i = 0; i < mainBackColor.length; i++) {
       mainBackColor[i].style.backgroundColor = mainStyle1; //color de fondo principal
     }
@@ -47,8 +47,8 @@ let showOP;
     $logo.src = "./assets/images/footer/logo-s1.png";
   }
   if(showOP==2) {
-    console.log("opcion 2 verde");
-        console.log(showOP);
+    //console.log("opcion 2 verde");
+        //console.log(showOP);
         for (let i = 0; i < mainBackColor.length; i++) {
           mainBackColor[i].style.backgroundColor = mainStyle2;
         }
@@ -69,8 +69,8 @@ let showOP;
 
   }
   if(showOP==3){
-    console.log("opcion 3 rojo");
-    console.log(showOP);
+    //console.log("opcion 3 rojo");
+    //console.log(showOP);
         for (let i = 0; i < mainBackColor.length; i++) {
           mainBackColor[i].style.backgroundColor = mainStyle3;
         }
@@ -91,8 +91,8 @@ let showOP;
 
   }
   if(showOP==4){
-    console.log("opcion 4 amarillo");
-    console.log(showOP);
+    //console.log("opcion 4 amarillo");
+    //console.log(showOP);
         for (let i = 0; i < mainBackColor.length; i++) {
           mainBackColor[i].style.backgroundColor = mainStyle4;
         }
@@ -114,7 +114,6 @@ let showOP;
 
 })();
 
-
 document.body.addEventListener("change", (e) => {
   let target = e.target;
   switch (target.id) {
@@ -123,8 +122,7 @@ document.body.addEventListener("change", (e) => {
       memoryColor = 1;
       localStorage.setItem("OpcionColor", memoryColor);
       showOP = localStorage.getItem("OpcionColor");
-      console.log(showOP);
-      //
+      //console.log(showOP);
       for (let i = 0; i < mainBackColor.length; i++) {
         mainBackColor[i].style.backgroundColor = mainStyle1; //color de fondo principal
       }
@@ -149,8 +147,7 @@ document.body.addEventListener("change", (e) => {
       memoryColor = 2;
       localStorage.setItem("OpcionColor", memoryColor);
       showOP = localStorage.getItem("OpcionColor");
-      console.log(showOP);
-      //
+      //console.log(showOP);
       for (let i = 0; i < mainBackColor.length; i++) {
         mainBackColor[i].style.backgroundColor = mainStyle2;
       }
@@ -176,8 +173,7 @@ document.body.addEventListener("change", (e) => {
       memoryColor = 3;
       localStorage.setItem("OpcionColor", memoryColor);
       showOP = localStorage.getItem("OpcionColor");
-      console.log(showOP);
-      //
+      //console.log(showOP);
       for (let i = 0; i < mainBackColor.length; i++) {
         mainBackColor[i].style.backgroundColor = mainStyle3;
       }
@@ -202,8 +198,7 @@ document.body.addEventListener("change", (e) => {
       memoryColor = 4;
       localStorage.setItem("OpcionColor", memoryColor);
       showOP = localStorage.getItem("OpcionColor");
-      console.log(showOP);
-      //
+      //console.log(showOP);
       memoryColor = 4;
       for (let i = 0; i < mainBackColor.length; i++) {
         mainBackColor[i].style.backgroundColor = mainStyle4;
