@@ -4,40 +4,80 @@
 <head>
   <meta charset="UTF-8">
   <!-- Begin Bootstrap styles -->
+  <!-- Bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- End Bootstrap styles -->
 
   <!-- Begin fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fuente Montserrat tamaños 400,700,900 -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Fuente Permanent-Marker tamaño 400-->
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <!-- End fonts -->
 
   <!-- Begin own styles -->
-  <link rel="stylesheet" href="./assets/css/categories.css">
+  <link rel="stylesheet" href="./assets/css/landing-page.css">
   <link rel="stylesheet" href="./assets/css/colors.css">
-  <link rel="stylesheet" href="./assets/css/aside-filters.css">
   <link rel="stylesheet" href="./assets/css/footer.css">
-  <link rel="stylesheet" href="./assets/css/image-header&product-shop.css">
-  <link rel="stylesheet" href="./assets/css/images-categories&shop.css">
-  <link rel="stylesheet" href="./assets/css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/navbar-footer.css">
   <!-- End own styles -->
-  <title>Página principal</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="./assets/images/icon.png">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKATE NATION</title>
 </head>
 
-<body>
-  <!-- 
-    Begin Navbar 
-    botones de lata y
-    rutas de navegacion
-  -->
+<!-- ///////////////////// BARRA DE NAVEGACION ///////////////////// -->
+
+<body class="style1">
+  <!-- Begin Navbar botones de lata y rutas de navegacion-->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="col col-lg-1 col-md-1 navbar-brand" href="#">lata01</a>
-      <a class="col col-lg-1 col-md-1 navbar-brand" href="#">lata02</a>
-      <a class="col col-lg-1 col-md-1 navbar-brand" href="#">lata03</a>
+      <!-- botones colores, pendiente  a fusionar -->
+      <div class="container">
+        <div class="row">
+          <form action="" id="colorSelect">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn border-0">
+                <input type="radio" name="options" id="option1">
+                <i class="col col-lg-1 col-md-1 navbar-brand text-primary fas fa-spray-can fa-spin"
+                  style="font-size:35px"></i>
+                </a>
+              </label>
+              <label class="btn border-0">
+                <input type="radio" name="options" id="option2">
+                <i class="col col-lg-1 col-md-1 navbar-brand text-success fas fa-spray-can fa-spin"
+                  style="font-size:35px"></i>
+                </a>
+              </label>
+              <label class="btn active border-0">
+                <input type="radio" name="options" id="option3">
+                <i class="col col-lg-1 col-md-1 navbar-brand text-danger fas fa-spray-can fa-spin"
+                  style="font-size:35px"></i>
+                </a>
+              </label>
+              <label class="btn border-0">
+                <input type="radio" name="options" id="option4">
+                <i class="col col-lg-1 col-md-1 navbar-brand text-warning fas fa-spray-can fa-spin"
+                  style="font-size:35px"></i>
+                </a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- fin botones cambio de colores -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,36 +85,240 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="col navbar-nav">
           <a class="col control" href="#"></a>
-          <a class="nav-link nav-letra" href="#">INICIO</a>
-          <a class="nav-link nav-letra" href="#">CONTACTO</a>
-          <a class="nav-link nav-letra" href="#">TIENDA</a>
-          <a class="nav-link nav-letra" href="#">NOSOTROS</a>
-          <a class="nav-letra nav-link" href="#"><i class="bi bi-cart4"></i></a>
+               <a class="nav-link nav-letra font-mainColor-s1" href="index.html">INICIO</a>
+               <a class="nav-link nav-letra font-mainColor-s1" href="store.html">TIENDA</a>
+              <a class="nav-link nav-letra font-mainColor-s1" href="login-signup.html">REGISTRARSE</a>
+               <a class="nav-link nav-letra font-mainColor-s1" href="about-us.html">NOSOTROS</a>
+               <a class="nav-link nav-letra font-mainColor-s1" href="contact.html">CONTACTO</a>
+               <a class="nav-link nav-letra  font-mainColor-s1" href="cart.html"><i class="bi bi-cart4"></i></a>
         </div>
       </div>
     </nav>
   </header>
-  <!--
-    End Navbar
-  -->
+  <!--End Navbar-->
 
-  <footer>
+<!-- ///////////////////// CINTA ///////////////////// -->
+<div class="container-fluid style1-comp font-compColor-s1 m-0 p-0">
+  <marquee direction="left" scrollamount="10">
+    <span>Nuevos productos agregados a la tienda</span><span> // </span><span>Descuentos del 20% en tablas y ruedas</span><span> // </span><span>Beneficios exclusivos para miembros<span> // </span>
+    <span>Nuevos productos agregados a la tienda</span><span> // </span><span>Descuentos del 20% en tablas y ruedas</span><span> // </span><span>Beneficios exclusivos para miembros</span><span> // </span>
+    <span>Nuevos productos agregados a la tienda</span><span> // </span><span>Descuentos del 20% en tablas y ruedas</span><span> // </span><span>Beneficios exclusivos para miembros</span><span> // </span>
+</marquee>
+</div>
+
+  <!-- ///////////////////// FOTO PRINCIPAL ///////////////////// -->
+  <div class="container-fluid">
+    <section class="principal row">
+      <img class="imagen-principal img-fluid" src="./assets/images/landing/Opcion21.jpg" alt="">
+      <article class="principal__informacion">
+        <h1 class="font-mainColor-s1">SKATE NATION</h1>
+      </article>
+    </section>
+
+    <!-- ///////////////////// IMAGENES CON TEXTO ///////////////////// -->
+    <section class="d-flex  ">
+      <div class="interior ">
+
+        <div class="columna-uno col-lg-4">
+          <div class="texto font-mainColor-s1 text-center">
+            <h2>Rodando para ti ...</h2>
+          </div> 
+          <div class="text-center">
+            <div>
+              <img src="assets/images/landing/Opcion19.jpg" width="400px">
+            </div>
+          </div>
+          <div class="font-mainColor-s1  text-center">
+            <p>
+              ¡Aquí te entendemos y cubrimos tus expectativas y necesidades!
+            </p>
+          </div>
+        </div>
+
+        <div class="columna-dos col-lg-4 text-center">
+          <div class="texto font-mainColor-s1 text-center">
+            <p>
+              Para muchos, el skateboarding es más que un deporte, es amor y una parte fundamental de sus vidas.
+            </p>
+            <p>
+              ❤
+            </p>
+          </div>     
+          <div>
+            <div>
+              <img src="assets/images/landing/opcion24.jpg">
+            </div>
+          </div>
+          <div class="texto font-mainColor-s1 text-center">
+            <p>
+              <!-- <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/skateboard_1f6f9.png"> -->
+              <!-- <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/emojipedia/113/skateboard_1f6f9.png"> -->
+            </p>
+            <p>
+              Compartimos contigo esa pasion y la sensación del skateboarding.
+            </p>
+          </div>
+        </div>
+
+        <div class="columna-tres col-lg-4 font-mainColor-s1 text-center">
+          <h2>since 2021.</h2>
+          <div>
+            <div>
+              <img src="assets/images/landing/opcion23.jpg" width="400px">
+            </div>
+            <p>
+              Gracias a nosotros, y por supuesto a tu buen gusto, todos te voltearan a ver.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ///////////////////// RESEÑAS ///////////////////// -->
+    <section class="reseñas style1-comp">
+      <div>
+        <figure class="reseñas--img ">
+          <img class="img img-fluid " src="assets/images/landing/Opcion5.jpg" alt="" />
+        </figure>
+      </div>
+      <div class="reseñas--info contenedor-info font-compColor-s1 ">
+        <h3>Se parte de Skate Nation ...</h3>
+        <h2>
+          <p>y recibe ofertas sobre tus marcas favoritas o productos añadidos recientementemente</p>
+          <p>Sabías que...</p>
+          <p>Recomendaciones...</p>
+          <p>Las mejores ofertas...</p>
+        </h2>
+      </div>
+
+    </section>
+
+    <!-- ///////////////////// CARRUSEL DE BOOSTRAP ///////////////////// -->
+    <div id="carouselExampleIndicators" class="carousel slide contenedor-carrusel" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/landing/carrusel1.jpg" class="d-block w-100 img-carrusel" alt="...">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/images/landing/Opcion18.jpg" class="d-block w-100 img-carrusel" alt="...">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/images/landing/carrusel3.jpg" class="d-block w-100 img-carrusel" alt="...">
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span></a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span></a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- ///////////////////// OFERTAS ///////////////////// -->
+    <!-- <section class="ofertas container mt-5"> 
+  <article class="ofertas-informacion col-4 font-mainColor-s1">
+    <h1>new</h1>
+    <img class="imagen-ofertas" src="assets/images/landing/Ofertas1.jpg" alt="">
+  </article>
+  
+  <article class="ofertas-informacion col-4 font-mainColor-s1">
+    <h1>sales</h1>
+    <img class="imagen-ofertas" src="assets/images/landing/Ofertas6.jpg" alt="">
+  </article>
+
+  <article class="ofertas-informacion col-4 font-mainColor-s1">
+    <h1>outlet</h1>
+    <img class="imagen-ofertas" src="assets/images/landing/Ofertas4.png" alt="">
+  </article>
+</section> -->
+
+     <!-- ///////////////////// TENNIS ///////////////////// -->
+     <div class="tennis-container">
+      <span id="tennis1">
+        <img src="./assets/images/landing/low-blue-D.png" alt="" class="img-tennis" />
+      </span>
+
+      <span id="tennis2">
+        <img src="./assets/images/landing/low-green-D.png" alt="" class="img-tennis" />
+      </span>
+
+      <span id="tennis3">
+        <img src="./assets/images/landing/low-red-D.png" alt="" class="img-tennis" />
+      </span>
+
+      <span id="tennis4">
+        <img src="./assets/images/landing/low-yellow-D.png" alt="" class="img-tennis" />
+      </span>
+    </div>
+
+    <!-- ///////////////////// FOTO SECUNDARIA ///////////////////// -->
+    <article class="secundaria"><img class="secundaria-imagen" src="./assets/images/landing/ciudad.png" alt="">
+    </article>
+  </div>
+
+  <!-- Begin footer -->
+  <footer class="footer d-flex  style1-comp">
+    <div class="col-sm-2 col-md-2 col-lg-2 logo">
+      <img class="row img rounded mx-auto d-block max-width: 100%" id="logo" src="./assets/images/footer/logo-s1.png"
+        alt="Logo Santa Cruz - recognized Skateboarding brand" />
+      <label class="text-center col font-titles font-compColor-s1">SKATE NATION</label>
+    </div>
+
+    <div class="col-sm-6 col-md-6 col-lg-8 copyright">
+      <h5 class="footer-letra font-compColor-s1 col font-titles text-center">Sobre nosotros</h5>
+      <p class="font-compColor-s1 col  text-center simple-text"> Este proyecto fue ideado para dar respuesta a la
+        necesidad de productos skate de excelente calidad y precio.
+        Sabemos
+        que si no tenemos un medio adecuado para dar conocer nuestra idea, podríamos quedar en el olvido. Es por eso
+        que, con
+        lo aprendido en Generation México, logramos desarrollar esta aplicación web que no sólo incluye los productos,
+        sino nuestros conocimientos y habilidades adquiridas... <a class="  saberMas" href="about-us.html">saber más</a>
+      </p>
+
+    </div>
+
+    <div class="col-sm-4 col-md-4 col-lg-2  social-network ">
+      <h5 class="col text-center font-compColor-s1 font-titles">Redes sociales</h5>
+
+      <div class="col text-center">
+        <a class="footer-letra" href="#"><i class=" text-center bi bi-facebook footer-letra font-compColor-s1"></i></a>
+        <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Facebook</label>
+      </div>
+      <div class="col text-center">
+        <a class="footer-letra" href="#"><i class=" text-center bi bi-instagram footer-letra font-compColor-s1"></i></a>
+        <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Instagram</label>
+      </div>
+    </div>
   </footer>
-
-  <!-- Begin Bootstrap -->
+  <!-- End footer -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
   </script>
-  <!-- End Bootstrap -->
-
-
-
-  <!-- Begin own Javascript files -->
   <script src="./assets/js/change-color.js"></script>
-  <!-- End own Javascript files -->
+  <script src="./assets/js/tennis-color.js"></script>
 </body>
 
 </html>
