@@ -32,6 +32,7 @@
   <!-- favicon -->
   <link rel="icon" type="image/png" href="./assets/images/icon.png">
   <title>Carrito de Compras</title>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body class="style1">
@@ -65,7 +66,9 @@
                   style="font-size:35px"></i>
                 </a>
               </label>
-              <label class="btn border-0">
+              <label class="btn 
+                   
+                   der-0">
                 <input type="radio" name="options" id="option4">
                 <i class="col col-lg-1 col-md-1 navbar-brand text-warning fas fa-spray-can fa-spin"
                   style="font-size:35px"></i>
@@ -164,7 +167,7 @@
         <div class="card-body">
           <h5 class="font-mainColor-s1">Titulo</h5>
           <p class="font-mainColor-s1">precio</p>
-          <button class="btn btn-dark ">Comprar</button>
+          <button class="btn btn-dark " onclick="swal('Producto agregado')">Comprar</button>
         </div>
       </div>
     </div>
@@ -181,7 +184,7 @@
     <td class="font-weight-bold">$ <span class="total font-mainColor-s1">5000</span></td>
   </template>
 
-  <!-- Begin footer -->
+   <!-- Begin footer -->
   <footer class="footer d-flex  style1-comp">
     <div class="col-sm-2 col-md-2 col-lg-2 logo">
       <img class="row img rounded mx-auto d-block max-width: 100%" id="logo" src="./assets/images/footer/logo-s1.png"
@@ -202,17 +205,6 @@
 
     </div>
 
-<<<<<<< HEAD
-        <div class="col text-center">
-          <a class="footer-letra" href="#"><i class=" text-center bi bi-facebook footer-letra font-compColor-s1"></i></a>
-          <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Facebook</label>
-        </div>
-        <div class="col text-center">
-          <a class="footer-letra" href="#"><i class=" text-center bi bi-instagram footer-letra font-compColor-s1"></i></a>
-          <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Instagram</label>
-        </div>
-        
-=======
     <div class="col-sm-4 col-md-4 col-lg-2  social-network ">
       <h5 class="col text-center font-compColor-s1 font-titles">Redes sociales</h5>
 
@@ -223,15 +215,6 @@
       <div class="col text-center">
         <a class="footer-letra" href="#"><i class=" text-center bi bi-instagram footer-letra font-compColor-s1"></i></a>
         <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Instagram</label>
-      </div>
-      <div class="col text-center">
-        <a class="footer-letra" href="#"><i class=" text-center bi bi-twitter footer-letra font-compColor-s1"></i></a>
-        <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Twitter</label>
->>>>>>> fc45f6a7dc530ade86680916dadfef4de38758b6
-      </div>
-      <div class="col text-center">
-        <a class="footer-letra" href="#"><i class=" text-center bi bi-youtube footer-letra font-compColor-s1"></i></a>
-        <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Youtube</label>
       </div>
     </div>
   </footer>
