@@ -1,9 +1,20 @@
+/* audio::-webkit-media-controls-panel
+audio::-webkit-media-controls-volume-slider-container
+
+audio::-webkit-media-controls-volume-slider */
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  width: 80px;
+  height: 20px;
+  position: sticky;
+}
+
 /* ///////////////////// SCROLLBAR ///////////////////// */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #2569B8;
+  background: #2569b8;
 }
 ::-webkit-scrollbar-thumb {
   background: #002b5c;
