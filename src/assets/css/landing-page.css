@@ -1,12 +1,25 @@
-/* audio::-webkit-media-controls-panel
-audio::-webkit-media-controls-volume-slider-container
+.sec-audio {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1rem;
+  margin-bottom: 5px;
+}
+@media (min-width: 1000px) {
+  .sec-audio {
+    margin-top: -2rem;
+  }
+}
 
-audio::-webkit-media-controls-volume-slider */
+audio:hover,
+audio:focus,
+audio:active {
+  box-shadow: 15px 15px 20px #002b5c;
+  transform: scale(1.05);
+}
 audio {
-  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
-  width: 400px;
-  height: 20px;
-  position: sticky;
+  transition: all 0.5s linear;
+  box-shadow: 2px 2px 4px 0px rgb(20, 20, 20);
+  border-radius: 20px;
 }
 
 /* ///////////////////// SCROLLBAR ///////////////////// */
