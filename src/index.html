@@ -36,6 +36,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SKATE NATION</title>
+  <!-- player -->
+       <script src="https://sh20raj.github.io/AudiPlay/audiplay.js"></script>
 </head>
 
 <!-- ///////////////////// BARRA DE NAVEGACION ///////////////////// -->
@@ -97,6 +99,21 @@
 </header>
 <!--End Navbar-->
 
+<!-- audio section begins-->
+
+<section class="sec-audio font-mainColor-s1"> 
+  <audio   id="myVideo" controls class="audiplay font-mainColor-s1">
+    <source src="../si-senor.mp3" type="audio/mp3"> 
+  </audio> 
+</section>
+ 
+<script>
+  var vid = document.getElementById("myVideo");
+vid.volume = .1; 
+</script>
+
+<!-- audio section ends-->
+
 <!-- ///////////////////// CINTA ///////////////////// -->
 <div class="container-fluid style1-comp font-compColor-s1 m-0 p-0">
   <marquee direction="left" scrollamount="10">
@@ -107,16 +124,7 @@
 </div>
 <!-- ///////////////////// FINAL CINTA ///////////////////// -->
 
-<!-- audio section begins-->
-<section>
-<audio id="myVideo" src="../si-senor.mp3" autoplay controls></audio>
-<script>
-  var vid = document.getElementById("myVideo");
-vid.volume = 0.2; 
-</script>
-</section>
-  
-<!-- audio section ends-->
+
 
 
   <!-- ///////////////////// FOTO PRINCIPAL ///////////////////// -->
