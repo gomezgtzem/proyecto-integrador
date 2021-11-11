@@ -9,6 +9,11 @@
     margin-top: -2rem;
   }
 }
+@media (max-width: 867px) {
+  .sec-audio {
+    display: none;
+  }
+}
 
 audio:hover,
 audio:focus,
