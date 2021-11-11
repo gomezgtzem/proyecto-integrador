@@ -102,15 +102,24 @@
 <!-- audio section begins-->
 
 <section class="sec-audio font-mainColor-s1"> 
-  <audio   id="myVideo" controls class="audiplay font-mainColor-s1">
+  <audio   id="myVideo" controls autoplay class="audiplay font-mainColor-s1">
     <source src="../si-senor.mp3" type="audio/mp3"> 
   </audio> 
-</section>
- 
+
 <script>
   var vid = document.getElementById("myVideo");
 vid.volume = .1; 
+const myvideo = document.getElementById('myVideo')
+let innerWidth = window.innerWidth
+console.log(innerWidth)
+window.addEventListener('rezise',()=>{
+  console.log(innerWidth)
+})
+if (innerWidth <=867){
+  myvideo.innerHTML=''
+}
 </script>
+</section>
 
 <!-- audio section ends-->
 
