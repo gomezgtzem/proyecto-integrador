@@ -32,3 +32,21 @@ a:hover {
 .button:hover {
   background-color: #dc3545;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #2569B8;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #002b5c;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #002b5c;
+}
