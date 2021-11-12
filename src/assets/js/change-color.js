@@ -219,4 +219,12 @@ document.body.addEventListener("change", (e) => {
       $logo.src = "./assets/images/footer/logo-s4.png";
       break;
   }
+
 });
+
+
+document.addEventListener("mousemove", customizeCursor);
+
+function customizeCursor(e) {
+  cursor.style.top = e.pageY + "px";
+  cursor.style.left = e.pageX + "px";
