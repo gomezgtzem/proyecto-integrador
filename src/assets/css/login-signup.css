@@ -11,14 +11,8 @@
   max-height: 600px;
   padding-bottom: 40px;
   background: transparent;
-<<<<<<< HEAD
   border: 10px solid rgba(0, 43, 92, 1);
   margin-top: 4rem;
-=======
-  border-width: 5px;
-  border-color:rgba(0, 43, 92, 1);
-  border-style: solid;
->>>>>>> fc45f6a7dc530ade86680916dadfef4de38758b6
 }
 .wrapper .slide-controls {
   position: relative;
@@ -50,7 +44,7 @@
   width: 50%;
   left: 0;
   z-index: 0;
- /*  background-color: rgba(37, 105, 184, 1); */
+  /*  background-color: rgba(37, 105, 184, 1); */
 }
 input[type="radio"] {
   display: none;
@@ -152,16 +146,10 @@ form .btn input[type="submit"] {
   font-weight: 500;
   cursor: pointer;
 }
-<<<<<<< HEAD
 ::placeholder {
   /* letra de formulario */
   color: black;
   font-family: "Montserrat", sans-serif;
-=======
-::placeholder { 
-  color:black;
-  font-family: 'Montserrat', sans-serif;
->>>>>>> fc45f6a7dc530ade86680916dadfef4de38758b6
   font-weight: 700;
   font-size: 15px;
 }

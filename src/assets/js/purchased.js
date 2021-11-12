@@ -1,15 +1,16 @@
 const $list = document.querySelector("#list");
-const $total = document.querySelector(".total");
+var $total = document.querySelector(".total");
 
 let cartPurchased = JSON.parse(localStorage.getItem("cart"));
 
-let total = JSON.parse(localStorage.getItem("total"));
-console.log(total);
-$total.innerHTML = `Total $${total}`;
+var total = JSON.parse(localStorage.getItem("total"));
+
+/* console.log(total); */
 
 const newPurchasedCart = Object.values(cartPurchased);
-
-(() => {
+if (cartPurchased === false && total > 1) {
+  $total.innerHTML = `No has comprado nada :(`;
+} else {
   newPurchasedCart.map((item) => {
     ({ title, precio, cantidad, total } = item);
     let listItem = document.createElement("li");
@@ -20,7 +21,9 @@ const newPurchasedCart = Object.values(cartPurchased);
     `;
     let newPrecio = parseInt(precio);
     newPrecio += newPrecio;
-    console.log(newPrecio);
+    /*       console.log(newPrecio); */
     $list.appendChild(listItem);
+    let finalTotal = localStorage.getItem("total");
+    $total.innerHTML = `Total $${finalTotal}`;
   });
-})();
+}

@@ -1,9 +1,38 @@
+.sec-audio {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1rem;
+  margin-bottom: 5px;
+}
+@media (min-width: 1000px) {
+  .sec-audio {
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 867px) {
+  .sec-audio {
+    display: none;
+  }
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+  box-shadow: 15px 15px 20px #002b5c;
+  transform: scale(1.05);
+}
+audio {
+  transition: all 0.5s linear;
+  box-shadow: 2px 2px 4px 0px rgb(20, 20, 20);
+  border-radius: 20px;
+}
+
 /* ///////////////////// SCROLLBAR ///////////////////// */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #2569B8;
+  background: #2569b8;
 }
 ::-webkit-scrollbar-thumb {
   background: #002b5c;
