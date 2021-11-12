@@ -1,3 +1,7 @@
+body {
+  cursor: none;
+}
+
 .barraFondo {
   background-color: #002b5c;
 }
@@ -80,7 +84,6 @@
 }
 a:hover{
   text-decoration: underline;
-} */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -99,5 +102,3 @@ a:hover{
 
 ::-webkit-scrollbar-thumb:hover {
   background: #002b5c;
-}
-

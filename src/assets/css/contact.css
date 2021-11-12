@@ -81,3 +81,22 @@ background-image: url("collage.png"); */
  */
  /* style 4
 linear-gradient(90deg, rgba(254,196,81,1) 0%, rgba(254,196,81,0.6561975131849616) 0%), url("collage.png") */
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #2569B8;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background: #002b5c;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #002b5c;
+  }
