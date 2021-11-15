@@ -7,6 +7,7 @@ body {
   width: 100%;
   place-items: center;
   display: grid;
+  cursor: none;
 }
 /* 4 opciones de colores */
 /* borde */
@@ -69,6 +70,6 @@ body {
 .font-mainColor-s4 {
   color: rgba(16, 71, 110, 1);
 }
-/* bordes */
+
 
 
