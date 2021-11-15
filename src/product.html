@@ -23,7 +23,8 @@
     <!-- Fuente Permanent-Marker tamaño 400-->
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <!-- End fonts -->
-
+    <!-- loader -->
+    <link rel="stylesheet" href="./assets/css/loader.css">
     <!-- Begin own styles -->
     <link rel="stylesheet" href="./assets/css/product.css">
     <link rel="stylesheet" href="./assets/css/colors.css">
@@ -41,43 +42,43 @@
   </head>
 
 
-  <body class="style1">
+  <body class="style1 hidden">
+    <div class="loader-centrado" id="preloader">
+      <img src="./assets/images/loader/llanta.gif" alt="llanta" class="llanta-loader"> 
+      <p class="loader-text font-mainColor-s1">Skate Nation</p>
+      <div></div>
+      <div></div>
+      <div></div>
+      </div>
+    </div>
 <!-- Begin Navbar botones de lata y rutas de navegacion-->
 <header>
   <nav class="navbar navbar-expand-lg navbar-light style1">
     <!-- botones colores -->
-    <div class="container">
-      <div class="row">
-        <form action="" id="colorSelect">
-          <div class="btn-group btn-group-toggle " data-toggle="buttons">
-            <label class="btn border-0">
-              <input type="radio" name="options" id="option1">
-              <i class="col col-lg-1 col-md-1 navbar-brand text-primary fas fa-spray-can p-0 mx-0"
-                style="font-size:35px"></i>
-              </a>
-            </label>
-            <label class="btn border-0">
-              <input type="radio" name="options" id="option2">
-              <i class="col col-lg-1 col-md-1 navbar-brand text-success fas fa-spray-can p-0 mx-0"
-                style="font-size:35px"></i>
-              </a>
-            </label>
-            <label class="btn active border-0">
-              <input type="radio" name="options" id="option3">
-              <i class="col col-lg-1 col-md-1 navbar-brand text-danger fas fa-spray-can p-0 mx-0"
-                style="font-size:35px"></i>
-              </a>
-            </label>
-            <label class="btn border-0">
-              <input type="radio" name="options" id="option4">
-              <i class="col col-lg-1 col-md-1 navbar-brand text-warning fas fa-spray-can p-0 mx-0"
-                style="font-size:35px"></i>
-              </a>
-            </label>
-          </div>
-        </form>
+    <form action="" id="colorSelect">
+      <div class="btn-group btn-group-toggle " data-toggle="buttons">
+        <label class="btn border-0">
+          <input type="radio" name="options" id="option1">
+          <i class="col col-lg-1 col-md-1 navbar-brand text-primary fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+          </a>
+        </label>
+        <label class="btn border-0">
+          <input type="radio" name="options" id="option2">
+          <i class="col col-lg-1 col-md-1 navbar-brand text-success fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+          </a>
+        </label>
+        <label class="btn active border-0">
+          <input type="radio" name="options" id="option3">
+          <i class="col col-lg-1 col-md-1 navbar-brand text-danger fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+          </a>
+        </label>
+        <label class="btn border-0">
+          <input type="radio" name="options" id="option4">
+          <i class="col col-lg-1 col-md-1 navbar-brand text-warning fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+          </a>
+        </label>
       </div>
-    </div>
+    </form>
     <!-- fin botones cambio de colores -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -258,6 +259,9 @@
     <!-- Begin own Javascript files -->
     <script src="assets/js/change-color.js"></script> <!-- cambia elementos de color -->
     <!-- End own Javascript files -->
+    <!-- loader -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/loader.js"></script>
   </body>
 
 </html>
