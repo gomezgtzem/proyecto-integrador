@@ -40,30 +40,38 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light style1">
       <!-- botones colores -->
-      <form action="" id="colorSelect">
-        <div class="btn-group btn-group-toggle " data-toggle="buttons">
-          <label class="btn border-0">
-            <input type="radio" name="options" id="option1">
-            <i class="col col-lg-1 col-md-1 navbar-brand text-primary fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
-            </a>
-          </label>
-          <label class="btn border-0">
-            <input type="radio" name="options" id="option2">
-            <i class="col col-lg-1 col-md-1 navbar-brand text-success fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
-            </a>
-          </label>
-          <label class="btn active border-0">
-            <input type="radio" name="options" id="option3">
-            <i class="col col-lg-1 col-md-1 navbar-brand text-danger fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
-            </a>
-          </label>
-          <label class="btn border-0">
-            <input type="radio" name="options" id="option4">
-            <i class="col col-lg-1 col-md-1 navbar-brand text-warning fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
-            </a>
-          </label>
+      <div class="container">
+        <div class="row">
+          <form action="" id="colorSelect">
+            <div class="btn-group btn-group-toggle " data-toggle="buttons">
+              <label class="btn border-0">
+                <input type="radio" name="options" id="option1">
+                <i class="col col-lg-1 col-md-1 navbar-brand text-primary fas fa-spray-can p-0 mx-0"
+                  style="font-size:35px"></i>
+                </a>
+              </label>
+              <label class="btn border-0">
+                <input type="radio" name="options" id="option2">
+                <i class="col col-lg-1 col-md-1 navbar-brand text-success fas fa-spray-can p-0 mx-0"
+                  style="font-size:35px"></i>
+                </a>
+              </label>
+              <label class="btn active border-0">
+                <input type="radio" name="options" id="option3">
+                <i class="col col-lg-1 col-md-1 navbar-brand text-danger fas fa-spray-can p-0 mx-0"
+                  style="font-size:35px"></i>
+                </a>
+              </label>
+              <label class="btn border-0">
+                <input type="radio" name="options" id="option4">
+                <i class="col col-lg-1 col-md-1 navbar-brand text-warning fas fa-spray-can p-0 mx-0"
+                  style="font-size:35px"></i>
+                </a>
+              </label>
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
       <!-- fin botones cambio de colores -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -146,12 +154,14 @@
   <!-- Este template se usará en las páginas de productos -->
   <template id="template-card">
     <div class="col-12 mb-2 col-md-4 col-sm-12 mt-4">
-      <div class="card">
-        <img src="" alt="" class="card-img-top" />
+      <div class="card bg-transparent border-0">
+        <img src="" class="img-card" alt="" class="card-img-top" />
         <div class="card-body">
-          <h5 class="font-mainColor-s1">Titulo</h5>
-          <p class="font-mainColor-s1">precio</p>
-          <button class="btn btn-dark btn-compra" onclick=" swal('¡Producto agregado al carrito!')">Comprar</button>
+          <h5 class="font-mainColor-s1 text-center titulo-card">Titulo</h5>
+          <p class="font-mainColor-s1 text-center precio-card">precio</p>
+          
+            <button class="btn btn-dark btn-compra font-compColor-s1 btn-lg button-card style1-comp" onclick=" swal('¡Producto agregado al carrito!')">Comprar</button>
+          
           <!-- swal('¡Producto agregado al carrito!') -->
         </div>
       </div>
@@ -169,7 +179,7 @@
     <td class="font-weight-bold">$ <span class="total font-mainColor-s1">5000</span></td>
   </template>
 
-  <!-- Begin footer -->
+   <!-- Begin footer -->
   <footer class="footer d-flex  style1-comp">
     <div class="col-sm-2 col-md-2 col-lg-2 logo">
       <img class="row img rounded mx-auto d-block max-width: 100%" id="logo" src="./assets/images/footer/logo-s1.png"
