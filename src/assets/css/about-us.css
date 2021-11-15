@@ -1,7 +1,3 @@
-body {
-  cursor: none;
-}
-
 .barraFondo {
   background-color: #002b5c;
 }
@@ -41,10 +37,11 @@ body {
 }
 
 .img-avatar {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border-width: 5px;
   border-style: solid;
-  
 }
 
 .avatar-titulo {
@@ -57,3 +54,55 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+
+
+.icon-next { 
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+
+.icon-prev { 
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+
+#myCarousel {
+  margin-left: 50px; 
+  margin-right: 50px;
+}
+.carousel-control {
+	top: 50%;
+  margin: 50px;
+}
+
+.carousel-control-prev {
+  margin-left: -25px;
+}
+
+.carousel-control.next {
+  margin-right: -25px;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  header nav .navbar-collapse .navbar-nav .nav-letra {
+    font-size: 50px!important;
+  }
+  header{
+    min-height: 6vh!important;
+    height: auto;
+  }
+  section .categories-content aside{
+    display: none;
+  }
+  .section-container .title-categories {
+    font-size: 150px;
+  }
+  .filter-text {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
