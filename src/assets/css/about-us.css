@@ -1,3 +1,7 @@
+body {
+  cursor: none;
+}
+
 .barraFondo {
   background-color: #002b5c;
 }
@@ -35,28 +39,21 @@
 .img-nombre {
   display: inline;
 }
-a{
-  color: #002b5c;
-}
-a:hover{
-  text-decoration: underline;
-}
 
-::-webkit-scrollbar {
-  width: 8px;
+.img-avatar {
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  
 }
 
-
-::-webkit-scrollbar-track {
-  background: #2569B8;
+.avatar-titulo {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
 }
 
-
-::-webkit-scrollbar-thumb {
-  background: #002b5c;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-  background: #002b5c;
+.avatar-redes {
+  display: flex;
+  justify-content: space-between;
 }
