@@ -1,38 +1,65 @@
 [
   {
-    "precio": 500,
+    "precio": 1000,
     "id": 1,
-    "title": "Producto: Patineta chiquita",
-    "thumbnailUrl": "assets/images/products/producto/producto1.png"
+    "title": "Producto: Patineta Penny (Roja)",
+    "thumbnailUrl": "assets/images/products/producto/22/1.png"
   },
   {
-    "precio": 300,
+    "precio": 1000,
     "id": 2,
-    "title": "Producto: Patineta chiquita",
-    "thumbnailUrl": "assets/images/products/producto/producto1.png"
+    "title": "Producto: Patineta Penny (Verde)",
+    "thumbnailUrl": "assets/images/products/producto/22/2.png"
   },
   {
-    "precio": 100,
+    "precio": 800,
     "id": 3,
-    "title": "Producto: Patineta chiquita",
-    "thumbnailUrl": "assets/images/products/producto/producto1.png"
+    "title": "Producto: Patineta Tipo Penny (Azul)",
+    "thumbnailUrl": "assets/images/products/producto/22/3.png"
   },
   {
-    "precio": 50,
+    "precio": 800,
     "id": 4,
-    "title": "Producto: Patineta chiquita",
-    "thumbnailUrl": "assets/images/products/producto/producto1.png"
+    "title": "Producto: Patineta Tipo Penny (Amarilla)",
+    "thumbnailUrl": "assets/images/products/producto/22/4.png"
   },
   {
-    "precio": 10,
+    "precio": 1000,
     "id": 5,
-    "title": "Producto: Patineta chiquita",
-    "thumbnailUrl": "assets/images/products/producto/producto1.png"
+    "title": "Producto: Patineta Penny (V - Milicia)",
+    "thumbnailUrl": "assets/images/products/producto/22/5.png"
   },
   {
-    "precio": 150,
+    "precio": 800,
     "id": 6,
-    "title": "Producto: Patineta chiquita",
-    "thumbnailUrl": "assets/images/products/producto/producto1.png"
+    "title": "Producto: Patineta Tipo Penny (Negra)",
+    "thumbnailUrl": "assets/images/products/producto/22/6.png"
+  },
+  {
+    "precio": 1000,
+    "id": 7,
+    "title": "Producto: Patineta Tipo Penny (Azul)",
+    "thumbnailUrl": "assets/images/products/producto/22/7.png"
+  },
+  {
+    "precio": 1000,
+    "id": 8,
+    "title": "Producto: Patineta Tipo Penny (Madera)",
+    "thumbnailUrl": "assets/images/products/producto/22/8.png"
+  },
+  {
+    "precio": 1000,
+    "id": 9,
+    "title": "Producto: Patineta Penny (Rosa)",
+    "thumbnailUrl": "assets/images/products/producto/22/9.png"
+  },
+  {
+    "precio": 1000,
+    "id": 10,
+    "title": "Producto: Patineta Penny (Rosa)",
+    "thumbnailUrl": "assets/images/products/producto/22/11.png"
   }
+
+
+
 ]

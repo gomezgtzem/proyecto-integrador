@@ -48,3 +48,12 @@ a:hover {
   margin-top: -5px;
   font-weight: bold;
 }
+.img-card:hover{
+  transform: scale(1.30);
+  
+}
+img{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
