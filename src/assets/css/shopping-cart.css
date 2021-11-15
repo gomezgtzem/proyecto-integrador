@@ -32,3 +32,28 @@ a:hover {
 .button:hover {
   background-color: #dc3545;
 }
+.button-card {
+  width: 300px;
+  color: rgba(37, 105, 184, 1);
+  display: block;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 15px;
+}
+.titulo-card{
+  margin-bottom: 10px;
+}
+.precio-card {
+  margin-top: -5px;
+  font-weight: bold;
+}
+.img-card:hover{
+  transform: scale(1.30);
+  
+}
+img{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
