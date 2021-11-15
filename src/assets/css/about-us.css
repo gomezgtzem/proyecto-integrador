@@ -1,7 +1,3 @@
-body {
-  cursor: none;
-}
-
 .barraFondo {
   background-color: #002b5c;
 }
@@ -44,16 +40,6 @@ a{
 }
 a:hover{
   text-decoration: underline;
-}
-
-.cursor {
-  position:absolute;
-  width: 20px;
-  height: 20px;
-  mix-blend-mode: difference;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: 200ms ease-out;
 }
 
 ::-webkit-scrollbar {
