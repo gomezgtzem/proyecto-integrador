@@ -78,7 +78,6 @@
   margin: 50px;
 }
 
-
 .carousel-control-prev {
   margin-left: -25px;
 }
@@ -105,32 +104,5 @@
     font-size: 35px;
     text-align: center;
   }
-}
-
-
-/* a{
-  color: #002b5c;
-}
-a:hover{
-  text-decoration: underline;
-} */
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-
-::-webkit-scrollbar-track {
-  background: #2569B8;
-}
-
-
-::-webkit-scrollbar-thumb {
-  background: #002b5c;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-  background: #002b5c;
 }
 
