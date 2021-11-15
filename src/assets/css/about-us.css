@@ -41,3 +41,22 @@ a{
 a:hover{
   text-decoration: underline;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #2569B8;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #002b5c;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #002b5c;
+}

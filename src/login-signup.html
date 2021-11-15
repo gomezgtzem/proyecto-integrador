@@ -49,38 +49,30 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light style1">
       <!-- botones colores -->
-      <div class="container">
-        <div class="row">
-          <form action="" id="colorSelect">
-            <div class="btn-group btn-group-toggle " data-toggle="buttons">
-              <label class="btn border-0">
-                <input type="radio" name="options" id="option1">
-                <i class="col col-lg-1 col-md-1 navbar-brand text-primary fas fa-spray-can p-0 mx-0"
-                  style="font-size:35px"></i>
-                </a>
-              </label>
-              <label class="btn border-0">
-                <input type="radio" name="options" id="option2">
-                <i class="col col-lg-1 col-md-1 navbar-brand text-success fas fa-spray-can p-0 mx-0"
-                  style="font-size:35px"></i>
-                </a>
-              </label>
-              <label class="btn active border-0">
-                <input type="radio" name="options" id="option3">
-                <i class="col col-lg-1 col-md-1 navbar-brand text-danger fas fa-spray-can p-0 mx-0"
-                  style="font-size:35px"></i>
-                </a>
-              </label>
-              <label class="btn border-0">
-                <input type="radio" name="options" id="option4">
-                <i class="col col-lg-1 col-md-1 navbar-brand text-warning fas fa-spray-can p-0 mx-0"
-                  style="font-size:35px"></i>
-                </a>
-              </label>
-            </div>
-          </form>
+      <form action="" id="colorSelect">
+        <div class="btn-group btn-group-toggle " data-toggle="buttons">
+          <label class="btn border-0">
+            <input type="radio" name="options" id="option1">
+            <i class="col col-lg-1 col-md-1 navbar-brand text-primary fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+            </a>
+          </label>
+          <label class="btn border-0">
+            <input type="radio" name="options" id="option2">
+            <i class="col col-lg-1 col-md-1 navbar-brand text-success fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+            </a>
+          </label>
+          <label class="btn active border-0">
+            <input type="radio" name="options" id="option3">
+            <i class="col col-lg-1 col-md-1 navbar-brand text-danger fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+            </a>
+          </label>
+          <label class="btn border-0">
+            <input type="radio" name="options" id="option4">
+            <i class="col col-lg-1 col-md-1 navbar-brand text-warning fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+            </a>
+          </label>
         </div>
-      </div>
+      </form>
       <!-- fin botones cambio de colores -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,10 +105,10 @@
             <div class="form-inner">
                 <form action="#" class="login">
                     <div class="field">
-                        <input type="text" class="font-mainColor-s1 bordS" placeholder="Dirección e-mail" required>
+                        <input type="text" class="font-mainColor-s1 bordS" placeholder="Dirección e-mail" name="correo" required>
                     </div>
                     <div class="field">
-                        <input type="password" class="font-mainColor-s1 bordS" placeholder="Contraseña" required>
+                        <input type="password" class="font-mainColor-s1 bordS" value="" placeholder="Contraseña" name="password" required>
                     </div>
                     <div class="pass-link">
                         <a href="#" class="font-mainColor-s1 font-bold">¿Olvidaste tu contraseña?</a>
@@ -131,16 +123,16 @@
                 </form>
                 <form action="#" class="signup">
                     <div class="field">
-                        <input type="text" class="font-mainColor-s1 bordS" placeholder="Nombre Completo" required>
+                        <input type="text" class="font-mainColor-s1 bordS" placeholder="Nombre Completo"  name="nombre_completo" required>
                     </div>
                     <div class="field">
-                        <input type="text" class="font-mainColor-s1 bordS" placeholder="Dirección e-mail" required>
+                        <input type="text" class="font-mainColor-s1 bordS" placeholder="Dirección e-mail" name="correo" required>
                     </div>
                     <div class="field">
-                        <input type="password" class="font-mainColor-s1 bordS" placeholder="Contraseña" required>
+                        <input type="password" class="font-mainColor-s1 bordS" placeholder="Contraseña" name="password" required>
                     </div>
                     <div class="field">
-                        <input type="password" class="font-mainColor-s1 bordS" placeholder="Confirmar contraseña"
+                        <input type="password" class="font-mainColor-s1 bordS" name="password" placeholder="Confirmar contraseña"
                             required>
                     </div>
                     <div class="field btn bordS">
