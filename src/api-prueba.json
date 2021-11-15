@@ -1,38 +1,65 @@
 [
   {
-    "precio": 500,
+    "precio": 1000,
     "id": 1,
-    "title": "Tabla chida",
-    "thumbnailUrl": "http://cdn.shopify.com/s/files/1/0125/2822/2298/products/TeenwolfWeb2_grande.jpg?v=1615260120"
+    "title": "Producto: Patineta Penny (Roja)",
+    "thumbnailUrl": "assets/images/products/producto/22/1.png"
   },
   {
-    "precio": 300,
+    "precio": 1000,
     "id": 2,
-    "title": "Tabla Dark",
-    "thumbnailUrl": "https://worldstreet.com.mx/wp-content/uploads/2021/02/apil9daaa__17027.1610573469-600x600.jpg"
+    "title": "Producto: Patineta Penny (Verde)",
+    "thumbnailUrl": "assets/images/products/producto/22/2.png"
   },
   {
-    "precio": 100,
+    "precio": 800,
     "id": 3,
-    "title": "Tabla God",
-    "thumbnailUrl": "https://media.kohlsimg.com/is/image/kohls/4411043?wid=600&hei=600&op_sharpen=1"
+    "title": "Producto: Patineta Tipo Penny (Azul)",
+    "thumbnailUrl": "assets/images/products/producto/22/3.png"
   },
   {
-    "precio": 50,
+    "precio": 800,
     "id": 4,
-    "title": "Tablón",
-    "thumbnailUrl": "https://picsum.photos/id/30/600"
+    "title": "Producto: Patineta Tipo Penny (Amarilla)",
+    "thumbnailUrl": "assets/images/products/producto/22/4.png"
   },
   {
-    "precio": 10,
+    "precio": 1000,
     "id": 5,
-    "title": "Tabla Devil",
-    "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0524/3715/6028/products/LUWL-LU80-NA-WH-B2B_600x_6f4b6eff-3764-4397-a38d-ae0bdc8022ee.png?v=1611888512"
+    "title": "Producto: Patineta Penny (V - Milicia)",
+    "thumbnailUrl": "assets/images/products/producto/22/5.png"
   },
   {
-    "precio": 150,
+    "precio": 800,
     "id": 6,
-    "title": "Ruedas",
-    "thumbnailUrl": "https://picsum.photos/id/50/600"
+    "title": "Producto: Patineta Tipo Penny (Negra)",
+    "thumbnailUrl": "assets/images/products/producto/22/6.png"
+  },
+  {
+    "precio": 1000,
+    "id": 7,
+    "title": "Producto: Patineta Tipo Penny (Azul)",
+    "thumbnailUrl": "assets/images/products/producto/22/7.png"
+  },
+  {
+    "precio": 1000,
+    "id": 8,
+    "title": "Producto: Patineta Tipo Penny (Madera)",
+    "thumbnailUrl": "assets/images/products/producto/22/8.png"
+  },
+  {
+    "precio": 1000,
+    "id": 9,
+    "title": "Producto: Patineta Penny (Rosa)",
+    "thumbnailUrl": "assets/images/products/producto/22/9.png"
+  },
+  {
+    "precio": 1000,
+    "id": 10,
+    "title": "Producto: Patineta Penny (Rosa)",
+    "thumbnailUrl": "assets/images/products/producto/22/11.png"
   }
+
+
+
 ]

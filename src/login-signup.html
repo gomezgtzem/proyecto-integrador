@@ -21,6 +21,8 @@
     <!-- Fuente Permanent-Marker tamaño 400-->
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <!-- End fonts -->
+    <!-- loader -->
+    <link rel="stylesheet" href="./assets/css/loader.css">
 
     <!-- Begin own styles -->
     <link rel="stylesheet" href="./assets/css/login-signup.css">
@@ -33,7 +35,16 @@
     <title>Cuenta</title>
 </head>
 
-<body class="style1">
+<body class="style1 hidden">
+  <!-- loader -->
+  <div class="loader-centrado" id="preloader">
+    <img src="./assets/images/loader/llanta.gif" alt="llanta" class="llanta-loader"> 
+    <p class="loader-text font-mainColor-s1">Skate Nation</p>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+  </div>
 <!-- Begin Navbar botones de lata y rutas de navegacion-->
 <header>
     <nav class="navbar navbar-expand-lg navbar-light style1">
@@ -238,6 +249,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
         </script>
+         <!-- loader -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="./assets/js/loader.js"></script>
 </body>
 
 </html>
