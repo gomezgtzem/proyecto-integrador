@@ -154,12 +154,14 @@
   <!-- Este template se usará en las páginas de productos -->
   <template id="template-card">
     <div class="col-12 mb-2 col-md-4 col-sm-12 mt-4">
-      <div class="card">
-        <img src="" alt="" class="card-img-top" />
+      <div class="card bg-transparent border-0">
+        <img src="" class="img-card" alt="" class="card-img-top" />
         <div class="card-body">
-          <h5 class="font-mainColor-s1">Titulo</h5>
-          <p class="font-mainColor-s1">precio</p>
-          <button class="btn btn-dark btn-compra" onclick=" swal('¡Producto agregado al carrito!')">Comprar</button>
+          <h5 class="font-mainColor-s1 text-center titulo-card">Titulo</h5>
+          <p class="font-mainColor-s1 text-center precio-card">precio</p>
+          
+            <button class="btn btn-dark btn-compra font-compColor-s1 btn-lg button-card style1-comp" onclick=" swal('¡Producto agregado al carrito!')">Comprar</button>
+          
           <!-- swal('¡Producto agregado al carrito!') -->
         </div>
       </div>
