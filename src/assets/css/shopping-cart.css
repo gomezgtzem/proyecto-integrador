@@ -51,9 +51,6 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #002b5c;
 }
-=======
-=======
->>>>>>> 150eb2e7364ca02c8f36101bc1a92ebc2a7be790
 .button-card {
   width: 300px;
   color: rgba(37, 105, 184, 1);
@@ -74,12 +71,3 @@ a:hover {
   transform: scale(1.30);
   
 }
-img{
-  width: 200px;
-  height: 200px;
-  padding: 10px;
-}
-<<<<<<< HEAD
->>>>>>> 4eeb9a124832c85a19878c93b2b4edc5316ca976
-=======
->>>>>>> 150eb2e7364ca02c8f36101bc1a92ebc2a7be790
