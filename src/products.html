@@ -1,87 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Begin Bootstrap styles -->
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- End Bootstrap styles -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Begin Bootstrap styles -->
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- End Bootstrap styles -->
 
-    <!-- Begin fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fuente Montserrat tamaños 400,700,900 -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- Fuente Permanent-Marker tamaño 400-->
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <!-- End fonts -->
-    <!-- loader -->
-    <link rel="stylesheet" href="./assets/css/loader.css">
-
-    <!-- Begin own styles -->
-    <link rel="stylesheet" href="./assets/css/products.css">
-    <link rel="stylesheet" href="./assets/css/colors.css">
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="./assets/images/icon.png">
-
-
-
-    <link rel="stylesheet" href="./assets/css/navbar-footer.css">
-
-    <title>Productos</title>
+  <!-- Begin fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuente Montserrat tamaños 400,700,900 -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Fuente Permanent-Marker tamaño 400-->
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <!-- End fonts -->
+  <!-- loader -->
+  <link rel="stylesheet" href="./assets/css/loader.css">
+  <!-- Begin own styles -->
+  <link rel="stylesheet" href="./assets/css/colors.css">
+  <link rel="stylesheet" href="./assets/css/navbar-footer.css">
+  <link rel="stylesheet" href="assets/css/shopping-cart.css" />
+  <!-- End own styles -->
+  <link rel="stylesheet" href="./assets/css/products.css">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="./assets/images/icon.png">
+  <title>Productos</title>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body class="style1 font-compColor-s1 hidden">
-
-    <div class="loader-centrado" id="preloader">
-        <img src="./assets/images/loader/llanta.gif" alt="llanta" class="llanta-loader"> 
-        <p class="loader-text font-mainColor-s1">Skate Nation</p>
-        <div></div>
-        <div></div>
-        <div></div>
-        </div>
-      </div>
-<!-- Begin Navbar botones de lata y rutas de navegacion-->
-<header>
+  <div class="loader-centrado" id="preloader">
+    <img src="./assets/images/loader/llanta.gif" alt="llanta" class="llanta-loader"> 
+    <p class="loader-text font-mainColor-s1">Skate Nation</p>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+  </div>
+  <!-- Begin Navbar botones de lata y rutas de navegacion-->
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light style1">
       <!-- botones colores -->
-    <form action="" id="colorSelect">
+      <form action="" id="colorSelect">
         <div class="btn-group btn-group-toggle " data-toggle="buttons">
-            <label class="btn border-0">
-                <input type="radio" name="options" id="option1">
-                <i class="col col-lg-1 col-md-1 navbar-brand text-primary fas fa-spray-can p-0 mx-0"
-                    style="font-size:35px"></i>
-                </a>
-            </label>
-            <label class="btn border-0">
-                <input type="radio" name="options" id="option2">
-                <i class="col col-lg-1 col-md-1 navbar-brand text-success fas fa-spray-can p-0 mx-0"
-                    style="font-size:35px"></i>
-                </a>
-            </label>
-            <label class="btn active border-0">
-                <input type="radio" name="options" id="option3">
-                <i class="col col-lg-1 col-md-1 navbar-brand text-danger fas fa-spray-can p-0 mx-0"
-                    style="font-size:35px"></i>
-                </a>
-            </label>
-            <label class="btn border-0">
-                <input type="radio" name="options" id="option4">
-                <i class="col col-lg-1 col-md-1 navbar-brand text-warning fas fa-spray-can p-0 mx-0"
-                    style="font-size:35px"></i>
-                </a>
-            </label>
+          <label class="btn border-0">
+            <input type="radio" name="options" id="option1">
+            <i class="col col-lg-1 col-md-1 navbar-brand text-primary fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+            </a>
+          </label>
+          <label class="btn border-0">
+            <input type="radio" name="options" id="option2">
+            <i class="col col-lg-1 col-md-1 navbar-brand text-success fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+            </a>
+          </label>
+          <label class="btn active border-0">
+            <input type="radio" name="options" id="option3">
+            <i class="col col-lg-1 col-md-1 navbar-brand text-danger fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+            </a>
+          </label>
+          <label class="btn border-0">
+            <input type="radio" name="options" id="option4">
+            <i class="col col-lg-1 col-md-1 navbar-brand text-warning fas fa-spray-can p-0 mx-0" style="font-size:35px"></i>
+            </a>
+          </label>
         </div>
-    </form>
+      </form>
       <!-- fin botones cambio de colores -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,324 +83,180 @@
         <div class="col navbar-nav">
           <a class="col control" href="#"></a>
           <a class="nav-link nav-letra font-mainColor-s1" href="index.html">INICIO</a>
-          <a class="nav-link nav-letra font-mainColor-s1" href="contact.html">CONTACTO</a>
           <a class="nav-link nav-letra font-mainColor-s1" href="store.html">TIENDA</a>
-          <a class="nav-link nav-letra font-mainColor-s1" href="about-us.html">NOSOTROS</a>
           <a class="nav-link nav-letra font-mainColor-s1" href="login-signup.html">REGISTRARSE</a>
+          <a class="nav-link nav-letra font-mainColor-s1" href="contact.html">CONTACTO</a>
+          <a class="nav-link nav-letra font-mainColor-s1" href="about-us.html">NOSOTROS</a>
           <a class="nav-link nav-letra  font-mainColor-s1" href="cart.html"><i class="bi bi-cart4"></i></a>
         </div>
       </div>
     </nav>
   </header>
   <!--End Navbar-->
-  
 
-    <!--  img hero -->
-    <div class="container-fluid ">
-        <div class="hero img-hero">
-            <div class="text-hero text-center">
-                <h1 class="text-center font-compColor-s1">Productos</h1>
-            </div>
+
+  <!--  img hero -->
+  <div class="container-fluid ">
+    <div class="hero img-hero">
+        <div class="text-hero text-center">
+            <h1 class="text-center font-compColor-s1">Productos</h1>
         </div>
     </div>
-    <!-- Productos -->
+</div>
+<!-- Productos -->
 
-    <div class=" cubo style1-comp container row mx-auto m-5 ">
-        <h3 class="mt-4 mb-4 font-weight-bolder">Nuestros Productos</h3>
-        <p class="mb-5 text-center pb-0"> Contamos con una alta variadad de productos y de la más alta calidad que se
-            ajusta perfectamente a sus preferencias.
+<div class=" cubo style1-comp container row mx-auto m-5 ">
+    <h3 class="mt-4 mb-4 font-weight-bolder">Nuestros Productos</h3>
+    <p class="mb-5 text-center pb-0"> Contamos con una alta variadad de productos y de la más alta calidad que se
+        ajusta perfectamente a sus preferencias.
 
-            Las colaboraciones de diferentes diseñadores y marcas dan como resultado una colección versátil que sigue el
-            mismo enfoque que nuestras patinetas: diseños claros y clásicos.
+        Las colaboraciones de diferentes diseñadores y marcas dan como resultado una colección versátil que sigue el
+        mismo enfoque que nuestras patinetas: diseños claros y clásicos.
 
-            <p class="m-0 p-0 pt-2">Podemos garantizar el cumplimiento de condiciones laborales justas y altos
-                estándares ambientales.</p>
+        <p class="m-0 p-0 pt-2">Podemos garantizar el cumplimiento de condiciones laborales justas y altos
+            estándares ambientales.</p>
 
-            <p class="mb-4"> Todos nuestros productos están envueltos en papel en lugar de plástico.</p>
-        </p>
+        <p class="mb-4"> Todos nuestros productos están envueltos en papel en lugar de plástico.</p>
+    </p>
+</div>
+
+  <!-- Imagen de fondo -->
+  <section class="contenido-hero ">
+    <!--   <img class="img " src="https://www.surfertoday.com/images/stories/olympic-skateboarding.jpg" alt="cover skate" /> -->
+  </section>
+
+  <!-- Carrito de compras de PRUEBA-->
+  <div class="container">
+    <!-- <h1 class="font-mainColor-s1 header">Carrito de compras</h1> -->
+    <hr />
+
+    <table class="table font-mainColor-s1" id="none">
+      <thead>
+        <tr>
+          <th scope="col ">id</th>
+          <th scope="col ">Item</th>
+          <th scope="col ">Cantidad</th>
+          <th scope="col ">Acción</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody id="items"></tbody>
+      <tfoot>
+        <tr id="footer">
+          <th class="font-mainColor-s1" scope="row" colspan="5">
+            ¡Carrito vacío! ¡Comienza a comprar!
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- checkout button -->
+    <section class="checkout-button">
+      <!-- <button class="button font-mainColor-s1">
+        <a href="purchased.html" target="_blank">Comprar</a>
+      </button> -->
+    </section>
+    <!-- <h1 class="text-center header font-mainColor-s1">¡Sigue comprando!</h1> -->
+    <div class="row mt-5" id="cards">
+      <!-- aquí se rellena con JS -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+  <!-- Templates, no se ven en el HTML -->
+
+  <template id="template-carrito">
+    <tr>
+      <th scope="row">id</th>
+      <td class="font-mainColor-s1">Café</td>
+      <td>1</td>
+      <td>
+        <button class="btn btn-danger btn-sm">-</button>
+        <button class="btn btn-info btn-sm">+</button>
+      </td>
+      <td>$ <span class="precio">500</span></td>
+    </tr>
+  </template>
+
+  <!-- Este template se usará en las páginas de productos -->
+  <template id="template-card">
+    <div class="col-12 mb-2 col-md-4 col-sm-12 mt-4">
+      <div class="card bg-transparent border-0">
+        <img src="" class="img-card img-fluid" alt="" class="card-img-top" onclick="enlace()" id="clic" />
+        <div class="card-body">
+          <h5 class="font-mainColor-s1 text-center titulo-card">Titulo</h5>
+          <p class="font-mainColor-s1 text-center precio-card">precio</p>
+          <button style="width:100%;" class="btn btn-dark btn-compra font-compColor-s1 btn-lg button-card style1-comp" onclick=" swal('¡Producto agregado al carrito!')">Comprar</button>
+
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="template-footer">
+    <th scope="row" colspan="2">Total productos</th>
+    <td>10</td>
+    <td>
+      <button class="btn btn-danger btn-sm  font-mainColor-s1" id="vaciar-carrito">
+        vaciar todo
+      </button>
+    </td>
+    <td class="font-weight-bold">$ <span class="total font-mainColor-s1">5000</span></td>
+  </template>
+
+  <!-- Begin footer -->
+  <footer class="footer d-flex  style1-comp">
+    <div class="col-sm-2 col-md-2 col-lg-2 logo">
+      <img class="row img rounded mx-auto d-block max-width: 100%" id="logo" src="./assets/images/footer/logo-s1.png"
+        alt="Logo Santa Cruz - recognized Skateboarding brand" />
+      <label class="text-center col font-titles font-compColor-s1">SKATE NATION</label>
     </div>
 
-    <main class="container">
-        <section class="row productos font-compColor-s1">
-            <article class="col-12 mt-5 mb-5 text-center font-compColor-s1">
-                <section class="row justify-contect-center">
+    <div class="col-sm-6 col-md-6 col-lg-8 copyright">
+      <h5 class="footer-letra font-compColor-s1 col font-titles text-center">Sobre nosotros</h5>
+      <p class="font-compColor-s1 col  text-center simple-text"> Este proyecto fue ideado para dar respuesta a la
+        necesidad de productos skate de excelente calidad y precio.
+        Sabemos
+        que si no tenemos un medio adecuado para dar conocer nuestra idea, podríamos quedar en el olvido. Es por eso
+        que, con
+        lo aprendido en Generation México, logramos desarrollar esta aplicación web que no sólo incluye los productos,
+        sino nuestros conocimientos y habilidades adquiridas... <a class="  saberMas" href="about-us.html">saber más</a>
+      </p>
 
-                    <article class="products col-6 col-lg-3 py-1 mb-5">
-                        <figure class="product">
-                            <a href="product.html">
-                                <img src="assets/images/products/producto/producto1.png" class="img-fluid"
-                                    alt="producto1">
+    </div>
 
+    <div class="col-sm-4 col-md-4 col-lg-2  social-network ">
+      <h5 class="col text-center font-compColor-s1 font-titles">Redes sociales</h5>
 
-                                <figcaption class="caja-producto">
-                                    <p class="text-product font-mainColor-s1">Producto: Patineta chiquita</p>
-                                    <p class="text-precio font-mainColor-s1">Precio: $1,000</p>
-                                </figcaption>
-                            </a>
-                        </figure>
+      <div class="col text-center">
+        <a class="footer-letra" href="#"><i class=" text-center bi bi-facebook footer-letra font-compColor-s1"></i></a>
+        <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Facebook</label>
+      </div>
+      <div class="col text-center">
+        <a class="footer-letra" href="#"><i class=" text-center bi bi-instagram footer-letra font-compColor-s1"></i></a>
+        <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Instagram</label>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
 
-                        <p>
-                            <a class="btn mb-5 mt-5 font-compColor-s1 style1-comp" href="#">Agregar al Carrito</a>
-                        </p>
-
-                    </article>
-
-                    <!-- fin producto1 -->
-
-                    <article class="products col-6 col-lg-3 py-1 mb-5">
-                        <figure class="product">
-
-                            <a href="product.html">
-                                <img src="assets/images/products/producto/producto2.png" class="img-fluid"
-                                    alt="producto1">
-                                <figcaption class="caja-producto">
-                                    <p class="text-product font-mainColor-s1">Producto: Patineta chiquita</p>
-                                    <p class="text-precio font-mainColor-s1">Precio: $1,000</p>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <p>
-                            <a class="btn mb-5 mt-5 font-compColor-s1 style1-comp" href="#">Agregar al Carrito</a>
-                        </p>
-
-                    </article>
-
-                    <!-- fin producto2 -->
-
-                    <article class="products col-6 col-lg-3 py-1 mb-5">
-                        <figure class="product">
-
-                            <a href="product.html">
-                                <img src="assets/images/products/producto/producto3.png" class="img-fluid"
-                                    alt="producto1">
-                                <figcaption class="caja-producto">
-                                    <p class="text-product font-mainColor-s1">Producto: Patineta chiquita</p>
-                                    <p class="text-precio font-mainColor-s1">Precio: $1,000</p>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <p>
-                            <a class="btn mb-5 mt-5 font-compColor-s1 style1-comp" href="#">Agregar al Carrito</a>
-                        </p>
-
-                    </article>
-
-
-                    <!-- fin producto3 -->
-                    <article class="products col-6 col-lg-3 py-1 mb-5">
-                        <figure class="product">
-
-                            <a href="product.html">
-                                <img src="assets/images/products/producto/producto4.png" class="img-fluid"
-                                    alt="producto1">
-                                <figcaption class="caja-producto">
-                                    <p class="text-product font-mainColor-s1">Producto: Patineta chiquita</p>
-                                    <p class="text-precio font-mainColor-s1">Precio: $1,000</p>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <p>
-                            <a class="btn mb-5 mt-5 font-compColor-s1 style1-comp" href="#">Agregar al Carrito</a>
-                        </p>
-
-                    </article>
-
-                    <!-- fin producto4 -->
-                    <article class="products col-6 col-lg-3 py-1 mb-5">
-                        <figure class="product">
-
-                            <a href="/src/product.html">
-                                <img src="assets/images/products/producto/producto5.png" class="img-fluid"
-                                    alt="producto1">
-                                <figcaption class="caja-producto">
-                                    <p class="text-product font-mainColor-s1">Producto: Patineta chiquita</p>
-                                    <p class="text-precio font-mainColor-s1">Precio: $1,000</p>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <p>
-                            <a class="btn mb-5 mt-5 font-compColor-s1 style1-comp" href="#">Agregar al Carrito</a>
-                        </p>
-
-                    </article>
-
-                    <!-- fin producto5 -->
-                    <article class="products col-6 col-lg-3 py-1 mb-5">
-                        <figure class="product">
-
-                            <a href="product.html">
-                                <img src="assets/images/products/producto/producto6.png" class="img-fluid"
-                                    alt="producto1">
-                                <figcaption class="caja-producto">
-                                    <p class="text-product font-mainColor-s1">Producto: Patineta chiquita</p>
-                                    <p class="text-precio font-mainColor-s1">Precio: $1,000</p>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <p>
-                            <a class="btn mb-5 mt-5 font-compColor-s1 style1-comp" href="#">Agregar al Carrito</a>
-                        </p>
-
-                    </article>
-
-                    <!-- fin producto6 -->
-                    <article class="products col-6 col-lg-3 py-1 mb-5">
-                        <figure class="product">
-
-                            <a href="product.html">
-                                <img src="assets/images/products/producto/producto7.png" class="img-fluid"
-                                    alt="producto1">
-                                <figcaption class="caja-producto">
-                                    <p class="text-product font-mainColor-s1">Producto: Patineta chiquita</p>
-                                    <p class="text-precio font-mainColor-s1">Precio: $1,000</p>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <p>
-                            <a class="btn mb-5 mt-5 font-compColor-s1 style1-comp" href="#">Agregar al Carrito</a>
-                        </p>
-
-                    </article>
-
-                    <!-- fin producto7 -->
-
-                    <article class="products col-6 col-lg-3 py-1 mb-5">
-                        <figure class="product">
-
-                            <a href="product.html">
-                                <img src="assets/images/products/producto/producto8.png" class="img-fluid"
-                                    alt="producto1">
-                                <figcaption class="caja-producto">
-                                    <p class="text-product font-mainColor-s1">Producto: Patineta chiquita</p>
-                                    <p class="text-precio font-mainColor-s1">Precio: $1,000</p>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <p>
-                            <a class="btn mb-5 mt-5 font-compColor-s1 style1-comp" href="#">Agregar al Carrito</a>
-                        </p>
-
-                    </article>
-
-                    <!-- fin producto8 -->
-                    <article class="products col-6 col-lg-3 py-1 mb-5">
-                        <figure class="product">
-
-                            <a href="product.html">
-                                <img src="assets/images/products/producto/producto9.png" class="img-fluid"
-                                    alt="producto1">
-                                <figcaption class="caja-producto">
-                                    <p class="text-product font-mainColor-s1">Producto: Patineta chiquita</p>
-                                    <p class="text-precio font-mainColor-s1">Precio: $1,000</p>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <p>
-                            <a class="btn mb-5 mt-5 font-compColor-s1 style1-comp" href="#">Agregar al Carrito</a>
-                        </p>
-
-                    </article>
-
-                    <!-- fin producto9 -->
-
-                    <article class="products col-6 col-lg-3 py-1 mb-5">
-                        <figure class="product">
-
-                            <a href="product.html">
-                                <img src="assets/images/products/producto/producto10.png" class="img-fluid"
-                                    alt="producto1">
-                                <figcaption class="caja-producto">
-                                    <p class=" text-product font-mainColor-s1">Producto: Patineta chiquita</p>
-                                    <p class="text-precio font-mainColor-s1">Precio: $1,000</p>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <p>
-                            <a class="btn mb-5 mt-5 font-compColor-s1 style1-comp" href="#">Agregar al Carrito</a>
-                        </p>
-
-                    </article>
-                    <!-- fin producto10 -->
-                </section>
-            </article>
-        </section>
-
-    </main>
-
-
-    <!-- Begin footer -->
-    <footer class="footer d-flex  style1-comp">
-        <div class="col-sm-2 col-md-2 col-lg-2 logo">
-            <img class="row img rounded mx-auto d-block max-width: 100%" id="logo"
-                src="./assets/images/footer/logo-s1.png" alt="Logo Santa Cruz - recognized Skateboarding brand" />
-            <label class="text-center col font-titles font-compColor-s1">SKATE NATION</label>
-        </div>
-
-        <div class="col-sm-6 col-md-6 col-lg-8 copyright">
-            <h5 class="footer-letra font-compColor-s1 col font-titles text-center">Sobre nosotros</h5>
-            <p class="font-compColor-s1 col  text-center simple-text"> Este proyecto fue ideado para dar respuesta a la
-                necesidad de productos skate de excelente calidad y precio.
-                Sabemos
-                que si no tenemos un medio adecuado para dar conocer nuestra idea, podríamos quedar en el olvido. Es por
-                eso
-                que, con
-                lo aprendido en Generation México, logramos desarrollar esta aplicación web que no sólo incluye los
-                productos,
-                sino nuestros conocimientos y habilidades adquiridas... <a class="  saberMas" href="about-us.html">saber
-                    más</a></p>
-
-        </div>
-
-        <div class="col-sm-4 col-md-4 col-lg-2  social-network ">
-            <h5 class="col text-center font-compColor-s1 font-titles">Redes sociales</h5>
-
-            <div class="col text-center">
-                <a class="footer-letra" href="#"><i
-                        class=" text-center bi bi-facebook footer-letra font-compColor-s1"></i></a>
-                <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Facebook</label>
-            </div>
-            <div class="col text-center">
-                <a class="footer-letra" href="#"><i
-                        class=" text-center bi bi-instagram footer-letra font-compColor-s1"></i></a>
-                <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Instagram</label>
-            </div>
-           <!--  <div class="col text-center">
-                <a class="footer-letra" href="#"><i
-                        class=" text-center bi bi-twitter footer-letra font-compColor-s1"></i></a>
-                <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Twitter</label>
-            </div>
-            <div class="col text-center">
-                <a class="footer-letra" href="#"><i
-                        class=" text-center bi bi-youtube footer-letra font-compColor-s1"></i></a>
-                <label class=" text-center font-compColor-s1 simple-text mt-3 ml-2">Siguenos en Youtube</label>
-            </div> -->
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-    </script>
-
-    <!-- Js -->
-    <script src="assets/js/change-color.js"></script> <!-- cambia elementos de color -->
-     <!-- loader -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/loader.js"></script>
-
+  <!-- javascript -->
+  <script src="assets/js/change-color.js"></script> <!-- cambia elementos de color -->
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/purchased.js"></script>
+<!-- redirección -->
+<script src="./assets/js/redireccion.js"></script>
+  <!-- bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+      <!-- loader -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="./assets/js/loader.js"></script>
 </body>
 
 </html>
