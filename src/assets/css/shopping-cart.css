@@ -37,21 +37,18 @@ a:hover {
   width: 8px;
 }
 
-
 ::-webkit-scrollbar-track {
-  background: #2569B8;
+  background: #2569b8;
 }
-
 
 ::-webkit-scrollbar-thumb {
   background: #002b5c;
 }
 
-
 ::-webkit-scrollbar-thumb:hover {
   background: #002b5c;
 }
-.button-card {
+/* .button-card {
   width: 300px;
   color: rgba(37, 105, 184, 1);
   display: block;
@@ -60,14 +57,35 @@ a:hover {
   font-weight: 600;
   padding: 15px;
 }
-.titulo-card{
+.titulo-card {
   margin-bottom: 10px;
+  height: 60px;
 }
 .precio-card {
   margin-top: -5px;
   font-weight: bold;
 }
-.img-card:hover{
-  transform: scale(1.30);
-  
+.img-card:hover {
+  transform: scale(1.3);
+}
+ */
+.titulo-card {
+  margin-bottom: 10px;
+  height: 50px;
+}
+
+@media (max-width: 990px) {
+  .titulo-card {
+    height: 70px;
+  }
+}
+@media (max-width: 750px) {
+  .titulo-card {
+    height: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .titulo-card {
+    height: 40px;
+  }
 }
