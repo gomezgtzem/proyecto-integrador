@@ -1,3 +1,3 @@
 function enlace(){
-    location.href = "/src/product.html";
+    location.href = "https://gomezgtzem.github.io/proyecto-integrador/src/product.html";
 }
