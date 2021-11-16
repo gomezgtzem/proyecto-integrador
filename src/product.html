@@ -27,14 +27,12 @@
     <link rel="stylesheet" href="./assets/css/loader.css">
     <!-- Begin own styles -->
     <link rel="stylesheet" href="./assets/css/product.css">
-    <link rel="stylesheet" href="./assets/css/colors.css">
-    
-    
-    
+    <link rel="stylesheet" href="./assets/css/colors.css">  
     <link rel="stylesheet" href="./assets/css/navbar-footer.css">
     <!-- End own styles -->
   <!-- favicon -->
   <link rel="icon" type="image/png" href="./assets/images/icon.png"> 
+
 
     <title>producto</title>
 
@@ -185,34 +183,129 @@
           </div>
         </div>
       </div>
+
       <!-- bloque de imagenes -->
-      <div class="container-fluid">
-        <div class="row justify-content-around pt-5 pb-5">
-          <div class="col-4.col-sm-12 pt-3 pb-3">
-            <img
-              src="assets/images/products/producto/producto1.png"
-              class="img-fluid" width="300px" alt="">
-          </div>
-          <div class="col-4.col-sm-12 pt-3 pb-3">
-            <img
-              src="assets/images/products/producto/producto2.png"
-              width="300px" alt="">
-          </div>
-          <div class="col-4.col-sm-12 pt-3 pb-3">
-            <img
-              src="assets/images/products/producto/producto3.png"
-              width="300px" alt="">
-          </div>
-          <div class="col-4.col-sm-12 pt-3 pb-3">
-            <img
-              src="assets/images/products/producto/producto4.png"
-              width="300px" alt="">
+    <hr class="mb-5"/>
+  <!--Carousel Wrapper-->
+  <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+  
+    <!--Controls-->
+    <div class="controls-top ">
+      <a class="btn-floating flechitas" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+      <a class="btn-floating  flechitas" href="#multi-item-example" data-slide="next"><i
+          class="fas fa-chevron-right"></i></a>
+    </div>
+    <!--/.Controls-->
+  
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+      <li data-target="#multi-item-example" data-slide-to="1"></li>
+      
+    </ol>
+    <!--/.Indicators-->
+  
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+  
+      <!--First slide-->
+      <div class="carousel-item active">
+  
+        <div class="col-md-3" style="float:left">
+         <div>
+            <img class="card-img-top"
+              src="assets/images/products/producto/22/1.png" alt="Card image cap">
+            <div class="card-body">
+              <!-- <h4 class="card-title">Card title</h4> -->
+            </div>
           </div>
         </div>
-      
+  
+        <div class="col-md-3" style="float:left">
+          <div>
+            <img class="card-img-top"
+              src="assets/images/products/producto/22/2.png" alt="Card image cap">
+            <div class="card-body">
+              <!-- <h4 class="card-title">Card title</h4> -->
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3" style="float:left">
+          <div>
+            <img class="card-img-top"
+              src="assets/images/products/producto/27/5.png" alt="Card image cap">
+            <div class="card-body">
+              <!-- <h4 class="card-title">Card title</h4> -->
+            </div>
+          </div>
+        </div>
+        
+         <div class="col-md-3" style="float:left">
+         <div>
+            <img class="card-img-top"
+              src="assets/images/products/producto/27/6.png" alt="Card image cap">
+            <div class="card-body">
+              <!-- <h4 class="card-title">Card title</h4> -->
+            </div>
+          </div>
+        </div>
+  
       </div>
-    </main>
+      <!--/.First slide-->
+  
+      <!--Second slide-->
+      <div class="carousel-item">
+  
+        <div class="col-md-3" style="float:left">
+          <div>
+            <img class="card-img-top"
+              src="assets/images/products/producto/29 SurfSkate/1.png" alt="Card image cap">
+            <div class="card-body">
+              <!-- <h4 class="card-title">Card title</h4> -->
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3" style="float:left">
+          <div>
+            <img class="card-img-top"
+              src="assets/images/products/producto/29 SurfSkate/2.png" alt="Card image cap">
+            <div class="card-body">
+              <!-- <h4 class="card-title">Card title</h4> -->
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3" style="float:left">
+          <div>
+            <img class="card-img-top"
+              src="assets/images/products/producto/36 LongBoards/1.png" alt="Card image cap">
+            <div class="card-body">
+              <!-- <h4 class="card-title">Card title</h4> -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3" style="float:left">
+          <div>
+            <img class="card-img-top"
+              src="assets/images/products/producto/36 LongBoards/2.png" alt="Card image cap">
+            <div class="card-body">
+              <!-- <h4 class="card-title">Card title</h4> -->
 
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <!--/.Second slide-->
+
+    </div>
+    <!--/.Slides-->
+  
+  </div>
+  
    <!-- Begin footer -->
    <footer class="footer d-flex  style1-comp">
     <div class="col-sm-2 col-md-2 col-lg-2 logo">
@@ -245,6 +338,7 @@
     </div>
 </footer>
 <!-- End footer -->
+
     <!-- Begin Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
