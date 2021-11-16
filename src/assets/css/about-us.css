@@ -66,8 +66,24 @@
 .avatar-redes {
   justify-content: space-between;
 }
-
-
+.spm{
+  height: auto;
+}
+.izq{
+  left: 15%;
+}
+.no-fondo{
+  opacity: 0;
+}
+.no-fondo:hover{
+  opacity: 0;
+}
+.no-fondo:active{
+  opacity: 0;
+}
+.no-fondo:focus{
+  opacity: 0;
+}
 
 .icon-next { 
   font-size: 40px;
