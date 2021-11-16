@@ -32,6 +32,25 @@ a:hover {
 .button:hover {
   background-color: #dc3545;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #2569B8;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #002b5c;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #002b5c;
+}
 .button-card {
   width: 300px;
   color: rgba(37, 105, 184, 1);
@@ -52,8 +71,3 @@ a:hover {
   transform: scale(1.30);
   
 }
-/* img{
-  width: 200px;
-  height: 200px;
-  padding: 10px;
-} */
