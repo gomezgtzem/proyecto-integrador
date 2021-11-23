@@ -31,6 +31,7 @@ body{
   transition: transform 1s;
 }
 .item { /* se va a aplciar a c/foto */
+  margin: 10px 0;
   display: block;
   position: absolute;
   width:100%; 

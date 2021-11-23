@@ -131,33 +131,6 @@ marquee {
   box-sizing: border-box;
   min-width: 250px;
 }
-/* .columna-uno {
-  width: 30.434%;
-  margin-left: 2%;
-  flex: 1;
-  min-width: 250px;
-  margin-bottom: 0px;
-}
-.columna-dos {
-  margin-left: 10%;
-  width: 17.391%;
-  display: flex;
-  flex-direction: column;
-  flex: 2;
-  min-width: 250px;
-  margin-bottom: 0px;
-}
-.columna-tres {
-  width: 34.782%;
-  margin-left: 20%;
-  display: flex;
-  flex-direction: column;
-  min-width: 250px;
-  margin-bottom: 0px;
-}
-.texto {
-  width: 57.1%;
-} */
 
 /* ///////////////////// Carrusel ///////////////////// */
 .contenedor-carrusel {
@@ -364,12 +337,19 @@ footer {
   width: 10rem;
 }
 
-@media only screen and (min-device-width: 280px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 280px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
   .tennis-container {
     display: none;
   }
   .imagen-principal {
     object-fit: cover;
     width: 100%;
+  }
+  .tennis-container {
+    width: 0%;
+    display: none !important;
+  }
+  section {
+    display: table-column;
   }
 }
